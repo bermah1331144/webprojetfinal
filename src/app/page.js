@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1 className={styles.title}>ALLO</h1>
+        <h1 className="amarante bold">ALLO</h1>
+        <h1 className="amarante">ALLO</h1>
         <Image
           className={styles.logo}
           src="/next.svg"
