@@ -1,13 +1,12 @@
 export default function footer() {
     return <>
-        <footer className="container-fluid bg-secondary">
+        <footer className="container-fluid bg-tertiary">
             <div className="justify-content-center text-center p-3">
                 <i className="bi bi-facebook p-4 socialMedia"></i>
                 <i className="bi bi-twitter p-4 socialMedia"></i>
-                <i className="bi bi-linkedin p-4 socialMedia"></i>
+                <i className="bi bi-instagram p-4 socialMedia"></i>
             </div>
-            <p className="text-center open-sans">Centre de d'expertise et de perfectionnement en informatique</p>
-            <p className="text-center open-sans">2022</p>
+            <p className="text-center m-0 pb-3">Copyright &copy; GrindHunter 2025</p>
         </footer>
 
 

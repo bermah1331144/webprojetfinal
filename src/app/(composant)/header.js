@@ -10,8 +10,8 @@ export default function(){
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse justify-content-center col-6" id="navbarNav">
-                    <div className="row col-9">
+                <div className="collapse navbar-collapse justify-content-center row col-9" id="navbarNav">
+                    <div className="col-9 row">
                         <ul className="navbar-nav col-12 justify-content-center">
                             <li className="nav-item">
                                 <Link className="nav-link active mx-4" aria-current="page" href="/accueil">Accueil</Link>
@@ -27,8 +27,8 @@ export default function(){
                             </li>
                         </ul>
                     </div>
-                    <div className="row col-3 justify-content-center align-items-center">
-                        <Link className="navbar-brand col-1 text-center bi bi-person-square userIcon" href="#"></Link>
+                    <div className="col-3 row justify-content-center align-items-center">
+                        <Link className="navbar-brand text-end bi bi-person-square userIcon" href="#"></Link>
                     </div>
                 </div>
             </div>
