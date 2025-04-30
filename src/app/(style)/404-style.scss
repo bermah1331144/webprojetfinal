@@ -61,35 +61,6 @@ $images: (
   overflow: hidden;
 }
 
-// Monster background
-// .monsterBackground {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-image: url('/monstre/Arkveld.png');
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   filter: brightness(0.8) contrast(1.1);
-  
-//   // Overlay to make text more readable
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: linear-gradient(
-//       to bottom,
-//       rgba(0, 0, 0, 0.3),
-//       rgba(0, 0, 0, 0.6)
-//     );
-//   }
-// }
-
 // Content overlay
 .overlayContent {
   position: absolute;
