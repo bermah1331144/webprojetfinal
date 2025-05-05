@@ -9,20 +9,77 @@ $quarternary: #F2F6D0
     
 @import ./node_modules/bootstrap/scss/bootstrap.scss
 
-.socialMedia
-    font-size: 2em
-.bold
-    font-weight: 400
-h2
-    font-family: god-of-war
-.userIcon
-    font-size: 4em
-.logo
-    width: 8rem
-.nav-spacing
-    padding-left: 10rem
+// Applique un effet de hover foncé sur les boutons et liens
+.custom-btn
+  background-color: $secondary
+  color: #fff
+  border-radius: 30px
+  padding: 0.8rem 1.5rem
+  font-weight: bold
+  font-family: god-of-war
+  transition: all 0.3s ease-in-out
+  &:hover
+    background-color: darken($secondary, 10%) // Plus foncé avec un effet subtil
+    transform: translateY(-3px) // Effet de mouvement léger pour un effet dynamique
 
-.bg-tertiary
-    background-color: $tertiary
-.bg-quarternary
-    background-color: $quarternary
+.custom-input
+  border-radius: 30px
+  padding: 0.8rem 1.5rem
+  background-color: $quarternary
+  border: 1px solid $secondary
+  transition: border-color 0.3s ease-in-out
+  &:focus
+    border-color: $primary
+    box-shadow: 0 0 5px 2px rgba($primary, 0.2)
+
+// Navbar background et texte
+.navbar
+  background-color: $tertiary
+  .navbar-brand
+    color: $primary
+    &:hover
+      color: darken($primary, 10%)
+
+.nav-item .btn
+  transition: all 0.3s ease-in-out
+  &:hover
+    background-color: darken($secondary, 10%)
+    transform: translateY(-3px) // Animation de l'élément survolé
+// Utilisation des couleurs et typographies définies dans ton fichier SASS
+
+.socialMedia
+  font-size: 2em
+  color: $primary
+  transition: color 0.3s ease, transform 0.3s ease
+  cursor: pointer
+
+  &:hover
+    color: darken($primary, 15%) // Changer la couleur au survol pour un effet de fondu
+    transform: scale(1.1) // Zoom léger pour un effet de profondeur
+
+.custom-icon
+  padding: 0.5rem
+  border-radius: 50%
+  background-color: $quarternary
+  transition: background-color 0.3s ease, transform 0.3s ease
+
+  &:hover
+    background-color: $secondary // Changer l'arrière-plan au survol
+    transform: translateY(-5px) // Déplacement léger pour un effet moderne
+
+footer
+  background-color: $tertiary
+  padding: 2rem 0
+  .text-dark
+    color: $primary
+
+  .container-fluid
+    padding: 0
+    .text-center
+      font-family: god-of-war
+      color: $primary
+      font-weight: bold
+      letter-spacing: 1px
+
+  .socialMedia
+    margin: 0 0.5rem
