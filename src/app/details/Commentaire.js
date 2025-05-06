@@ -8,7 +8,7 @@ export default function commentaire({commentaire}) {
     
     //reste a teste, pour afficher un seul commentaire
 
-    console.log(commentaire);
+    //console.log(commentaire);
 
     //------------------ATTENTION!!!! DOIS CHANGER LES ATTIBUTS DANS ID="COMMENTAIRE" -> <p> & <p> ------------------
     return <>
