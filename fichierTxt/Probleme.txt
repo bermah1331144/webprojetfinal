@@ -1,0 +1,7 @@
+Dans ma page details, 
+    * Jarrive pas a faire afficher les attribut
+
+
+Dans pagr commentaire,
+    *J'ai des tableau vide
+

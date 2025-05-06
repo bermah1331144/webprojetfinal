@@ -12,7 +12,6 @@ export default function listCommentaire({idMonste}) {
     //fetch dans useEffect/get commentaires
     useEffect(() => {
         async function getCommentaires() {
-            console.log(idMonste);
             const response = await fetch(`http://localhost:3001/commentaires?idMonstre=${idMonste}`);
             const data = await response.json();
             setCommentaires(data);
@@ -20,13 +19,13 @@ export default function listCommentaire({idMonste}) {
         getCommentaires();
     }, [idMonste]);     
 
+    const affichage = commentaires.map((c) => <Commentaire commentaire={c} key={c.id} />);
+
 
     //doit afficher tout les commentaires doit use map
     return <>
         <div id="listCommentaire">
-            {commentaires.map((c) => (
-                <Commentaire commentaire={c} key={c.id}/>
-            ))}
+            {affichage}
         </div>
     </>;
 }

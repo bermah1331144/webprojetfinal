@@ -3,48 +3,48 @@ import Image from "next/image";
 import "../(style)/detailsStyle.sass";
 import ListCommentaire from "./listCommentaire";
 import AddCommentaire from "./addCommentaire";
-import Commentaire from "./Commentaire";
 import { useEffect, useState } from "react";
-import items from "../../../bd.json";
 
 export default function pageDetails({/*idMonste*/}){
     const [items, setItems] = useState([]);
+    const [itemActuel, setItemActuel] = useState([]); 
     
     const params = new URLSearchParams(window.location.search);
     const idMonste = parseInt(params.get("id"));
     
     //fonction pour aller chercher les infos du produit
-    async function getItems() {
-        try{
-            const response = await fetch("../../bd.json/items");
-            const data = await response.json();
-            setItems(data);
-
-        }catch(error){
-            console.error("Erreur lors de la recherche du produit", error);
-
-
-        }
-
-    }
-    document.addEventListener("DOMContentLoaded", getItems);
-
-
-/*     doit aller fetch les informations du produit et les afficher
     useEffect(() => {
         async function getItems() {
-            const response = await fetch("../../bd.json/items");
-            const data = await response.json();
-            setItems(data);
+            try{
+                const response = await fetch(`http://localhost:3001/items?id=${idMonste}`);
+                const data = await response.json();
+                setItems(data);
+
+                const trouveItem = items.find((i) => i.id === idMonste);
+                setItemActuel(trouveItem);
+
+
+            }catch(error){
+                console.error("Erreur lors de la recherche du produit", error);
+
+
+            }
+
         }
         getItems();
-    },[]);
-    const item = items.find((i) => i.Id === id);
-    const commentaire = item?.Commentaire?.[0]; */
+    },[idMonste])
+
     
     return<>
         <div>
-            <h1>{items.Nom}</h1>
+            <div>
+                {itemActuel ? (
+                <h1>{itemActuel.nom}</h1>
+            ) : (
+            <p>Chargement de l'item...</p>
+            )}
+            </div>
+            <h1>Nom items</h1>
             <div className="container">
                 <div className="row justify-content-center">
                         <Image className="imageProduit"

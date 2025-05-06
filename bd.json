@@ -3380,6 +3380,14 @@
             "contenu":"Wow, quel beau morceau de monstre !",
             "idUser":1,
             "idItem":1
+        },
+        {
+            "id":2,
+            "date": "2022-01-01",
+            "titre":"Mes fetch ont tous des erreurs",
+            "contenu":"Je vais me battre !",
+            "idUser":1,
+            "idItem":1
         }
     ],
 
