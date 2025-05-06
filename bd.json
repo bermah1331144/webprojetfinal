@@ -3372,7 +3372,7 @@
         }
     ],
 
-    "commentaire":[
+    "commentaires":[
         {
             "id":1,
             "date": "2022-01-01",
@@ -3381,5 +3381,18 @@
             "idUser":1,
             "idItem":1
         }
+    ],
+
+    "utilisateurs":[
+        {
+            "id":1,
+            "nom":"Jean",
+            "prenom":"Dupont",
+            "pseudo":"Jdupont",
+            "password":"azerty",
+            "email":"9o6oO@example.com"
+        }
     ]
+
+    
 }
