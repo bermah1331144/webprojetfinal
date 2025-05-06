@@ -3370,5 +3370,16 @@
           "imgLien": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_wing_item_equipment_material_mhwilds_wiki_guide_85px.png",
           "description": "Aile de Vespoïde. Extrêmement difficile à traiter, elle produit des résultats très variables."
         }
+    ],
+
+    "commentaire":[
+        {
+            "id":1,
+            "date": "2022-01-01",
+            "titre":"Ca marche tu l'espace commentaire ?",
+            "contenu":"Wow, quel beau morceau de monstre !",
+            "idUser":1,
+            "idItem":1
+        }
     ]
 }

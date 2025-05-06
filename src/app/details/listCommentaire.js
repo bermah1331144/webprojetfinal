@@ -22,7 +22,7 @@ export default function listCommentaire({idMonste}) {
     return <>
         <div id="listCommentaire">
             {commentaires.map((commentaire) => (
-                <Commentaire key={commentaire.id} commentaire={commentaire} />
+                <Commentaire commentaire={idMonste}/>
             ))}
         </div>
     </>;
