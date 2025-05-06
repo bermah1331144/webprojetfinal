@@ -1,3 +1,5 @@
+import '../(style)/style.sass'; // Assure-toi que le chemin est correct
+
 export default function Footer() {
     return (
         <>
@@ -8,7 +10,8 @@ export default function Footer() {
                     <i className="bi bi-instagram p-4 socialMedia custom-icon"></i>
                 </div>
                 <p className="text-center m-0 pb-3 text-dark">Copyright &copy; GrindHunter 2025</p>
-            </footer>    
+            </footer>
+
             {/* Mettre mes scripts */}
             <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
             <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossOrigin="anonymous"></script>
