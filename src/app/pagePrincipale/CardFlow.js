@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-
+import Link from 'next/link';
 
 export default function CardCarousel({ cards = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-
+  const idMonste = new URLSearchParams(window.location.search);
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -100,6 +100,9 @@ export default function CardCarousel({ cards = [] }) {
     return 'card-hidden';
   };
   
+
+  //Doit faire un map pour aller chercher les parties de monstres
+  
   return (
     <div className="carousel-container">
       <div className="carousel-inner">
@@ -138,9 +141,9 @@ export default function CardCarousel({ cards = [] }) {
                     <h3 className="card-title">{card.title}</h3>
                     <p className="card-description">{card.description}</p>
                     <div className="card-actions">
-                      <button className="card-button">
+                      <Link href={`/details/${idMonste}`} className="card-button">
                         Voir détails
-                      </button>
+                      </Link>
                       <button 
                         className="cart-button"
                         onClick={(e) => {
