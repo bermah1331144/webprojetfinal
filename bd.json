@@ -2292,7 +2292,7 @@
         },
         {
           "Id": 230,
-          "Nom": "Guardian Rathalos Scale+",
+          "Nom": "Guardian Rathalos Scale +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 314,
@@ -2852,7 +2852,7 @@
         },
         {
           "Id": 286,
-          "Nom": "Rathian Scale+",
+          "Nom": "Rathian Scale +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 304,
@@ -2872,7 +2872,7 @@
         },
         {
           "Id": 288,
-          "Nom": "Rathian Spike+",
+          "Nom": "Rathian Spike +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 341,
@@ -2912,23 +2912,23 @@
         },
         {
           "Id": 292,
-          "Nom": "Guardian Fulgur Scale+",
+          "Nom": "Guardian Fulgur Scale +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 308,
           "PrixAchat": 462,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
+          "description": "Une écaille de Gardien Fulgur Anjanath de haute qualité. Étonnamment lourde, elle vous électrocute au toucher."
         },
         {
           "Id": 293,
-          "Nom": "Guardian Fulgur Nosebone+",
+          "Nom": "Guardian Fulgur Nosebone +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 320,
           "PrixAchat": 480,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/20/MHWilds-Bone_Icon_White.png",
+          "description": "L'os nasal d'un gardien Fulgur Anjanath. Son mucus est chargé d'électricité."
         },
         {
           "Id": 294,
@@ -2937,28 +2937,28 @@
           "Recette": [],
           "PrixVente": 202,
           "PrixAchat": 303,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
+          "description": "La queue d'un Fulgur Anjanath gardien. Dotée de muscles épais qui lui permettent de maintenir son équilibre."
         },
         {
           "Id": 295,
-          "Nom": "Guardian Fulgur Pelt+",
+          "Nom": "Guardian Fulgur Pelt +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 318,
           "PrixAchat": 477,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
+          "description": "Une peau de Fulgur Anjanath Gardien de haute qualité. Ses motifs sauvages ont éclipsé sa forme originale."
         },
         {
           "Id": 296,
-          "Nom": "Guardian Fulgur Fang+",
+          "Nom": "Guardian Fulgur Fang +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 344,
           "PrixAchat": 516,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
+          "description": "Un croc acéré d'un Gardien Fulgur Anjanath. Conçu pour résister à la puissance écrasante de sa mâchoire."
         },
         {
           "Id": 297,
@@ -2967,8 +2967,8 @@
           "Recette": [],
           "PrixVente": 257,
           "PrixAchat": 385,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/d1/MHWilds-Sac_Icon_Yellow.png",
+          "description": "A monster organ that can store up large amounts of high voltage electricity."
         },
         {
           "Id": 298,
@@ -2977,8 +2977,8 @@
           "Recette": [],
           "PrixVente": 219,
           "PrixAchat": 328,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un gardien Fulgur Anjanath. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 299,
@@ -2987,8 +2987,8 @@
           "Recette": [],
           "PrixVente": 354,
           "PrixAchat": 531,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
+          "description": "Un joyau rare né au sein d'un Gardien, Fulgur Anjanath. On dit qu'il détient la puissance des cieux."
         },
         {
           "Id": 300,
@@ -2997,18 +2997,18 @@
           "Recette": [],
           "PrixVente": 250,
           "PrixAchat": 375,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Bone_Icon_Light_Blue.png",
+          "description": "Un os découvert dans les ruines de Wyveria. Sa forme particulière est propre à la faune locale."
         },
         {
           "Id": 301,
-          "Nom": "Wingdrake Hide+",
+          "Nom": "Wingdrake Hide +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 329,
           "PrixAchat": 493,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b1/MHWilds-Hide_Icon_Tan.png",
+          "description": "Un matériau rare, taillé dans des dragons ailés. À la fois résistant et facile à travailler."
         },
         {
           "Id": 302,
@@ -3017,8 +3017,8 @@
           "Recette": [],
           "PrixVente": 205,
           "PrixAchat": 307,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b1/MHWilds-Hide_Icon_Tan.png",
+          "description": "Un matériau taillé dans des dragons ailés. Léger, il est souvent utilisé pour la fabrication d'armures."
         },
         {
           "Id": 303,
@@ -3027,8 +3027,8 @@
           "Recette": [],
           "PrixVente": 220,
           "PrixAchat": 330,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
+          "description": "Un coquillage Bulaqchi. Idéal pour les loisirs créatifs grâce à sa durabilité et sa légèreté exceptionnelles."
         },
         {
           "Id": 304,
@@ -3037,18 +3037,18 @@
           "Recette": [],
           "PrixVente": 240,
           "PrixAchat": 360,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Bone_Icon_Gray.png",
+          "description": "Un os érodé provenant d'un tas d'os. L'érosion l'a rendu trop fragile pour être utilisé en artisanat."
         },
         {
           "Id": 305,
           "Nom": "Honey",
-          "Rarity": 4,
+          "Rarity": 2,
           "Recette": [],
           "PrixVente": 200,
           "PrixAchat": 300,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/c1/MHWilds-Webbing_Icon_Orange.png",
+          "description": "Miel hautement nutritif. À combiner avec des potions pour obtenir une méga potion encore plus puissante."
         },
         {
           "Id": 306,
@@ -3057,8 +3057,8 @@
           "Recette": [],
           "PrixVente": 219,
           "PrixAchat": 328,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
+          "description": "Une carapace de Bulaqchi de haute qualité. Facile à travailler et incroyablement résistante."
         },
         {
           "Id": 307,
@@ -3067,8 +3067,8 @@
           "Recette": [],
           "PrixVente": 228,
           "PrixAchat": 342,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/20/MHWilds-Bone_Icon_White.png",
+          "description": "Os rigide provenant d'un tas d'os. Résistant, mais léger et facile à manipuler."
         },
         {
           "Id": 308,
@@ -3077,8 +3077,8 @@
           "Recette": [],
           "PrixVente": 215,
           "PrixAchat": 322,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a3/MHWilds-Shell_Icon_Brown.png",
+          "description": "Partie de carapace d'un herbivore. Matériau relativement robuste pour un petit monstre."
         },
         {
           "Id": 309,
@@ -3087,8 +3087,8 @@
           "Recette": [],
           "PrixVente": 245,
           "PrixAchat": 367,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a3/MHWilds-Shell_Icon_Brown.png",
+          "description": "Une épaisse carapace d'herbivore. Même les plus petites sont incroyablement résistantes."
         },
         {
           "Id": 310,
@@ -3097,8 +3097,8 @@
           "Recette": [],
           "PrixVente": 201,
           "PrixAchat": 301,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f0/MHWilds-Bug_Icon_Pink.png",
+          "description": "Un coquillage Comaqchi. Incroyablement lisse et au lustre attrayant."
         },
         {
           "Id": 311,
@@ -3107,8 +3107,8 @@
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b2/MHWilds-Herb_Icon_Light_Blue.png",
+          "description": "Une plante contenant des somnifères. Nécessaire à la fabrication de munitions somnifères et de bombes tranquillisantes."
         },
         {
           "Id": 312,
@@ -3117,8 +3117,8 @@
           "Recette": [],
           "PrixVente": 223,
           "PrixAchat": 334,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/20/MHWilds-Bone_Icon_White.png",
+          "description": "Un os découvert dans les falaises d'Icestone. Forgé au fil des millénaires dans les profondeurs de la terre gelée."
         },
         {
           "Id": 313,
@@ -3127,8 +3127,8 @@
           "Recette": [],
           "PrixVente": 227,
           "PrixAchat": 340,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f0/MHWilds-Bug_Icon_Pink.png",
+          "description": "Un coquillage Comaqchi de haute qualité. Sa couleur éclatante envoûte tous ceux qui le voient."
         },
         {
           "Id": 314,
@@ -3137,8 +3137,8 @@
           "Recette": [],
           "PrixVente": 216,
           "PrixAchat": 324,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/81/MHWilds-Claw_Icon_Orange.png",
+          "description": "Les crocs existent sous différentes formes et tailles. Choisissez le croc adapté à votre tâche."
         },
         {
           "Id": 315,
@@ -3147,8 +3147,8 @@
           "Recette": [],
           "PrixVente": 236,
           "PrixAchat": 354,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/81/MHWilds-Claw_Icon_Orange.png",
+          "description": "Les crocs sont de formes et de tailles variées. Celui-ci est petit, mais peut néanmoins percer les écailles."
         },
         {
           "Id": 316,
@@ -3157,8 +3157,8 @@
           "Recette": [],
           "PrixVente": 249,
           "PrixAchat": 373,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Bone_Icon_Gray.png",
+          "description": "Un os découvert dans le bassin d'Oilwell. Recouvert d'une épaisse couche de pétrole accumulée au fil des ans."
         },
         {
           "Id": 317,
@@ -3167,8 +3167,8 @@
           "Recette": [],
           "PrixVente": 245,
           "PrixAchat": 367,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9f/MHWilds-Head_Icon_Purple.png",
+          "description": "Un crâne de Kranodath. Son incroyable résistance en fait un matériau idéal pour les armures."
         },
         {
           "Id": 318,
@@ -3177,8 +3177,8 @@
           "Recette": [],
           "PrixVente": 210,
           "PrixAchat": 315,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
+          "description": "Pyrite de cuivre provenant d'une coquille de Kranodath. Son éclat en fait un matériau de choix pour la décoration."
         },
         {
           "Id": 319,
@@ -3187,8 +3187,8 @@
           "Recette": [],
           "PrixVente": 239,
           "PrixAchat": 358,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ore_Icon_Green.png?20241201033247",
+          "description": "Minerai provenant d'affleurements miniers. Un matériau rare et recherché pour sa durabilité dans la fabrication d'armures."
         },
         {
           "Id": 320,
@@ -3197,8 +3197,8 @@
           "Recette": [],
           "PrixVente": 300,
           "PrixAchat": 450,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9f/MHWilds-Head_Icon_Purple.png",
+          "description": "Un crâne de Kranodath extra-dur. Tellement résistant qu'il ne se fissurera pas, même en le frappant de toutes ses forces."
         },
         {
           "Id": 321,
@@ -3207,18 +3207,18 @@
           "Recette": [],
           "PrixVente": 238,
           "PrixAchat": 357,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
+          "description": "Pyrite de cuivre de haute qualité provenant d'une coquille de Kranodath. Son éclat brillant est époustouflant."
         },
         {
           "Id": 322,
-          "Nom": "Piragill Fin+",
+          "Nom": "Piragill Fin +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 350,
           "PrixAchat": 525,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
+          "description": "Une nageoire de Piragill de haute qualité. D'un rouge écarlate profond, elle tranche la chair au moindre contact."
         },
         {
           "Id": 323,
@@ -3227,8 +3227,8 @@
           "Recette": [],
           "PrixVente": 210,
           "PrixAchat": 315,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/d5/MHWilds-Mushroom_Icon_Lemon.png",
+          "description": "Un champignon paralysant. Nécessaire pour fabriquer des munitions paralysantes et des bombes tranquillisantes."
         },
         {
           "Id": 324,
@@ -3237,8 +3237,8 @@
           "Recette": [],
           "PrixVente": 238,
           "PrixAchat": 357,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/af/MHWilds-Ore_Icon_Purple.png",
+          "description": "Une nageoire de Piragill. Son bord tranchant coupe sa proie comme un couteau dans du beurre."
         },
         {
           "Id": 325,
@@ -3247,7 +3247,7 @@
           "Recette": [],
           "PrixVente": 242,
           "PrixAchat": 363,
-          "imgLien": "",
+          "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
           "description": ""
         },
         {
@@ -3257,117 +3257,97 @@
           "Recette": [],
           "PrixVente": 218,
           "PrixAchat": 327,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f0/MHWilds-Ore_Icon_Blue.png",
+          "description": "Minerai extrait d'affleurements miniers. Encore en cours de recherche, mais connu pour produire un métal d'une grande pureté."
         },
         {
           "Id": 327,
-          "Nom": "Guardian Fang",
-          "Rarity": 4,
-          "Recette": [],
-          "PrixVente": 222,
-          "PrixAchat": 333,
-          "imgLien": "",
-          "description": ""
-        },
-        {
-          "Id": 328,
-          "Nom": "Guardian Plate",
-          "Rarity": 7,
-          "Recette": [],
-          "PrixVente": 375,
-          "PrixAchat": 562,
-          "imgLien": "",
-          "description": ""
-        },
-        {
-          "Id": 329,
           "Nom": "Guardian Seikret Feather +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 375,
           "PrixAchat": 562,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
+          "description": "Une plume Guardian Seikret de haute qualité. Incroyablement légère et pourtant parfaitement résistante."
         },
         {
-          "Id": 330,
+          "Id": 328,
           "Nom": "Guardian Seikret Feather",
           "Rarity": 4,
           "Recette": [],
           "PrixVente": 375,
           "PrixAchat": 562,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
+          "description": "Une plume de Seikret Gardien. Assez résistante pour dévier les lames."
         },
         {
-          "Id": 331,
-          "Nom": "Taliohth Scale+",
+          "Id": 329,
+          "Nom": "Talioth Scale +",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 345,
           "PrixAchat": 517,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/24/MHWilds-Scale_Icon_Orange.png",
+          "description": "Une échelle Talioth de haute qualité. Conçue pour survivre à des combats acharnés, elle n'en reste pas moins discrète."
         },
         {
-          "Id": 332,
+          "Id": 330,
           "Nom": "Earth Crystal",
           "Rarity": 4,
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/c6/MHWilds-Ore_Icon_White.png",
+          "description": "Microbes cristallisés provenant d'affleurements miniers. Apprécié comme abrasif pour les équipements de polissage."
         },
         {
-          "Id": 333,
-          "Nom": "Taliohth Scale",
+          "Id": 331,
+          "Nom": "Talioth Scale",
           "Rarity": 4,
           "Recette": [],
           "PrixVente": 246,
           "PrixAchat": 369,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/24/MHWilds-Scale_Icon_Orange.png",
+          "description": "Une écaille de Talioth. Adaptée aux environnements difficiles, elle est conçue pour protéger le corps comme une armure."
         },
         {
-          "Id": 334,
+          "Id": 332,
           "Nom": "Vespoid Carapace",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 375,
           "PrixAchat": 562,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
+          "description": "La carapace dure d'un vespoidé. Elle acquiert une qualité unique une fois transformée."
         },
         {
-          "Id": 335,
+          "Id": 333,
           "Nom": "Vespoid Innerwing",
           "Rarity": 6,
           "Recette": [],
           "PrixVente": 375,
           "PrixAchat": 562,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/48/MHWilds-Webbing_Icon_Yellow.png",
+          "description": "L'aile intérieure d'un Vespoïde. Aiguisée et élégante, telle une lame."
         },
         {
-          "Id": 336,
+          "Id": 334,
           "Nom": "Vespoid Shell",
           "Rarity": 4,
           "Recette": [],
           "PrixVente": 375,
           "PrixAchat": 562,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
+          "description": "Une carapace de Vespoïde. Correctement traitée, elle peut devenir aussi résistante que la peau d'une wyverne"
         },
         {
-          "Id": 337,
+          "Id": 335,
           "Nom": "Vespoid Wing",
           "Rarity": 4,
           "Recette": [],
           "PrixVente": 375,
           "PrixAchat": 562,
-          "imgLien": "https://monsterhunterwilds.wiki.fextralife.com/file/Monster-Hunter-Wilds/vespoid_wing_item_equipment_material_mhwilds_wiki_guide_85px.png",
+          "imgLien": "https://monsterhunterwiki.org/images/4/48/MHWilds-Webbing_Icon_Yellow.png",
           "description": "Aile de Vespoïde. Extrêmement difficile à traiter, elle produit des résultats très variables."
         }
     ]
