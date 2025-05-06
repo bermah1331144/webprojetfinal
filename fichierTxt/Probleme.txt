@@ -5,3 +5,5 @@ Dans ma page details,
 Dans pagr commentaire,
     *J'ai des tableau vide
 
+Dans page inscription
+    * mon push n'ajoute pas les information dans ma bd 
