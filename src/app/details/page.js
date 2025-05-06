@@ -13,7 +13,24 @@ export default function pageDetails({/*idMonste*/}){
     const params = new URLSearchParams(window.location.search);
     const idMonste = parseInt(params.get("id"));
     
-    //doit aller fetch les informations du produit et les afficher
+    //fonction pour aller chercher les infos du produit
+    async function getItems() {
+        try{
+            const response = await fetch("../../bd.json/items");
+            const data = await response.json();
+            setItems(data);
+
+        }catch(error){
+            console.error("Erreur lors de la recherche du produit", error);
+
+
+        }
+
+    }
+    document.addEventListener("DOMContentLoaded", getItems);
+
+
+/*     doit aller fetch les informations du produit et les afficher
     useEffect(() => {
         async function getItems() {
             const response = await fetch("../../bd.json/items");
@@ -23,7 +40,7 @@ export default function pageDetails({/*idMonste*/}){
         getItems();
     },[]);
     const item = items.find((i) => i.Id === id);
-    const commentaire = item?.Commentaire?.[0];
+    const commentaire = item?.Commentaire?.[0]; */
     
     return<>
         <div>
