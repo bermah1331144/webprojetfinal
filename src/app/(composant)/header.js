@@ -14,13 +14,8 @@ export default function Navbar() {
           <span className="fw-bold fs-4" style={{ color: '#443627' }}>GrindHunter</span>
         </Link>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon" style={{ backgroundColor: '#D98324' }}></span>
+        <button className="navbar-toggler col-9 row justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon col-4" style={{ backgroundColor: '#D98324' }}></span>
         </button>
 
         <div className="collapse navbar-collapse justify-content-between col-9 row" id="navbarNav">
@@ -41,10 +36,18 @@ export default function Navbar() {
                   Link 3
                 </Link>
               </li>
+              <li>
+                <form className="d-flex row justify-content-center d-lg-none" role="search" onSubmit={(e) => e.preventDefault()}>
+                  <button className="btn col-3" type="submit"><i class="bi bi-search custom-btn icons"></i></button>
+                  <div className="col-8">
+                    <input className="form-control custom-input py-2 " type="search" placeholder="Recherche" aria-label="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
+                  </div>
+                </form>
+              </li>
             </ul>
           </div>
 
-          <form className="d-flex me-3 col-3 row justify-content-center" role="search" onSubmit={(e) => e.preventDefault()}>
+          <form className="d-lg-flex me-3 col-3 row justify-content-center d-none" role="search" onSubmit={(e) => e.preventDefault()}>
             <div className="col-8">
               <input className="form-control custom-input py-2 " type="search" placeholder="Recherche" aria-label="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
             </div>
