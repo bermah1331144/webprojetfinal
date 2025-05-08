@@ -7,8 +7,8 @@
           "Recette": [],
           "PrixVente": 244,
           "PrixAchat": 366,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/3/3d/MHWilds-Shell_Icon_Green.png",
+          "description": "Robuste plaque de bras de Chatacabra. Frottement constant avec le sol, elle brille de mille feux."
         },
         {
           "Id": 2,
@@ -17,8 +17,8 @@
           "Recette": [],
           "PrixVente": 333,
           "PrixAchat": 499,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b7/MHWilds-Scale_Icon_Green.png",
+          "description": "Une écaille Chatacabra de haute qualité. Sa durabilité accrue la rend insensible à la plupart des chocs."
         },
         {
           "Id": 3,
@@ -27,8 +27,8 @@
           "Recette": [],
           "PrixVente": 305,
           "PrixAchat": 457,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
+          "description": "Une peau de Chatacabra de haute qualité. Résistante à son environnement hostile, elle constitue un excellent matériau d'artisanat."
         },
         {
           "Id": 4,
@@ -37,8 +37,8 @@
           "Recette": [],
           "PrixVente": 300,
           "PrixAchat": 450,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1f/MHWilds-Head_Icon_Green.png",
+          "description": "Belle plaque provenant de la mâchoire massive d'un Chatacabra. Sa densité et son poids sont impressionnants."
         },
         {
           "Id": 5,
@@ -47,8 +47,8 @@
           "Recette": [],
           "PrixVente": 230,
           "PrixAchat": 345,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/fd/MHWilds-Ticket_Icon_Green.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé le Chatacabra. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 6,
@@ -57,8 +57,8 @@
           "Recette": [],
           "PrixVente": 210,
           "PrixAchat": 315,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/3/3d/MHWilds-Shell_Icon_Green.png",
+          "description": "Plaque recouvrant les membres antérieurs du Chatacabra. Après une vie de léchage, elle est devenue à la fois lisse et robuste."
         },
         {
           "Id": 7,
@@ -67,8 +67,8 @@
           "Recette": [],
           "PrixVente": 213,
           "PrixAchat": 319,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b7/MHWilds-Scale_Icon_Green.png",
+          "description": "Une écaille dentelée provenant de la peau d'un Chatacabra, particulièrement résistante et bien adaptée à la fabrication d'armures."
         },
         {
           "Id": 8,
@@ -77,8 +77,8 @@
           "Recette": [],
           "PrixVente": 230,
           "PrixAchat": 345,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
+          "description": "La peau épaisse d'un Chatacabra. Élastique et facile à modeler grâce à son régime alimentaire gourmand."
         },
         {
           "Id": 9,
@@ -87,8 +87,8 @@
           "Recette": [],
           "PrixVente": 226,
           "PrixAchat": 339,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1f/MHWilds-Head_Icon_Green.png",
+          "description": "La plaque mandibulaire d'un Chatacabra. Des protubérances dures parsèment le cuir épais mais souple."
         },
         {
           "Id": 10,
@@ -97,8 +97,8 @@
           "Recette": [],
           "PrixVente": 206,
           "PrixAchat": 309,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/fd/MHWilds-Ticket_Icon_Green.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé le Chatacabra. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 11,
@@ -107,8 +107,8 @@
           "Recette": [],
           "PrixVente": 393,
           "PrixAchat": 589,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
+          "description": "Une mystérieuse gemme formée dans un Arkveld. Sa lumière blanche pulsée semble absorber la vie."
         },
         {
           "Id": 12,
@@ -117,8 +117,8 @@
           "Recette": [],
           "PrixVente": 235,
           "PrixAchat": 352,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/93/MHWilds-Wing_Icon_White.png",
+          "description": "Une carapace Arkveld liée qui est reliée par un tendon flexible, lui permettant de se déplacer comme une chaîne."
         },
         {
           "Id": 13,
@@ -127,8 +127,8 @@
           "Recette": [],
           "PrixVente": 325,
           "PrixAchat": 487,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
+          "description": "Une balance Arkveld de haute qualité. Malgré sa densité et sa dureté exceptionnelles, ses bords s'écaillent facilement."
         },
         {
           "Id": 14,
@@ -137,8 +137,8 @@
           "Recette": [],
           "PrixVente": 341,
           "PrixAchat": 511,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
+          "description": "Une corne d'Arkveld pointue et acérée. Si menaçante que sa simple vue décourage quiconque doit lui résister."
         },
         {
           "Id": 15,
@@ -147,8 +147,8 @@
           "Recette": [],
           "PrixVente": 232,
           "PrixAchat": 348,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
+          "description": "La queue d'un Arkveld. Très prisée pour ses muscles épais cachés sous sa peau et ses poils."
         },
         {
           "Id": 16,
@@ -157,8 +157,8 @@
           "Recette": [],
           "PrixVente": 397,
           "PrixAchat": 595,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
+          "description": "Une carapace d'Arkveld résistante. Nommée ainsi en raison de la superposition de ses écailles, telle une armure de plaques."
         },
         {
           "Id": 17,
@@ -167,8 +167,8 @@
           "Recette": [],
           "PrixVente": 200,
           "PrixAchat": 300,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
+          "description": "Une fourrure blanche d'Arkveld. Ses brins robustes et naturellement entrelacés offrent une protection supplémentaire contre les attaques."
         },
         {
           "Id": 18,
@@ -177,8 +177,8 @@
           "Recette": [],
           "PrixVente": 213,
           "PrixAchat": 319,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/5/55/MHWilds-Bone_Icon_Red.png",
+          "description": "Os précieux obtenu sur de grands monstres de haut rang. Leur rareté les rend très recherchés."
         },
         {
           "Id": 19,
@@ -187,8 +187,8 @@
           "Recette": [],
           "PrixVente": 202,
           "PrixAchat": 303,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Arkveld. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 20,
@@ -197,8 +197,8 @@
           "Recette": [],
           "PrixVente": 202,
           "PrixAchat": 303,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2a/MHWilds-Chemical_Icon_Gray.png",
+          "description": "Liquide céphalo-rachidien d'un Xu Wu. Une grande quantité d'énergie est dissimulée à l'intérieur, ce qui le fait briller."
         },
         {
           "Id": 21,
@@ -207,8 +207,8 @@
           "Recette": [],
           "PrixVente": 377,
           "PrixAchat": 565,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Ball_Icon_Gray.png",
+          "description": "Un joyau rare s'est développé dans le corps de Xu Wu. Il recèle une obscurité profonde et impénétrable."
         },
         {
           "Id": 22,
@@ -217,8 +217,8 @@
           "Recette": [],
           "PrixVente": 310,
           "PrixAchat": 465,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
+          "description": "Un corneum doré et scintillant de Xu Wu. Renforcé par ses sécrétions extrêmement pures."
         },
         {
           "Id": 23,
@@ -227,8 +227,8 @@
           "Recette": [],
           "PrixVente": 349,
           "PrixAchat": 523,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Une griffe acérée de Xu Wu. Plus longue et plus acérée, elle lui permet d'abattre plus facilement ses proies."
         },
         {
           "Id": 24,
@@ -237,8 +237,8 @@
           "Recette": [],
           "PrixVente": 342,
           "PrixAchat": 513,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
+          "description": "Une peau de Xu Wu de haute qualité. Suffisamment résistante pour repousser les griffes et les crocs d'un Gardien."
         },
         {
           "Id": 25,
@@ -247,8 +247,8 @@
           "Recette": [],
           "PrixVente": 330,
           "PrixAchat": 495,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
+          "description": "Un tentacule de Xu Wu de haute qualité. Il continue de se tortiller pendant le traitement, témoignant de sa vitalité."
         },
         {
           "Id": 26,
@@ -257,8 +257,8 @@
           "Recette": [],
           "PrixVente": 307,
           "PrixAchat": 460,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Un croc acéré d'un Xu Wu. Teint avec le sang de toutes les proies qu'il a impitoyablement écrasées."
         },
         {
           "Id": 27,
@@ -267,8 +267,8 @@
           "Recette": [],
           "PrixVente": 214,
           "PrixAchat": 321,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Xu Wu. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 28,
@@ -277,8 +277,8 @@
           "Recette": [],
           "PrixVente": 202,
           "PrixAchat": 303,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
+          "description": "La cornée dorée d'un Xu Wu. Formé de sécrétions durcies qui scintillent d'une lumière inquiétante."
         },
         {
           "Id": 29,
@@ -287,8 +287,8 @@
           "Recette": [],
           "PrixVente": 229,
           "PrixAchat": 343,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Une griffe d'un Xu Wu. Aiguisée comme un couteau et capable de percer une proie sans un bruit."
         },
         {
           "Id": 30,
@@ -297,8 +297,8 @@
           "Recette": [],
           "PrixVente": 206,
           "PrixAchat": 309,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
+          "description": "La peau d'un Xu Wu. Recouverte de mucus et particulièrement flexible, c'est un véritable défi de travailler avec elle."
         },
         {
           "Id": 31,
@@ -307,8 +307,8 @@
           "Recette": [],
           "PrixVente": 230,
           "PrixAchat": 345,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
+          "description": "Un tentacule de Xu Wu. Sa musculature flexible le rend idéal pour la fabrication d'armes et d'armures."
         },
         {
           "Id": 32,
@@ -317,8 +317,8 @@
           "Recette": [],
           "PrixVente": 204,
           "PrixAchat": 306,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Un croc de Xu Wu. Assez résistant pour écraser n'importe quelle proie."
         },
         {
           "Id": 33,
@@ -327,8 +327,8 @@
           "Recette": [],
           "PrixVente": 245,
           "PrixAchat": 367,
-          "imgLien": "",          
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",          
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Xu Wu. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 34,
@@ -337,8 +337,8 @@
           "Recette": [],
           "PrixVente": 305,
           "PrixAchat": 457, 
-          "imgLien": "",
-          "description": "" 
+          "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Wing_Icon_Gray.png",
+          "description": "Une aile horrible qui projette une ombre affamée sur sa proie et la rend folle." 
         },  
         {
           "Id": 35,
@@ -347,8 +347,8 @@
           "Recette": [],
           "PrixVente": 320,
           "PrixAchat": 480,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a4/MHWilds-Claw_Icon_Gray.png",
+          "description": "Un organe sensoriel bien affûté issu d'un Gore Magala qui suinte une mélancolie violette de son extrémité infectée."
         },
         {
           "Id": 36,
@@ -357,8 +357,8 @@
           "Recette": [],
           "PrixVente": 220,
           "PrixAchat": 330,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Tail_Icon_Gray.png",
+          "description": "Une queue souple recouverte d'écailles inversées qui frappe comme un fouet, pas comme une lame."
         },
         {
           "Id": 37,
@@ -367,8 +367,8 @@
           "Recette": [],
           "PrixVente": 346,
           "PrixAchat": 519,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
+          "description": "Une écaille noire profonde qui semble dévorer la lumière environnante, sans la refléter."
         },
         {
           "Id": 38,
@@ -377,8 +377,8 @@
           "Recette": [],
           "PrixVente": 234,
           "PrixAchat": 351,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
+          "description": "La belle armure noire du Gore Magala, censée annuler tous les coups"
         },
         {
           "Id": 39,
@@ -387,8 +387,8 @@
           "Recette": [],
           "PrixVente": 345,
           "PrixAchat": 517,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a4/MHWilds-Claw_Icon_Gray.png",
+          "description": "Une griffe provenant de la deuxième patte avant d'un Gore Magala. Elle inflige la frénésie et des générations de souffrance."
         },
         {
           "Id": 40,
@@ -397,8 +397,8 @@
           "Recette": [],
           "PrixVente": 216,
           "PrixAchat": 324,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Crystal_Icon_Purple.png",
+          "description": "Un cristal troublant, enveloppé d'une puissance frénétique. À manipuler avec une extrême précaution."
         },
         {
           "Id": 41,
@@ -407,8 +407,8 @@
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Gore Magala. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 42,
@@ -417,8 +417,8 @@
           "Recette": [],
           "PrixVente": 361,
           "PrixAchat": 541,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Ball_Icon_Gray.png",
+          "description": "Un joyau pur, noir de jais, qui emprisonne et avale toute lumière proche."
         },
         {
           "Id": 43,
@@ -427,8 +427,8 @@
           "Recette": [],
           "PrixVente": 246,
           "PrixAchat": 369,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Wing_Icon_Red.png",
+          "description": "L'aile d'un Rathalos. Des artisans qualifiés peuvent la transformer en un équipement robuste."
         },
         {
           "Id": 44,
@@ -437,8 +437,8 @@
           "Recette": [],
           "PrixVente": 302,
           "PrixAchat": 453,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/89/MHWilds-Scale_Icon_Red.png",
+          "description": "Une écaille extraordinairement durable sculptée dans le corps d'un Rathalos."
         },
         {
           "Id": 45,
@@ -447,8 +447,8 @@
           "Recette": [],
           "PrixVente": 236,
           "PrixAchat": 354,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/c3/MHWilds-Shell_Icon_Red.png",
+          "description": "Cette carapace de Rathalos émane une noblesse digne du Roi des Cieux."
         },
         {
           "Id": 46,
@@ -457,8 +457,8 @@
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/7d/MHWilds-Tail_Icon_Red.png",
+          "description": "Une queue de Rathalos sectionnée, recouverte de plaques et d'épines acérées. Ses usages sont multiples."
         },
         {
           "Id": 47,
@@ -467,8 +467,8 @@
           "Recette": [],
           "PrixVente": 294,
           "PrixAchat": 441,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Sac_Icon_Red.png",
+          "description": "Un organe de monstre rempli de poudre qui s'enflamme au moindre contact avec l'air. Danger !"
         },
         {
           "Id": 48,
@@ -477,8 +477,8 @@
           "Recette": [],
           "PrixVente": 209,
           "PrixAchat": 313,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/5/5b/MHWilds-Ticket_Icon_Red.png",
+          "description": "Un certificat de guilde décerné à ceux qui ont chassé un Rathalos. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 49,
@@ -487,8 +487,8 @@
           "Recette": [],
           "PrixVente": 233,
           "PrixAchat": 349,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
+          "description": "Extractible récemment grâce aux progrès des techniques de sculpture. Difficile à forger."
         },
         {
           "Id": 50,
@@ -497,8 +497,8 @@
           "Recette": [],
           "PrixVente": 360,
           "PrixAchat": 540,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/49/MHWilds-Ball_Icon_Red.png",
+          "description": "Un joyau rare et précieux provenant d'un Rathalos. Trop beau pour être utilisé."
         },
         {
           "Id": 51,
@@ -507,8 +507,8 @@
           "Recette": [],
           "PrixVente": 233,
           "PrixAchat": 349,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/93/MHWilds-Wing_Icon_White.png",
+          "description": "L'aile imposante d'un Gravios. La demande et la valeur de ce matériau ont récemment augmenté."
         },
         {
           "Id": 52,
@@ -517,8 +517,8 @@
           "Recette": [],
           "PrixVente": 203,
           "PrixAchat": 304,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
+          "description": "La carapace robuste d'un Gravios. Fusionnée avec du minerai par une chaleur intense, elle est devenue anormalement résistante."
         },
         {
           "Id": 53,
@@ -527,8 +527,8 @@
           "Recette": [],
           "PrixVente": 223,
           "PrixAchat": 334,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/8a/MHWilds-Head_Icon_White.png",
+          "description": "L'armure de tête d'un Gravios, durcie par sa propre chaleur. Elle est également difficile à manipuler."
         },
         {
           "Id": 54,
@@ -537,8 +537,8 @@
           "Recette": [],
           "PrixVente": 315,
           "PrixAchat": 472,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
+          "description": "Coquille recouvrant le torse d'un Gravios. Elle est devenue si épaisse au fil du temps que les attaques classiques ne lui font aucun effet."
         },
         {
           "Id": 55,
@@ -547,8 +547,8 @@
           "Recette": [],
           "PrixVente": 216,
           "PrixAchat": 324,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/15/MHWilds-Ore_Icon_Orange.png",
+          "description": "Un dépôt semblable à du magma que seules des mains expertes peuvent manipuler. L'armure qui en est issue est de première classe."
         },
         {
           "Id": 56,
@@ -557,8 +557,8 @@
           "Recette": [],
           "PrixVente": 249,
           "PrixAchat": 373,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
+          "description": "Un certificat de guilde décerné à ceux qui ont chassé un Gravios. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 57,
@@ -567,8 +567,8 @@
           "Recette": [],
           "PrixVente": 229,
           "PrixAchat": 343,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
+          "description": "Bien que difficile à extraire et à fabriquer, le tronc cérébral est une partie particulièrement précieuse de Gravios."
         },
         {
           "Id": 58,
@@ -577,8 +577,8 @@
           "Recette": [],
           "PrixVente": 269,
           "PrixAchat": 403,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/8d/MHWilds-Sac_Icon_Light_Blue.png",
+          "description": "Un organe de monstre rempli d'une poudre dangereuse. Une seule bouffée peut provoquer un coma."
         },
         {
           "Id": 59,
@@ -587,8 +587,8 @@
           "Recette": [],
           "PrixVente": 373,
           "PrixAchat": 559,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/97/MHWilds-Ball_Icon_Light_Blue.png",
+          "description": "Tout au long de la vie d'une wyverne, les impuretés s'accumulent et forment cette gemme particulière."
         },
         {
           "Id": 60,
@@ -597,8 +597,8 @@
           "Recette": [],
           "PrixVente": 309,
           "PrixAchat": 463,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
+          "description": "Une canine de Blangonga. Aussi gros qu'une cuisse humaine, c'est déjà une arme."
         },
         {
           "Id": 61,
@@ -607,8 +607,8 @@
           "Recette": [],
           "PrixVente": 309,
           "PrixAchat": 463,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
+          "description": "Fourrure raffinée de Blangonga. Sa souplesse et sa chaleur en font un animal très apprécié dans les régions froides."
         },
         {
           "Id": 62,
@@ -617,8 +617,8 @@
           "Recette": [],
           "PrixVente": 210,
           "PrixAchat": 315,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
+          "description": "La queue d'un Blangonga. Son pelage soyeux et brillant est un vrai plaisir au toucher."
         },
         {
           "Id": 63,
@@ -627,8 +627,8 @@
           "Recette": [],
           "PrixVente": 229,
           "PrixAchat": 343,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
+          "description": "Une moustache glorieuse est la marque et la fierté d’un leader Blangonga, un symbole de sa puissance."
         },
         {
           "Id": 64,
@@ -637,8 +637,8 @@
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Blangonga. Utilisé pour fabriquer du matériel."
         },
         {
           "Id": 65,
@@ -647,8 +647,8 @@
           "Recette": [],
           "PrixVente": 389,
           "PrixAchat": 583,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/c1/MHWilds-Ball_Icon_Orange.png",
+          "description": "Un joyau précieux formé à partir des sucs coagulés à l'intérieur d'un monstre. Il brille intensément."
         },
         {
           "Id": 66,
@@ -657,8 +657,8 @@
           "Recette": [],
           "PrixVente": 324,
           "PrixAchat": 486,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/91/MHWilds-Scale_Icon_Blue.png",
+          "description": "Une balance Quematrice de haute qualité. Ses arêtes vives lui permettent de fendre la pierre d'un seul coup."
         },
         {
           "Id": 67,
@@ -667,8 +667,8 @@
           "Recette": [],
           "PrixVente": 315,
           "PrixAchat": 472,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
+          "description": "Peau de Quematrice raffinée, endurcie par la lutte pour la survie. Offre une protection exceptionnelle contre le feu."
         },
         {
           "Id": 68,
@@ -677,8 +677,8 @@
           "Recette": [],
           "PrixVente": 308,
           "PrixAchat": 462,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/aa/MHWilds-Head_Icon_Red.png",
+          "description": "La grande crête d'un Quematrice. Colorée d'un rouge furieux, elle est violemment secouée en signe d'agression."
         },
         {
           "Id": 69,
@@ -687,8 +687,8 @@
           "Recette": [],
           "PrixVente": 213,
           "PrixAchat": 319,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Tail_Icon_Blue.png",
+          "description": "La queue d'une Quematrice. Ses nombreux plis se frottent les uns contre les autres pour créer des étincelles."
         },
         {
           "Id": 70,
@@ -697,8 +697,8 @@
           "Recette": [],
           "PrixVente": 321,
           "PrixAchat": 481,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f4/MHWilds-Chemical_Icon_Red.png",
+          "description": "Fluide particulièrement visqueux provenant d'une Quematrice. Le gaz qu'il libère brûle à une température dangereuse."
         },
         {
           "Id": 71,
@@ -707,8 +707,8 @@
           "Recette": [],
           "PrixVente": 200,
           "PrixAchat": 300,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/4e/MHWilds-Ticket_Icon_Blue.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Quematrice. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 72,
@@ -717,8 +717,8 @@
           "Recette": [],
           "PrixVente": 240,
           "PrixAchat": 360,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/91/MHWilds-Scale_Icon_Blue.png",
+          "description": "L'écaille d'une Quematrice. Sa texture fine agit comme une lime naturelle utilisée pour meuler et polir les armures."
         },
         {
           "Id": 73,
@@ -727,8 +727,8 @@
           "Recette": [],
           "PrixVente": 250,
           "PrixAchat": 375,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
+          "description": "La peau d'un Quematrice. Assez épaisse malgré sa forme ridée, elle est très résistante au feu."
         },
         {
           "Id": 74,
@@ -737,8 +737,8 @@
           "Recette": [],
           "PrixVente": 249,
           "PrixAchat": 373,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/aa/MHWilds-Head_Icon_Red.png",
+          "description": "La crête d'un Quematrice. Sa couleur rouge flamboyante sert d'appât aux prédateurs potentiels."
         },
         {
           "Id": 75,
@@ -747,8 +747,8 @@
           "Recette": [],
           "PrixVente": 249,
           "PrixAchat": 373,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f4/MHWilds-Chemical_Icon_Red.png",
+          "description": "Fluides inflammables provenant d'une Quematrice, expulsés sous forme de gaz puis enflammés par des étincelles provenant de sa queue grossière."
         },
         {
           "Id": 76,
@@ -757,8 +757,8 @@
           "Recette": [],
           "PrixVente": 237,
           "PrixAchat": 355,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/4e/MHWilds-Ticket_Icon_Blue.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Quematrice. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 77,
@@ -767,8 +767,8 @@
           "Recette": [],
           "PrixVente": 323,
           "PrixAchat": 484,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_Rose.png",
+          "description": "Une griffe acérée de Lala Barina. Sa pointe d'un rouge profond reflète le sang d'innombrables victimes."
         },
         {
           "Id": 78,
@@ -777,8 +777,8 @@
           "Recette": [],
           "PrixVente": 318,
           "PrixAchat": 477,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
+          "description": "Des cheveux de haute qualité de Lala Barina. Leurs mèches délicates et transparentes dansent au vent."
         },
         {
           "Id": 79,
@@ -787,8 +787,8 @@
           "Recette": [],
           "PrixVente": 310,
           "PrixAchat": 465,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
+          "description": "Le dard acéré d'un Lala Barina. Capable de percer les armures les plus épaisses."
         },
         {
           "Id": 80,
@@ -797,8 +797,8 @@
           "Recette": [],
           "PrixVente": 230,
           "PrixAchat": 345,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
+          "description": "La carapace dure d'un Lala Barina. Un peu de polish la fera briller d'un noir absolu."
         },
         {
           "Id": 81,
@@ -807,8 +807,8 @@
           "Recette": [],
           "PrixVente": 311,
           "PrixAchat": 466,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/fe/MHWilds-Chemical_Icon_Rose.png",
+          "description": "Liquide corporel épais provenant d'une Lala Barina. Rouge comme du sang frais, il contient un puissant paralysant."
         },
         {
           "Id": 82,
@@ -817,8 +817,8 @@
           "Recette": [],
           "PrixVente": 250,
           "PrixAchat": 375,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/0e/MHWilds-Chemical_Icon_Blue.png",
+          "description": "Un bouillon composé uniquement du jus le plus épais d'un monstre. Assez riche."
         },
         {
           "Id": 83,
@@ -827,8 +827,8 @@
           "Recette": [],
           "PrixVente": 216,
           "PrixAchat": 324,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/5/53/MHWilds-Ticket_Icon_Rose.png",
+          "description": "Un certificat de guilde décerné à ceux qui ont chassé un Lala Barina. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 84,
@@ -837,8 +837,8 @@
           "Recette": [],
           "PrixVente": 209,
           "PrixAchat": 313,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_Rose.png",
+          "description": "Une griffe de Lala Barina. Un écarlate vif orne son tranchant acéré."
         },
         {
           "Id": 85,
@@ -847,8 +847,8 @@
           "Recette": [],
           "PrixVente": 215,
           "PrixAchat": 322,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
+          "description": "Poil de Lala Barina. Si blanc et immaculé qu'il pourrait passer pour une peau de haute qualité."
         },
         {
           "Id": 86,
@@ -857,8 +857,8 @@
           "Recette": [],
           "PrixVente": 249,
           "PrixAchat": 373,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
+          "description": "Le dard d'un Lala Barina. Aiguisé comme une épée, un seul coup suffit pour maîtriser sa proie."
         },
         {
           "Id": 87,
@@ -867,8 +867,8 @@
           "Recette": [],
           "PrixVente": 235,
           "PrixAchat": 352,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
+          "description": "La carapace d'un Lala Barina. Son éclat sombre et sa légèreté sont remarquables."
         },
         {
           "Id": 88,
@@ -877,8 +877,8 @@
           "Recette": [],
           "PrixVente": 246,
           "PrixAchat": 369,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/fe/MHWilds-Chemical_Icon_Rose.png",
+          "description": "Liquide corporel d'une Lala Barina. Un liquide rouge et collant qui provoque une paralysie."
         },
         {
           "Id": 89,
@@ -887,8 +887,8 @@
           "Recette": [],
           "PrixVente": 244,
           "PrixAchat": 366,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Chemical_Icon_Light_Blue.png",
+          "description": "Un liquide que les insectes sucent sur les monstres. Il se mélange aux fluides des insectes pour former un adhésif.Un liquide que les insectes sucent sur les monstres. Il se mélange aux fluides des insectes pour former un adhésif."
         },
         {
           "Id": 90,
@@ -897,8 +897,8 @@
           "Recette": [],
           "PrixVente": 218,
           "PrixAchat": 327,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/5/53/MHWilds-Ticket_Icon_Rose.png",
+          "description": "Un certificat de guilde décerné à ceux qui ont chassé un Lala Barina. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 91,
@@ -907,8 +907,8 @@
           "Recette": [],
           "PrixVente": 344,
           "PrixAchat": 516,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
+          "description": "Une écaille Balahara de haute qualité. Épaisse et suffisamment résistante pour sculpter la pierre sans la rayer."
         },
         {
           "Id": 92,
@@ -917,8 +917,8 @@
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
+          "description": "Une carapace dure de Balahara. Un matériau de qualité provenant d'un spécimen enveloppé de fulgurite pure."
         },
         {
           "Id": 93,
@@ -927,8 +927,8 @@
           "Recette": [],
           "PrixVente": 304,
           "PrixAchat": 456,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/07/MHWilds-Head_Icon_Gray.png",
+          "description": "Le crâne pointu d'un Balahara. Une carapace incroyablement résistante qui perce facilement la roche dure."
         },
         {
           "Id": 94,
@@ -937,8 +937,8 @@
           "Recette": [],
           "PrixVente": 236,
           "PrixAchat": 354,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Tail_Icon_Gray.png",
+          "description": "Une queue de Balahara. Sa forme unique et torsadée lui permet de se propulser à travers le sol avec une force considérable."
         },
         {
           "Id": 95,
@@ -947,8 +947,8 @@
           "Recette": [],
           "PrixVente": 296,
           "PrixAchat": 444,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/fc/MHWilds-Sac_Icon_Blue.png",
+          "description": "Un organe de monstre conçu pour contenir et conserver de grandes quantités d'eau."
         },
         {
           "Id": 96,
@@ -957,8 +957,8 @@
           "Recette": [],
           "PrixVente": 214,
           "PrixAchat": 321,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Balahara. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 97,
@@ -967,8 +967,8 @@
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
+          "description": "Un joyau formé à partir de minerai ayant séjourné des années dans un Balahara. D'une beauté envoûtante."
         },
         {
           "Id": 98,
@@ -977,8 +977,8 @@
           "Recette": [],
           "PrixVente": 236,
           "PrixAchat": 354,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
+          "description": "Une écaille de Balahara. L'érosion causée par le creusement constant limite son utilité pour l'artisanat."
         },
         {
           "Id": 99,
@@ -987,8 +987,8 @@
           "Recette": [],
           "PrixVente": 212,
           "PrixAchat": 318,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
+          "description": "Un coquillage Balahara. La fulgurite qu'il a absorbée renforce sa dureté."
         },
         {
           "Id": 100,
@@ -997,8 +997,8 @@
           "Recette": [],
           "PrixVente": 244,
           "PrixAchat": 366,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/07/MHWilds-Head_Icon_Gray.png",
+          "description": "Le crâne d'un Balahara. Plus solide que la plupart des autres, il est conçu pour résister aux plongées difficiles dans le sable."
         },
         {
           "Id": 101,
@@ -1007,8 +1007,8 @@
           "Recette": [],
           "PrixVente": 256,
           "PrixAchat": 384,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/fc/MHWilds-Sac_Icon_Blue.png",
+          "description": "Un organe de monstre conçu pour retenir et conserver l'eau."
         },
         {
           "Id": 102,
@@ -1017,8 +1017,8 @@
           "Recette": [],
           "PrixVente": 214,
           "PrixAchat": 321,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Balahara. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 103,
@@ -1027,8 +1027,8 @@
           "Recette": [],
           "PrixVente": 317,
           "PrixAchat": 475,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
+          "description": "Fourrure de Congalala de haute qualité. Robuste et résistante, elle constitue un matériau d'artisanat important une fois transformée."
         },
         {
           "Id": 104,
@@ -1037,8 +1037,8 @@
           "Recette": [],
           "PrixVente": 304,
           "PrixAchat": 456,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
+          "description": "Une griffe longue, dure et acérée provenant du plus sauvage des Congalala, et non moins difficile à gérer que sa source."
         },
         {
           "Id": 105,
@@ -1047,8 +1047,8 @@
           "Recette": [],
           "PrixVente": 329,
           "PrixAchat": 493,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/0c/MHWilds-Hide_Icon_Yellow.png",
+          "description": "Cheveux éclatants provenant de la tête d'un Congalala. La touffe fait office de couronne, affirmant son statut de chef."
         },
         {
           "Id": 106,
@@ -1057,8 +1057,8 @@
           "Recette": [],
           "PrixVente": 300,
           "PrixAchat": 450,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
+          "description": "Une très grande défense de Congalala. Sa robustesse le rend plus apte à écraser qu'à déchirer."
         },
         {
           "Id": 107,
@@ -1067,8 +1067,8 @@
           "Recette": [],
           "PrixVente": 222,
           "PrixAchat": 333,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Ticket_Icon_Pink.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé le Congalala. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 108,
@@ -1077,8 +1077,8 @@
           "Recette": [],
           "PrixVente": 243,
           "PrixAchat": 364,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
+          "description": "La fourrure rose d'un Congalala. Ses touffes de poils duveteux sont idéales pour la confection de vêtements."
         },
         {
           "Id": 109,
@@ -1087,8 +1087,8 @@
           "Recette": [],
           "PrixVente": 240,
           "PrixAchat": 360,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
+          "description": "La longue griffe d'un Congalala. Grande et pointue, elle entaille tout ce qu'elle touche."
         },
         {
           "Id": 110,
@@ -1097,8 +1097,8 @@
           "Recette": [],
           "PrixVente": 200,
           "PrixAchat": 300,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/0c/MHWilds-Hide_Icon_Yellow.png",
+          "description": "Un Congalala arbore une chevelure éclatante. Ses jolies couleurs témoignent de sa position au sein de la meute."
         },
         {
           "Id": 111,
@@ -1107,8 +1107,8 @@
           "Recette": [],
           "PrixVente": 236,
           "PrixAchat": 354,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
+          "description": "Une incisive de Congalala. Bien que non tranchante, elle est suffisamment robuste pour écraser les substances les plus dures."
         },
         {
           "Id": 112,
@@ -1117,8 +1117,8 @@
           "Recette": [],
           "PrixVente": 240,
           "PrixAchat": 360,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Ticket_Icon_Pink.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé le Congalala. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 113,
@@ -1127,8 +1127,8 @@
           "Recette": [],
           "PrixVente": 316,
           "PrixAchat": 474,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ec/MHWilds-Claw_Icon_Violet.png",
+          "description": "Une griffe acérée d'Uth Duna. Assez lourde pour écraser facilement les arbres les plus épais."
         },
         {
           "Id": 114,
@@ -1137,8 +1137,8 @@
           "Recette": [],
           "PrixVente": 304,
           "PrixAchat": 456,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/4f/MHWilds-Scale_Icon_Violet.png",
+          "description": "Poils Uth Duna de haute qualité. Peu coupants, mais capables de retenir une grande quantité d'eau."
         },
         {
           "Id": 115,
@@ -1147,8 +1147,8 @@
           "Recette": [],
           "PrixVente": 317,
           "PrixAchat": 475,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
+          "description": "Poils Uth Duna de haute qualité. Peu coupants, mais capables de retenir une grande quantité d'eau."
         },
         {
           "Id": 116,
@@ -1157,8 +1157,8 @@
           "Recette": [],
           "PrixVente": 310,
           "PrixAchat": 465,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/95/MHWilds-Monster_Part_Icon_Pink.png",
+          "description": "Un tentacule élégant et flexible d'un Uth Duna. Une membrane d'eau l'entoure tel un voile."
         },
         {
           "Id": 117,
@@ -1167,8 +1167,8 @@
           "Recette": [],
           "PrixVente": 314,
           "PrixAchat": 471,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/00/MHWilds-Hide_Icon_Violet.png",
+          "description": "Une peau de haute qualité provenant d'un Uth Duna. Son motif est d'une beauté presque divine."
         },
         {
           "Id": 118,
@@ -1177,8 +1177,8 @@
           "Recette": [],
           "PrixVente": 330,
           "PrixAchat": 495,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f2/MHWilds-Ticket_Icon_Violet.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Uth Duna. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 119,
@@ -1187,8 +1187,8 @@
           "Recette": [],
           "PrixVente": 350,
           "PrixAchat": 525,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/e6/MHWilds-Plate_Icon_Violet.png",
+          "description": "Une plaque rare provenant d'un Uth Duna. Considérée comme un symbole d'abondance en raison de la quantité d'eau qu'elle contient."
         },
         {
           "Id": 120,
@@ -1197,8 +1197,8 @@
           "Recette": [],
           "PrixVente": 374,
           "PrixAchat": 561,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/d2/MHWilds-Ball_Icon_Violet.png",
+          "description": "Un joyau rare formée dans une Duna d'Uth. On dit qu'il possède le pouvoir d'une inondation dévastatrice."
         },
         {
           "Id": 121,
@@ -1207,8 +1207,8 @@
           "Recette": [],
           "PrixVente": 219,
           "PrixAchat": 328,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ec/MHWilds-Claw_Icon_Violet.png",
+          "description": "Une griffe d'Uth Duna. Sa courbure lui permet de résister aux vagues qu'elle crée."
         },
         {
           "Id": 122,
@@ -1217,8 +1217,8 @@
           "Recette": [],
           "PrixVente": 229,
           "PrixAchat": 343,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/4f/MHWilds-Scale_Icon_Violet.png",
+          "description": "Une écaille d'Uth Duna. Scintillante dans un kaléidoscope de couleurs."
         },
         {
           "Id": 123,
@@ -1227,8 +1227,8 @@
           "Recette": [],
           "PrixVente": 229,
           "PrixAchat": 343,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
+          "description": "Poils extrêmement fins provenant d'un Uth Duna. Une fois tissés, ils forment une fine membrane aqueuse."
         },
         {
           "Id": 124,
@@ -1237,8 +1237,8 @@
           "Recette": [],
           "PrixVente": 209,
           "PrixAchat": 313,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/95/MHWilds-Monster_Part_Icon_Pink.png",
+          "description": "Un tentacule provenant du dos d'un Uth Duna. Recouvert d'un mélange gélatineux d'eau et de fluides corporels."
         },
         {
           "Id": 125,
@@ -1247,8 +1247,8 @@
           "Recette": [],
           "PrixVente": 248,
           "PrixAchat": 372,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/00/MHWilds-Hide_Icon_Violet.png",
+          "description": "La peau d'un Uth Duna. Très prisée pour sa densité et ses motifs spectaculairement vibrants."
         },
         {
           "Id": 126,
@@ -1257,8 +1257,8 @@
           "Recette": [],
           "PrixVente": 240,
           "PrixAchat": 360,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f2/MHWilds-Ticket_Icon_Violet.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Uth Duna. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 127,
@@ -1267,8 +1267,8 @@
           "Recette": [],
           "PrixVente": 312,
           "PrixAchat": 468,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
+          "description": "Fourrure de Doshaguma de haute qualité. Tellement habituée aux climats rigoureux qu'elle s'apparente à une armure."
         },
         {
           "Id": 128,
@@ -1277,8 +1277,8 @@
           "Recette": [],
           "PrixVente": 316,
           "PrixAchat": 474,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
+          "description": "Une griffe acérée de Doshaguma. Un coup transperce la peau, un coup arrache la chair des os."
         },
         {
           "Id": 129,
@@ -1287,8 +1287,8 @@
           "Recette": [],
           "PrixVente": 315,
           "PrixAchat": 472,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
+          "description": "Peau de Doshaguma de haute qualité. Son poids épais et confortable rassure ceux qui la portent."
         },
         {
           "Id": 130,
@@ -1297,8 +1297,8 @@
           "Recette": [],
           "PrixVente": 310,
           "PrixAchat": 465,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
+          "description": "Un croc de Doshaguma acéré. Preuve de la nature sauvage de son propriétaire : sa capacité à ronger même les os."
         },
         {
           "Id": 131,
@@ -1307,8 +1307,8 @@
           "Recette": [],
           "PrixVente": 207,
           "PrixAchat": 310,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Ticket_Icon_Brown.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Doshaguma. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 132,
@@ -1317,8 +1317,8 @@
           "Recette": [],
           "PrixVente": 228,
           "PrixAchat": 342,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
+          "description": "Fourrure de Doshaguma. Sa texture rigide et hérissée en fait un matériau d'artisanat durable."
         },
         {
           "Id": 133,
@@ -1327,8 +1327,8 @@
           "Recette": [],
           "PrixVente": 212,
           "PrixAchat": 318,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
+          "description": "Une griffe de Doshaguma. Aussi tranchante que résistante, elle peut couper des proies musclées sans laisser de trace."
         },
         {
           "Id": 134,
@@ -1337,8 +1337,8 @@
           "Recette": [],
           "PrixVente": 206,
           "PrixAchat": 309,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
+          "description": "Une peau de Doshaguma. Les nombreuses cicatrices sur son corps témoignent de sa nature bestiale et agressive."
         },
         {
           "Id": 135,
@@ -1347,8 +1347,8 @@
           "Recette": [],
           "PrixVente": 222,
           "PrixAchat": 333,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
+          "description": "Un croc de Doshaguma. Grand et pointu, il peut facilement percer sa proie."
         },
         {
           "Id": 136,
@@ -1357,8 +1357,8 @@
           "Recette": [],
           "PrixVente": 212,
           "PrixAchat": 318,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Ticket_Icon_Brown.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Doshaguma. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 137,
@@ -1367,8 +1367,8 @@
           "Recette": [],
           "PrixVente": 226,
           "PrixAchat": 339,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/ca/MHWilds-Claw_Icon_Blue.png",
+          "description": "Une griffe ailée de Rey Dau à l'éclat azur. Recouverte de fulgurite pure et tranchante comme un rasoir."
         },
         {
           "Id": 138,
@@ -1377,8 +1377,8 @@
           "Recette": [],
           "PrixVente": 336,
           "PrixAchat": 504,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/da/MHWilds-Scale_Icon_Yellow.png",
+          "description": "Une écaille Rey Dau de haute qualité. Son exposition constante au sable lui confère une robustesse et une douceur exceptionnelles."
         },
         {
           "Id": 139,
@@ -1387,8 +1387,8 @@
           "Recette": [],
           "PrixVente": 203,
           "PrixAchat": 304,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/7f/MHWilds-Shell_Icon_Yellow.png",
+          "description": "La carapace résistante d'un Rey Dau. Son motif complexe mais constant améliore sa conductivité."
         },
         {
           "Id": 140,
@@ -1397,8 +1397,8 @@
           "Recette": [],
           "PrixVente": 209,
           "PrixAchat": 313,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Une corne de Rey Dau crépitante d'éclairs. Assez résistant pour supporter de violents éclairs."
         },
         {
           "Id": 141,
@@ -1407,8 +1407,8 @@
           "Recette": [],
           "PrixVente": 213,
           "PrixAchat": 319,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Tail_Icon_Yellow.png",
+          "description": "Une queue de Rey Dau. Ses épines couvertes de fulgurite se frottent les unes contre les autres pour produire une mélodie menaçante."
         },
         {
           "Id": 142,
@@ -1417,8 +1417,8 @@
           "Recette": [],
           "PrixVente": 217,
           "PrixAchat": 325,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/70/MHWilds-Ticket_Icon_Yellow.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Rey Dau. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 143,
@@ -1427,8 +1427,8 @@
           "Recette": [],
           "PrixVente": 398,
           "PrixAchat": 597,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/f/f7/MHWilds-Plate_Icon_Yellow.png",
+          "description": "Une plaque Rey Dau. L'échelle orientée vers l'arrière accumule une quantité considérable d'énergie."
         },
         {
           "Id": 144,
@@ -1437,8 +1437,8 @@
           "Recette": [],
           "PrixVente": 208,
           "PrixAchat": 312,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/89/MHWilds-Ball_Icon_Yellow.png",
+          "description": "Un joyau rare formée au sein d'un Rey Dau. On dit qu'il possède le pouvoir de dix mille tempêtes."
         },
         {
           "Id": 145,
@@ -1447,8 +1447,8 @@
           "Recette": [],
           "PrixVente": 203,
           "PrixAchat": 304,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/ca/MHWilds-Claw_Icon_Blue.png",
+          "description": "Le conduit énergétique en forme de griffe d'un Rey Dau. Recouvert de lames de fulgurite acérées formées par des décharges électriques."
         },
         {
           "Id": 146,
@@ -1457,8 +1457,8 @@
           "Recette": [],
           "PrixVente": 239,
           "PrixAchat": 358,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/da/MHWilds-Scale_Icon_Yellow.png",
+          "description": "Une échelle Rey Dau. Sa forme unique permet le passage de l'électricité provenant de ses organes."
         },
         {
           "Id": 147,
@@ -1467,8 +1467,8 @@
           "Recette": [],
           "PrixVente": 243,
           "PrixAchat": 364,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/7f/MHWilds-Shell_Icon_Yellow.png",
+          "description": "Coque d'un Rey Dau. Hautement conductrice, elle est capable de produire des courants électriques importants."
         },
         {
           "Id": 148,
@@ -1477,8 +1477,8 @@
           "Recette": [],
           "PrixVente": 238,
           "PrixAchat": 357,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Une corne de Rey Dau chargée électriquement. Le muscle épais et flexible à sa base lui permet de bouger librement."
         },
         {
           "Id": 149,
@@ -1487,8 +1487,8 @@
           "Recette": [],
           "PrixVente": 245,
           "PrixAchat": 367,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/7/70/MHWilds-Ticket_Icon_Yellow.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Rey Dau. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 150,
@@ -1497,8 +1497,8 @@
           "Recette": [],
           "PrixVente": 303,
           "PrixAchat": 454,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
+          "description": "Une peau Rompopolo de haute qualité. Peut s'étendre jusqu'à des dimensions extrêmes lorsqu'elle est remplie de gaz."
         },
         {
           "Id": 151,
@@ -1507,8 +1507,8 @@
           "Recette": [],
           "PrixVente": 304,
           "PrixAchat": 456,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/19/MHWilds-Claw_Icon_Dark_Blue.png",
+          "description": "Une griffe acérée de Rompopolo. Parfaitement adaptée pour percer les organes vitaux avec une précision extrême."
         },
         {
           "Id": 152,
@@ -1517,8 +1517,8 @@
           "Recette": [],
           "PrixVente": 348,
           "PrixAchat": 522,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
+          "description": "Une peau hautement toxique provenant d'un Rompopolo. Plus le motif est frappant, plus elle est toxique."
         },
         {
           "Id": 153,
@@ -1527,8 +1527,8 @@
           "Recette": [],
           "PrixVente": 300,
           "PrixAchat": 450,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9d/MHWilds-Sac_Icon_Purple.png",
+          "description": "Un organe monstrueux rempli d'une toxine extrêmement puissante. Un seul contact peut le rendre bleu clair."
         },
         {
           "Id": 154,
@@ -1537,8 +1537,8 @@
           "Recette": [],
           "PrixVente": 347,
           "PrixAchat": 520,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/e2/MHWilds-Head_Icon_Dark_Blue.png",
+          "description": "Un grand bec de Rompopolo. Sa pointe acérée et sa courbe douce inspirent une peur indicible à sa proie."
         },
         {
           "Id": 155,
@@ -1547,8 +1547,8 @@
           "Recette": [],
           "PrixVente": 209,
           "PrixAchat": 313,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cf/MHWilds-Ticket_Icon_Dark_Blue.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Rompopolo. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 156,
@@ -1557,8 +1557,8 @@
           "Recette": [],
           "PrixVente": 238,
           "PrixAchat": 357,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
+          "description": "Une peau de Rompopolo. Elle reprend sa forme initiale même étirée au maximum."
         },
         {
           "Id": 157,
@@ -1567,8 +1567,8 @@
           "Recette": [],
           "PrixVente": 225,
           "PrixAchat": 337,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/19/MHWilds-Claw_Icon_Dark_Blue.png",
+          "description": "Griffe de Rompopolo. Spécialement conçue pour percer ses proies."
         },
         {
           "Id": 158,
@@ -1577,8 +1577,8 @@
           "Recette": [],
           "PrixVente": 201,
           "PrixAchat": 301,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/e/e2/MHWilds-Head_Icon_Dark_Blue.png",
+          "description": "Le bec d'un Rompopolo. Sa forme inquiétante évoque un indescriptible sentiment de malaise."
         },
         {
           "Id": 159,
@@ -1587,8 +1587,8 @@
           "Recette": [],
           "PrixVente": 213,
           "PrixAchat": 319,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
+          "description": "Une peau venimeuse de Rompopolo. Ses taches vives préviennent du danger inhérent."
         },
         {
           "Id": 160,
@@ -1597,8 +1597,8 @@
           "Recette": [],
           "PrixVente": 299,
           "PrixAchat": 448,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9d/MHWilds-Sac_Icon_Purple.png",
+          "description": "Un organe monstrueux rempli d'une toxine mortelle. À manipuler avec une extrême prudence."
         },
         {
           "Id": 161,
@@ -1607,8 +1607,8 @@
           "Recette": [],
           "PrixVente": 242,
           "PrixAchat": 363,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cf/MHWilds-Ticket_Icon_Dark_Blue.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Rompopolo. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 162,
@@ -1617,8 +1617,8 @@
           "Recette": [],
           "PrixVente": 240,
           "PrixAchat": 360,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/02/MHWilds-Claw_Icon_Purple.png",
+          "description": "Une griffe de la queue d'un Hirabami. Sa forme incurvée lui permet de piéger facilement ses proies."
         },
         {
           "Id": 163,
@@ -1627,8 +1627,8 @@
           "Recette": [],
           "PrixVente": 207,
           "PrixAchat": 310,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/c7/MHWilds-Scale_Icon_Purple.png",
+          "description": "Une écaille d'Hirabami. Bien que petite et légère, elle est très solide et facile à manipuler."
         },
         {
           "Id": 164,
@@ -1637,8 +1637,8 @@
           "Recette": [],
           "PrixVente": 204,
           "PrixAchat": 306,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Purple.png",
+          "description": "La peau d'un Hirabami. Légère et douce comme du tissu, elle est réputée pour sa texture unique."
         },
         {
           "Id": 165,
@@ -1647,8 +1647,8 @@
           "Recette": [],
           "PrixVente": 250,
           "PrixAchat": 375,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Webbing_Icon_Purple.png",
+          "description": "Toile d'Hirabami. Son élasticité exceptionnelle permet au monstre de flotter dans les airs."
         },
         {
           "Id": 166,
@@ -1657,8 +1657,8 @@
           "Recette": [],
           "PrixVente": 280,
           "PrixAchat": 420,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Sac_Icon_White.png",
+          "description": "Un organe de monstre rempli d'un liquide extrêmement froid. À manipuler avec précaution."
         },
         {
           "Id": 167,
@@ -1667,8 +1667,8 @@
           "Recette": [],
           "PrixVente": 223,
           "PrixAchat": 334,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Ticket_Icon_Purple.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Hirabami. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 168,
@@ -1677,8 +1677,8 @@
           "Recette": [],
           "PrixVente": 323,
           "PrixAchat": 484,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/02/MHWilds-Claw_Icon_Purple.png",
+          "description": "Une griffe de haute qualité provenant de la queue d'un Hirabami. Aucune proie ne peut échapper à sa morsure semblable à une faux."
         },
         {
           "Id": 169,
@@ -1687,8 +1687,8 @@
           "Recette": [],
           "PrixVente": 337,
           "PrixAchat": 505,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/c7/MHWilds-Scale_Icon_Purple.png",
+          "description": "Une écaille d'Hirabami de haute qualité. Non seulement elle est robuste, mais aussi extrêmement légère."
         },
         {
           "Id": 170,
@@ -1697,8 +1697,8 @@
           "Recette": [],
           "PrixVente": 334,
           "PrixAchat": 501,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Purple.png",
+          "description": "Une peau Hirabami de haute qualité. Douce comme un tissu de la plus haute qualité, elle offre la chaleur nécessaire pour affronter le blizzard."
         },
         {
           "Id": 171,
@@ -1707,8 +1707,8 @@
           "Recette": [],
           "PrixVente": 312,
           "PrixAchat": 468,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Webbing_Icon_Purple.png",
+          "description": "Toile d'Hirabami de haute qualité. Peut manipuler les courants d'air même lors des tempêtes de neige les plus violentes."
         },
         {
           "Id": 172,
@@ -1717,8 +1717,8 @@
           "Recette": [],
           "PrixVente": 261,
           "PrixAchat": 391,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Sac_Icon_White.png",
+          "description": "Un organe de monstre au pouvoir glacial incroyable. Il gèle instantanément son environnement."
         },
         {
           "Id": 173,
@@ -1727,8 +1727,8 @@
           "Recette": [],
           "PrixVente": 248,
           "PrixAchat": 372,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Ticket_Icon_Purple.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé un Hirabami. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 174,
@@ -1737,8 +1737,8 @@
           "Recette": [],
           "PrixVente": 235,
           "PrixAchat": 352,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
+          "description": "Une griffe légère, semblable à une faux, qui permet les attaques rapides et mortelles du Nerscylla."
         },
         {
           "Id": 175,
@@ -1747,8 +1747,8 @@
           "Recette": [],
           "PrixVente": 239,
           "PrixAchat": 358,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
+          "description": "Peau élastique et résistante à l'électricité portée par une Nerscylla. Probablement celle d'un autre monstre."
         },
         {
           "Id": 176,
@@ -1757,8 +1757,8 @@
           "Recette": [],
           "PrixVente": 211,
           "PrixAchat": 316,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
+          "description": "Coquille extérieure d'une Nerscylla. Extrêmement claire, avec une coloration nettement aposématique."
         },
         {
           "Id": 177,
@@ -1767,8 +1767,8 @@
           "Recette": [],
           "PrixVente": 236,
           "PrixAchat": 354,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
+          "description": "Une pointe dorsale et un sac à poison utilisés pour faire couler du poison sur les proies passant sous le nid du Nerscylla."
         },
         {
           "Id": 178,
@@ -1777,8 +1777,8 @@
           "Recette": [],
           "PrixVente": 247,
           "PrixAchat": 370,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
+          "description": "Le croc venimeux rétractable d'une Nerscylla. À manipuler avec précaution !"
         },
         {
           "Id": 179,
@@ -1787,8 +1787,8 @@
           "Recette": [],
           "PrixVente": 284,
           "PrixAchat": 426,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/8d/MHWilds-Sac_Icon_Light_Blue.png",
+          "description": "Un organe de monstre rempli d'une poudre assommante capable d'induire le sommeil."
         },
         {
           "Id": 180,
@@ -1797,8 +1797,8 @@
           "Recette": [],
           "PrixVente": 216,
           "PrixAchat": 324,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé une Nerscylla. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 181,
@@ -1807,8 +1807,8 @@
           "Recette": [],
           "PrixVente": 326,
           "PrixAchat": 489,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
+          "description": "Cette griffe acérée de Nerscylla sort de l'ombre pour faire une liste toujours plus longue de victimes."
         },
         {
           "Id": 182,
@@ -1817,8 +1817,8 @@
           "Recette": [],
           "PrixVente": 218,
           "PrixAchat": 327,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
+          "description": "Une carapace de Nerscylla robuste. Sa matière blanche porcelaine est très prisée, notamment par les femmes."
         },
         {
           "Id": 183,
@@ -1827,8 +1827,8 @@
           "Recette": [],
           "PrixVente": 333,
           "PrixAchat": 499,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
+          "description": "La peau de qualité de Gypceros. Sa texture ample et extensible est étonnamment agréable à porter."
         },
         {
           "Id": 184,
@@ -1837,8 +1837,8 @@
           "Recette": [],
           "PrixVente": 315,
           "PrixAchat": 472,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
+          "description": "Une pointe de Nerscylla particulièrement grande, plus prisée pour sa poche de poison mortelle que pour son tranchant."
         },
         {
           "Id": 185,
@@ -1847,8 +1847,8 @@
           "Recette": [],
           "PrixVente": 215,
           "PrixAchat": 322,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
+          "description": "Un croc de Nerscylla flexible et venimeux. Attention à son poison mortel en le manipulant !"
         },
         {
           "Id": 186,
@@ -1857,8 +1857,8 @@
           "Recette": [],
           "PrixVente": 231,
           "PrixAchat": 346,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
+          "description": "Certificat de guilde décerné à ceux qui ont chassé une Nerscylla. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 187,
@@ -1867,8 +1867,8 @@
           "Recette": [],
           "PrixVente": 239,
           "PrixAchat": 358,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
+          "description": "Une peau Nu Udra très élastique. Son aspect est lisse, mais elle présente une légère rugosité."
         },
         {
           "Id": 188,
@@ -1877,8 +1877,8 @@
           "Recette": [],
           "PrixVente": 210,
           "PrixAchat": 315,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2a/MHWilds-Chemical_Icon_Gray.png",
+          "description": "Un liquide visqueux fabriqué à partir des fluides corporels et de l'huile d'un Nu Udra. L'ajout d'huile le rend plus inflammable."
         },
         {
           "Id": 189,
@@ -1887,8 +1887,8 @@
           "Recette": [],
           "PrixVente": 200,
           "PrixAchat": 300,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Une corne de Nu Udra. Courbée pour protéger les yeux et parsemée de petites épines."
         },
         {
           "Id": 190,
@@ -1897,8 +1897,8 @@
           "Recette": [],
           "PrixVente": 247,
           "PrixAchat": 370,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Un pic Nu Udra. Sa forme torsadée et irrégulière nécessite une main experte pour le manipuler."
         },
         {
           "Id": 191,
@@ -1907,8 +1907,8 @@
           "Recette": [],
           "PrixVente": 233,
           "PrixAchat": 349,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
+          "description": "Un tentacule de Nu Udra. Incroyablement flexible et élastique, seule la lame la plus tranchante peut le percer."
         },
         {
           "Id": 192,
@@ -1917,8 +1917,8 @@
           "Recette": [],
           "PrixVente": 230,
           "PrixAchat": 345,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
+          "description": "Un certificat de guilde décerné à ceux qui ont chassé un Nu Udra. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 193,
@@ -1927,8 +1927,8 @@
           "Recette": [],
           "PrixVente": 227,
           "PrixAchat": 340,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Chemical_Icon_Light_Blue.png",
+          "description": "Un étrange fluide s'est formé à l'intérieur d'un Nu Udra. Il brille en bleu et peut renforcer les matériaux."
         },
         {
           "Id": 194,
@@ -1937,8 +1937,8 @@
           "Recette": [],
           "PrixVente": 317,
           "PrixAchat": 475,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
+          "description": "Peau Nu Udra de haute qualité. Particulièrement élastique et résistante au feu. Éternellement visqueuse."
         },
         {
           "Id": 195,
@@ -1947,8 +1947,8 @@
           "Recette": [],
           "PrixVente": 331,
           "PrixAchat": 496,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Une corne Nu Udra pointue. Chacune se tord étrangement vers l'extérieur, comme à la recherche de quelque chose."
         },
         {
           "Id": 196,
@@ -1957,8 +1957,8 @@
           "Recette": [],
           "PrixVente": 348,
           "PrixAchat": 522,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2a/MHWilds-Chemical_Icon_Gray.png",
+          "description": "Huile dense de mucus Nu Udra. Brûle incroyablement fort et longtemps une fois allumée."
         },
         {
           "Id": 197,
@@ -1967,8 +1967,8 @@
           "Recette": [],
           "PrixVente": 341,
           "PrixAchat": 511,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
+          "description": "Une pointe Nu Udra de qualité. Elle arrache la chair environnante lorsqu'elle est retirée de sa victime."
         },
         {
           "Id": 198,
@@ -1977,8 +1977,8 @@
           "Recette": [],
           "PrixVente": 313,
           "PrixAchat": 469,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
+          "description": "Un grand tentacule de Nu Udra. Un énorme morceau de muscle qui se débattra de manière incontrôlable même coupé."
         },
         {
           "Id": 199,
@@ -1987,8 +1987,8 @@
           "Recette": [],
           "PrixVente": 236,
           "PrixAchat": 354,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
+          "description": "Un certificat de guilde décerné à ceux qui ont chassé un Nu Udra. Utilisé pour fabriquer de l'équipement."
         },
         {
           "Id": 200,
@@ -1997,8 +1997,8 @@
           "Recette": [],
           "PrixVente": 356,
           "PrixAchat": 534,
-          "imgLien": "",
-          "description": ""
+          "imgLien": "https://monsterhunterwiki.org/images/4/49/MHWilds-Ball_Icon_Red.png",
+          "description": "Une mystérieuse gemme formée à l'intérieur d'un Nu Udra. On dit qu'elle détient le pouvoir de réduire le monde en cendres."
         },
         {
           "Id": 201,
@@ -2048,7 +2048,7 @@
           "PrixVente": 346,
           "PrixAchat": 519,
           "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Ore_Icon_Vermilion.png",
-          "description": "Un grand joyau né dans un Ajarakan. Il brille d'un rouge intense, comme s'il contenait un brasier."
+          "description": "Un grand joyau formée dans un Ajarakan. Il brille d'un rouge intense, comme s'il contenait un brasier."
         },
         {
           "Id": 206,
@@ -2118,7 +2118,7 @@
           "PrixVente": 211,
           "PrixAchat": 316,
           "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Ore_Icon_Vermilion.png",
-          "description": "Un grand joyau né dans un Ajarakan. Il brille d'un rouge intense, comme s'il contenait un brasier."
+          "description": "Un grand joyau formée dans un Ajarakan. Il brille d'un rouge intense, comme s'il contenait un brasier."
         },
         {
           "Id": 213,
@@ -2348,7 +2348,7 @@
           "PrixVente": 376,
           "PrixAchat": 564,
           "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
-          "description": "Un joyau rare né dans le corps d'un Rathalos Gardien. On dit qu'il possède le pouvoir d'un enfer."
+          "description": "Un joyau rare formée dans le corps d'un Rathalos Gardien. On dit qu'il possède le pouvoir d'un enfer."
         },
         {
           "Id": 236,
@@ -2398,7 +2398,7 @@
           "PrixVente": 296,
           "PrixAchat": 444,
           "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Sac_Icon_Red.png",
-          "description": "Un orgue monstrueux rempli de poudre inflammable. À manipuler avec une extrême prudence."
+          "description": "Un organe de monstre rempli de poudre inflammable. À manipuler avec une extrême prudence."
         },
         {
           "Id": 241,
@@ -2498,7 +2498,7 @@
           "PrixVente": 390,
           "PrixAchat": 585,
           "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
-          "description": "Un joyau rare né dans un Odogaron Gardien d'Ébène. On dit qu'il détient un étrange pouvoir draconique."
+          "description": "Un joyau rare formée dans un Odogaron Gardien d'Ébène. On dit qu'il détient un étrange pouvoir draconique."
         },
         {
           "Id": 251,
@@ -2988,7 +2988,7 @@
           "PrixVente": 354,
           "PrixAchat": 531,
           "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
-          "description": "Un joyau rare né au sein d'un Gardien, Fulgur Anjanath. On dit qu'il détient la puissance des cieux."
+          "description": "Un joyau rare formée au sein d'un Gardien, Fulgur Anjanath. On dit qu'il détient la puissance des cieux."
         },
         {
           "Id": 300,

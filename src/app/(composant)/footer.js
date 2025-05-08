@@ -5,9 +5,9 @@ export default function Footer() {
         <>
             <footer className="container-fluid bg-tertiary py-4">
                 <div className="d-flex justify-content-center text-center">
-                    <i className="bi bi-facebook p-4 socialMedia custom-icon"></i>
-                    <i className="bi bi-twitter p-4 socialMedia custom-icon"></i>
-                    <i className="bi bi-instagram p-4 socialMedia custom-icon"></i>
+                    <i className="bi bi-facebook m-2 custom-btn icons"></i>
+                    <i className="bi bi-twitter m-2 custom-btn icons"></i>
+                    <i className="bi bi-instagram m-2 custom-btn icons py-3"></i>
                 </div>
                 <p className="text-center m-0 pb-3 text-dark">Copyright &copy; GrindHunter 2025</p>
             </footer>
