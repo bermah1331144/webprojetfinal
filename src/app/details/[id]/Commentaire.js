@@ -22,16 +22,17 @@ export default function CommentaireUnique({id}) {
     
     //reste a teste, pour afficher un seul commentaire
 
-    console.log(commentaire); //permet de voir les infos du commentaire
+
 
     //------------------ATTENTION!!!! DOIS CHANGER LES ATTIBUTS DANS ID="COMMENTAIRE" -> <p> & <p> ------------------
     return <>
     
         <div id="boiteCommentaire"  className="d-flex- flex-row-reverse">
-            <div id="userIcon">
-                <i className="bi bi-person-square"></i>
-            </div>
+
             <div id="commentaire">
+                <div id="userIcon">
+                    <i className="bi bi-person-square"></i>
+                </div>
                 <p>{commentaire.titre}</p>
                 <p>{commentaire.date}</p>
                 <p>{commentaire.contenu}</p>
