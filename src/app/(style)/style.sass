@@ -14,7 +14,6 @@ $quarternary: #F2F6D0
   background-color: $secondary
   color: #fff
   border-radius: 30px
-  padding: 0.8rem 1.5rem
   font-weight: bold
   font-family: god-of-war
   transition: all 0.3s ease-in-out
@@ -24,7 +23,6 @@ $quarternary: #F2F6D0
 
 .custom-input
   border-radius: 30px
-  padding: 0.8rem 1.5rem
   background-color: $quarternary
   border: 1px solid $secondary
   transition: border-color 0.3s ease-in-out
@@ -84,98 +82,6 @@ footer
   .socialMedia
     margin: 0 0.5rem
 
-
-
-.card
-  background-color: $quarternary
-  padding: 3rem
-  border-radius: 20px
-  box-shadow: 0 10px 30px rgba($primary, 0.3)
-  width: 100%
-  max-width: 450px
-  text-align: center
-  position: relative
-  z-index: 2
-
-  form
-    display: flex
-    flex-direction: column
-    gap: 1.2rem
-
-
-.title
-  font-size: 2rem
-  color: $primary
-  margin-bottom: 2rem
-.card form
-  display: flex
-  flex-direction: column
-  gap: 1.2rem // Espace entre les champs et les boutons
-
-.link-btn
-  background: none
-  border: none
-  color: $secondary
-  text-decoration: underline
-  font-family: 'god-of-war'
-  font-size: 0.95rem
-  cursor: pointer
-  transition: color 0.3s ease
-
-  &:hover
-    color: darken($secondary, 10%)
-.connexionLayout
-  display: flex
-  flex-direction: column
-  height: 100vh
-
-.pageContainer
-  flex: 1
-  display: flex
-  align-items: center
-  justify-content: center
-  background: url('/mhco.jpg') no-repeat center center
-  background-size: cover
-  position: relative
-  font-family: 'god-of-war'
-  padding: 2rem 1rem // utile pour mobile
-
-  &::before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: rgba(239, 220, 171, 0.6)
-    z-index: 1
-
-
-html, body
-  height: 100%
-  margin: 0
-
-body
-  display: flex
-  flex-direction: column
-  min-height: 100vh
-
-.mainLayout
-  flex: 1
-  display: flex
-  flex-direction: column
-
-
-@media (max-width: 768px)
-  .dropdown-menu-user
-    position: static !important
-    transform: none !important
-    width: 100%
-    margin-top: 1rem
-
-@media (max-width: 768px)
-  form[role="search"]
-    width: 100%
-    flex-direction: column
-    gap: 0.5rem
-
+.icons
+  font-size: 1.5em
+  padding: 1rem
