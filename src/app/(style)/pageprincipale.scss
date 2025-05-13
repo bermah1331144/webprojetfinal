@@ -465,4 +465,208 @@ $transition-speed: 500ms;
       }
     }
   }
+  @media (max-width: 768px) {
+    // Container
+    .carousel-container {
+      height: 60vh;
+      min-height: 350px;
+      padding: 0 1rem; // Ajoute du padding horizontal
+    }
+  
+    // Cartes
+    .carousel-card {
+      width: 24rem;
+  
+      .card-content {
+        .card-image {
+          height: 10rem;
+        }
+  
+        .card-body {
+          padding: 0.75rem;
+  
+          .card-title {
+            font-size: 1.25rem;
+            line-height: 1.4;
+          }
+  
+          .card-description {
+            font-size: 0.875rem;
+            line-height: 1.4;
+          }
+  
+          .card-actions {
+            margin-top: 0.75rem;
+  
+            .card-button {
+              font-size: 0.875rem;
+              padding: 0.4rem 0.75rem;
+            }
+  
+            .cart-button {
+              width: 2.5rem;
+              height: 2.5rem;
+  
+              svg {
+                width: 1.25rem;
+                height: 1.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    // Navigation
+    .nav-button {
+      padding: 0.75rem;
+  
+      &.prev-button {
+        left: 0.75rem;
+      }
+  
+      &.next-button {
+        right: 0.75rem;
+      }
+    }
+  
+    // Classes de position 3D mobile (moins de profondeur)
+    .card-adjacent-left {
+      transform: translateX(-65%) scale(0.75) translateZ(-30px);
+    }
+  
+    .card-adjacent-right {
+      transform: translateX(65%) scale(0.75) translateZ(-30px);
+    }
+  
+    .card-far-left {
+      transform: translateX(-110%) scale(0.6) translateZ(-80px);
+    }
+  
+    .card-far-right {
+      transform: translateX(110%) scale(0.6) translateZ(-80px);
+    }
+  
+    // Indicateurs
+    .carousel-indicators {
+      bottom: 1rem;
+  
+      .indicator {
+        height: 0.5rem;
+        width: 0.5rem;
+        margin: 0 0.25rem;
+      }
+    }
+  
+    // Bas de page
+    .bottom-content {
+      padding: 1.5rem 1rem;
+  
+      .left-section {
+        margin-bottom: 1.5rem;
+  
+        .image-container {
+          max-width: 200px;
+          margin: 0 auto;
+  
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+  
+      .section-title {
+        font-size: 1rem;
+      }
+  
+      .section-text {
+        font-size: 0.85rem;
+      }
+  
+      .right-section .info-card {
+        padding: 1rem;
+      }
+  
+      .right-section .info-item {
+        font-size: 0.85rem;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .carousel-card {
+      width: 20rem;
+  
+      .card-content {
+        .card-image {
+          height: 8rem;
+        }
+  
+        .card-body {
+          padding: 0.5rem;
+  
+          .card-title {
+            font-size: 1rem;
+          }
+  
+          .card-description {
+            font-size: 0.75rem;
+          }
+  
+          .card-actions {
+            flex-direction: column;
+            gap: 0.5rem;
+  
+            .card-button {
+              width: 100%;
+              text-align: center;
+            }
+  
+            .cart-button {
+              width: 2rem;
+              height: 2rem;
+  
+              svg {
+                width: 1rem;
+                height: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .nav-button {
+      padding: 0.5rem;
+    }
+  }
+  .pagination-controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .pagination-controls button {
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    border: 1px solid #aaa;
+    background: #f1f1f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .pagination-controls button:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination-controls .active-page {
+    font-weight: bold;
+    background-color: #222;
+    color: white;
+  }
+  
+  
 
