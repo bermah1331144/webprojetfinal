@@ -49,7 +49,7 @@ export default function pageDetails({params}){
                 {/* ------------------ au besoin mettre les composants en commentaire pour faire test unitaire ----------------*/}
                 <a className="btn btn-primary" href="/panier"><i className="bi bi-bag"></i>Ajouter au panier</a>
                 <div className="zoneCommentaire">
-                    <ListCommentaire idMonste={id}/>
+                    <ListCommentaire idItems={id}/>
 
                     <AddCommentaire idMonste= {id}/>
 
