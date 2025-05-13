@@ -1,29 +1,35 @@
 "use client";
 
+
 //Afficher tout les commentaires aller chercher dans bs avec fetch
 import Commentaire from "./Commentaire";
 import { useState, useEffect } from "react";
-export default function listCommentaire({idMonste}) {
+import { use } from "react";
+export default function listCommentaire({idItems}) {
     //aller chercher etat de mes commentiares
     const [commentaires, setCommentaires] = useState([]);
-    
+
+
+
     //fetch dans useEffect/get commentaires
     useEffect(() => {
         async function getCommentaires() {
-            const response = await fetch(`/api/commentaires/${idMonste}`);
+            const response = await fetch(`http://localhost:3001/commentaires?idItems=${idItems}`);
             const data = await response.json();
             setCommentaires(data);
+            console.log(data);
         }
+        
         getCommentaires();
-    }, [idMonste]);     
+        console.log(commentaires);
+    }, []);     
+
 
 
     //doit afficher tout les commentaires doit use map
     return <>
-        <div id="listCommentaire">
-            {commentaires.map((commentaire) => (
-                <Commentaire commentaire={idMonste}/>
-            ))}
+        <div className ="container-fluid row-justify-content-right col-4" id="listCommentaire">
+            {commentaires.map((c) => <Commentaire commentaire={c} key={c.id} />)}
         </div>
     </>;
 }
