@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import './style.sass';
 export default function Inscription() {
     const [message, setMessage] = useState("");
     //doit faire un fetch post qunad on clique sur submit dans une fonction
@@ -62,8 +63,6 @@ export default function Inscription() {
             setMessage("Une erreur s'est produite lors de l'inscription.");
         }
     }
-
-
 
     
     return <>
@@ -155,8 +154,11 @@ export default function Inscription() {
                                 />
                                 <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                             </div>
-                            <button type="submit" className="btn btn-primary">Envoyer</button>
+
                         </form>
+                        <div id="btnInscription" className="container-fluid d-flex">
+                            <button  type="submit" className="btn btn-primary ">Envoyer</button>
+                        </div>
                     </div>
                 </div>
             </div>

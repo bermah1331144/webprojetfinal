@@ -5,6 +5,7 @@ import ListCommentaire from "./listCommentaire";
 import AddCommentaire from "./addCommentaire";
 import { useEffect, useState } from "react";
 import { use } from "react";
+import './style.sass';
 export default function pageDetails({params}){
     const [items, setItems] = useState([]);
     const { id }= use(params);

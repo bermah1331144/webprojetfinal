@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function CardCarousel({ cards = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const idMonste = new URLSearchParams(window.location.search);
+  const id = new URLSearchParams(window.location.search);
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -141,7 +141,7 @@ export default function CardCarousel({ cards = [] }) {
                     <h3 className="card-title">{card.title}</h3>
                     <p className="card-description">{card.description}</p>
                     <div className="card-actions">
-                      <Link href={`/details/${idMonste}`} className="card-button">
+                      <Link href={`/details/${id}`} className="card-button">
                         Voir détails
                       </Link>
                       <button 
