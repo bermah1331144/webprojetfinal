@@ -28,7 +28,7 @@ export default function listCommentaire({idItems}) {
 
     //doit afficher tout les commentaires doit use map
     return <>
-        <div className ="container-fluid revese row col-4" id="listCommentaire">
+        <div className ="container-fluid row-justify-content-right col-4" id="listCommentaire">
             {commentaires.map((c) => <Commentaire commentaire={c} key={c.id} />)}
         </div>
     </>;

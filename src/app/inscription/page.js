@@ -1,39 +1,68 @@
-import { headers } from "next/headers";
+"use client";
 
+import { useState } from "react";
 export default function Inscription() {
-    
+    const [message, setMessage] = useState("");
     //doit faire un fetch post qunad on clique sur submit dans une fonction
-    async function EnvoyerDonneesUtilsateurs() {
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData.entries());
+    const [utilisateur, setUtilisateur] = useState({
+        Nom: "",
+        Prenom: "",
+        Pseudo: "",
+        Email: "",
+        Password: ""
+    });
+
+    //gestion des charmenets dans les champs du formaulaire
+    const handleCharge = (e) => {
+        setUtilisateur({
+            ...utilisateur,
+            [e.target.name]: e.target.value
+        });
+    };
+
+
+    
+    //gere la soumission du formulaire
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if(!utilisateur.Nom || !utilisateur.Prenom || !utilisateur.Pseudo || !utilisateur.Email || !utilisateur.Password){
+            setMessage("Veuillez remplir tous les champs");
+            return;
+        }
         
-        console.log(data);
         try{
-            const reponse = await fetch("../../bd.json/utilisateurs",{ 
+            const reponse = awaitfetch("http://localhost:3001/utilisateurs",{ 
                 method: 'POST',
                 headers: {
-                  'Content-Type': 'application/json'
+                'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(data)
-              });
+                body: JSON.stringify(utilisateur)
+            });
 
-            if(reponse.ok){
-                console.log("Utilisateur ajouté");
-                this.reset();
-            }else{
-                console.log("Erreur lors de l'ajout de l'utilisateur");
+            if (reponse.ok) {
+                setMessage("Données envoyées avec succès");
             }
+
+            const data = await reponse.json();
+            setMessage("Utilisateur créé:", data);
+
+            setUtilisateur({
+                Nom: "",
+                Prenom: "",
+                Pseudo: "",
+                Email: "",
+                Password: ""
+            });
+
+            setMessage("Inscription réussie!");
+
         }catch(error){
-            console.log(error);
+            console.error("Erreur lors de la recherche du produit", error);
+            setMessage("Une erreur s'est produite lors de l'inscription.");
         }
-        document.getElementById("formInscription").addEventListener("submit", (e) => {
-            e.preventDefault(); // Empêche l'envoi classique
-            EnvoyerDonneesUtilisateurs(); // Appelle la fonction
-          });
-        return function reset() {
-            document.getElementById("formInscription").reset();
-        };
     }
+
 
 
     
@@ -43,34 +72,87 @@ export default function Inscription() {
                 <div className="row">
                     <div className="col-4 mx-auto">
                         <h1> Inscription </h1>
-                        <form id = "formInscription">
+                        <form onSubmit={handleSubmit} id = "formInscription">
                             <div className="mb-3">
                                 <label htmlFor="Nom" className="form-label">Nom</label>
-                                <input type="text" className="form-control" id="Nom" />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="Nom"
+                                    name="Nom"
+                                    value={utilisateur.nom}
+                                    onChange={handleCharge}
+                                    required
+                                />
                             </div>
                             <div> 
                                 <label htmlFor="Prenom" className="form-label">Prenom</label>
-                                <input type="text" className="form-control" id="Prenom" />
+                                <input 
+                                    type="text"    
+                                    className="form-control" 
+                                    id="Prenom" 
+                                    name="Prenom"
+                                    value={utilisateur.prenom}
+                                    onChange={handleCharge}
+                                    required
+                                    
+                                />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="Pseudo" className="form-label">Pseudo</label>
-                                <input type="text" className="form-control" id="Pseudo" />
+                                <input 
+                                    type="text"
+                                    className="form-control"
+                                    id="Pseudo"
+                                    name="Pseudo"
+                                    value={utilisateur.pseudo}
+                                    onChange={handleCharge}
+                                    required
+                                />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="Email1" className="form-label">Email address</label>
-                                <input type="email" className="form-control" id="Email" aria-describedby="email" />
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    id="Email"
+                                    name="Email"
+                                    value={utilisateur.email}
+                                    onChange={handleCharge}
+                                    required
+                                />
                                 <div id="email" className="form-text">We'll never share your email with anyone else.</div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="Password" className="form-label">Password</label>
-                                <input type="password" className="form-control" id="Password" />
+                                <input 
+                                    type="password"
+                                    className="form-control"
+                                    id="Password"
+                                    name="Password"
+                                    value={utilisateur.password}
+                                    onChange={handleCharge}
+                                    required
+                                />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="Password" className="form-label">Confirmer le mot de passe</label>
-                                <input type="password" className="form-control" id="ConfirmerPassword" />
+                                <input 
+                                    type="password"
+                                    className="form-control"
+                                    id="ConfirmerPassword"
+                                    name="ConfirmerPassword"
+                                    value={utilisateur.password}
+                                    onChange={handleCharge}
+                                    required
+                                    />
                             </div>
                             <div className="mb-3 form-check">
-                                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                                <input 
+                                    type="checkbox" 
+                                    className="form-check-input"
+                                    id="exampleCheck1"
+                                />
                                 <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                             </div>
                             <button type="submit" className="btn btn-primary">Envoyer</button>
