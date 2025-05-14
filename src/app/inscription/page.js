@@ -13,7 +13,8 @@ export default function Inscription() {
         Prenom: "",
         Pseudo: "",
         Email: "",
-        Password: ""
+        Password: "",
+        ConfirmerPassword: ""   
     });
 
     //gestion des changements dans les champs du formaulaire
@@ -31,7 +32,7 @@ export default function Inscription() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if(!utilisateur.Nom || !utilisateur.Prenom || !utilisateur.Pseudo || !utilisateur.Email || !utilisateur.Password){
+        if(!utilisateur.Nom || !utilisateur.Prenom || !utilisateur.Pseudo || !utilisateur.Email || !utilisateur.Password || !utilisateur.ConfirmerPassword){
             setMessage("Veuillez remplir tous les champs");
             return ;
         }
@@ -57,7 +58,9 @@ export default function Inscription() {
                 Prenom: "",
                 Pseudo: "",
                 Email: "",
-                Password: ""
+                Password: "",
+                ConfirmerPassword: ""   
+
             });
 
             setMessage("Inscription réussie!");
@@ -97,7 +100,7 @@ export default function Inscription() {
                                     className="form-control" 
                                     id="Prenom" 
                                     name="Prenom"
-                                    value={utilisateur.prenom}
+                                    value={utilisateur.Prenom}
                                     onChange={handleCharge}
                                     required
                                     
@@ -110,7 +113,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Pseudo"
                                     name="Pseudo"
-                                    value={utilisateur.pseudo}
+                                    value={utilisateur.Pseudo}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -122,7 +125,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Email"
                                     name="Email"
-                                    value={utilisateur.email}
+                                    value={utilisateur.Email}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -135,7 +138,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Password"
                                     name="Password"
-                                    value={utilisateur.password}
+                                    value={utilisateur.Password}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -147,7 +150,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="ConfirmerPassword"
                                     name="ConfirmerPassword"
-                                    value={utilisateur.password}
+                                    value={utilisateur.ConfirmerPassword}
                                     onChange={handleCharge}
                                     required
                                     />
@@ -160,11 +163,16 @@ export default function Inscription() {
                                 />
                                 <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                             </div>
-
+                            <div id="btnInscription" className="container-fluid d-flex">
+                                <button  type="submit" className="btn btn-primary ">Envoyer</button>
+                            </div>
                         </form>
-                        <div id="btnInscription" className="container-fluid d-flex">
-                            <button  type="submit" className="btn btn-primary ">Envoyer</button>
-                        </div>
+                        {message && (
+                            <div className="alert alert-info mt-3">
+                                {message}
+                            </div>
+                        )}
+
                     </div>
                 </div>
             </div>

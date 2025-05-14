@@ -3721,6 +3721,61 @@
       "pseudo": "Jdupont",
       "password": "azerty",
       "email": "9o6oO@example.com"
+    },
+    {
+      "id": "d844",
+      "Nom": "Bergeron",
+      "Prenom": "Mahelie",
+      "Pseudo": "mahe",
+      "Email": "mahelie.bergeron@gmail.com",
+      "Password": "qwerty123",
+      "ComfirmerPassword": "",
+      "ConfirmerPassword": "qwerty123"
+    },
+    {
+      "id": "eeaf",
+      "Nom": "Bergeron",
+      "Prenom": "Mahelie",
+      "Pseudo": "mae",
+      "Email": "mahelie.bergeron@gmail.com",
+      "Password": "qwerty123"
+    },
+    {
+      "id": "8716",
+      "Nom": "Bergeron",
+      "Prenom": "Mahelie",
+      "Pseudo": "mahe",
+      "Email": "mahelie.bergeron@gmail.com",
+      "Password": "qwerty123",
+      "ComfirmerPassword": "",
+      "ConfirmerPassword": "qwerty123"
+    },
+    {
+      "id": "24d8",
+      "Nom": "Bergeron",
+      "Prenom": "Mahelie",
+      "Pseudo": "mahe",
+      "Email": "mahelie.bergeron@gmail.com",
+      "Password": "qwerty123",
+      "ConfirmerPassword": "qwerty123"
+    },
+    {
+      "id": "2055",
+      "Nom": "Bergeron",
+      "Prenom": "Mahelie",
+      "Pseudo": "mae",
+      "Email": "mahelie.bergeron@gmail.com",
+      "Password": "qazwsx123",
+      "ConfirmerPassword": "qazwsx123"
+    },
+    {
+      "id": "4107",
+      "Nom": "Bergeron",
+      "Prenom": "Mahelie",
+      "Pseudo": "bergy",
+      "Email": "mahelie.bergeron@gmail.com",
+      "Password": "qwerty",
+      "ConfirmerPassword": "qwerty"
     }
   ]
 }
