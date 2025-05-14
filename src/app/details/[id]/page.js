@@ -35,21 +35,23 @@ export default function pageDetails({params}){
     const imageLien = items.imgLien;
 
     return<>
-        <div>
-            <div id="afficheProduit" className="container py-5 mt-5 mb-5">
-                <h1>{items.Nom}</h1>
-                <div className="row justify-content-center">
-                    <img src={imageLien} alt="Produit" className="img-fluid col-md-3"/>
-                    <div className="col-12col-md-6 justify-content-center text-center">   
-                        <h2>Description items</h2>
-                        <p>{items.description}</p>
-                    </div> 
-                </div>
-                <a className="btn btn-primary" href="/panier"><i className="bi bi-bag"></i>Ajouter au panier</a>
-                <div className="zoneCommentaire">
+        <div id="backgroundAfficheProduit" className="pt-5 py-5">
+            <div id="afficheProduit" className="container-fluid">
+                <div id ="boiteProduit" >  
+                    <h1>{items.Nom}</h1>
+                    <div className="row justify-content-center ">
+                        <img src={imageLien} alt="Produit" className="img-fluid col-md-3"/>
+                        <div className="col-12col-md-6 justify-content-center text-center">   
+                            <h2>Description items</h2>
+                            <p>{items.description}</p>
+                        </div> 
+                    </div>
+                    <a className="btn btn-primary" href="/panier"><i className="bi bi-bag"></i>Ajouter au panier</a>
+                    <div className="zoneCommentaire">
 
-                    <AddCommentaire idMonste= {id}/>
+                        <AddCommentaire idMonste= {id}/>
 
+                    </div>
                 </div>
             </div>
          </div>            
