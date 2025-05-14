@@ -41,8 +41,8 @@ export default function pageDetails({params}){
             </div>
             <div className="container">
                 <div className="row justify-content-center">
-                    <img src={imageLien} alt="Produit"/>
-                    <div className="col-md-6 justify-content-center">   
+                    <img src={imageLien} alt="Produit" className="img-fluid col-md-3"/>
+                    <div className="col-12col-md-6 justify-content-center text-center">   
                         <h2>Description items</h2>
                         <p>{items.description}</p>
                     </div> 

@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+
 export default function CardCarousel({ cards = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const id = new URLSearchParams(window.location.search);
+
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -59,6 +60,7 @@ export default function CardCarousel({ cards = [] }) {
       description: 'Un guerrier spectral qui hante les champs de bataille.'
     }
   ];
+  
   
   const cardsToShow = cards.length > 0 ? cards : defaultCards;
   const totalCards = cardsToShow.length;
@@ -141,7 +143,8 @@ export default function CardCarousel({ cards = [] }) {
                     <h3 className="card-title">{card.title}</h3>
                     <p className="card-description">{card.description}</p>
                     <div className="card-actions">
-                      <Link href={`/details/${id}`} className="card-button">
+                  
+                      <Link href={`/details/${card.id}`} className="card-button">
                         Voir détails
                       </Link>
                       <button 

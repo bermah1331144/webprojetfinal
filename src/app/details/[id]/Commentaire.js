@@ -6,17 +6,17 @@ export default function CommentaireUnique({commentaire}) {
 
     return <>
     
-        <div id="boiteCommentaire"  className="d-flex- flex-row-reverse">
+        <div id="boiteCommentaire"  className="d-flex">
 
             <div id="commentaire">
-                <div id="userIcon">
-                    <i className="bi bi-person-square"></i>
-                </div>
+
+                <i id="iconeUser" className="bi bi-person-square col-1"></i>
+                
                 {commentaire ? (
                     <>
-                        <p>{commentaire.titre}</p>
-                        <p>{commentaire.date}</p>
-                        <p>{commentaire.contenu}</p>
+                        <p className="col-11">Titre: {commentaire.titre}
+                        Contenu: {commentaire.contenu}
+                        Date: {commentaire.date}</p>
                     </>
                 ) : (
                     <p>Chargement du commentaire...</p>

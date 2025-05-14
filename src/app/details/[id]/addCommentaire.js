@@ -5,6 +5,9 @@ import Commentaire from "./Commentaire";
 import ListCommentaire from "./listCommentaire";
 import { useEffect, useState } from "react";
 export default function addCommentaire({idItems}) {
+
+    //recupere les infos ecrit par l'usager, puis les add a la bd 
+    //Permet de refraichir la liste de commentaire
     const [commentaire,setCommentaire] = useState({
         date: new Date().toISOString(),
         titre: "",
@@ -15,7 +18,9 @@ export default function addCommentaire({idItems}) {
     
     const [message,setMesage] = useState("");
 
+    const [rafraichir, setRafraichir] = useState(false);
 
+    //gestion d#e changements dans les champs du formaulaire
     const handleCharge = (e) => {
         
         setCommentaire({
@@ -49,6 +54,7 @@ export default function addCommentaire({idItems}) {
             });
             if (response.ok) {
                 console.log("Commentaire ajouté avec succès");
+                setRafraichir(!rafraichir);
             }
             const data = await response.json();
             console.log(data);
@@ -64,7 +70,7 @@ export default function addCommentaire({idItems}) {
     return <>
         <div className="container-fluid row">
                 <div className="col-6">
-                    <form onSubmit={handleSubmit} id= "formCommentaire">
+                    <form onSubmit={handleSubmit} id= "formCommentaire" className="row g-3">
                         <label htmlFor="titre" className="form-label">Titre</label>
                         <input
                             type="text"
@@ -78,14 +84,14 @@ export default function addCommentaire({idItems}) {
                         <label htmlFor="commentaire" className="form-label">Commentaire</label>
                         <textarea
                             className="form-control"
-                            id="commentaire" rows="4"
+                            id="commentaire"
                             name="commentaire"
                             value={commentaire.contenu}
                             onChange={handleCharge}
                             required
                         ></textarea>
                 
-                        <button type="submit" className="btn btn-primary">Ajouter</button>
+                        <button id="boutonCommentaire" type="submit" className="btn btn-primary">Ajouter</button>
                     </form>
                     
                 </div>
