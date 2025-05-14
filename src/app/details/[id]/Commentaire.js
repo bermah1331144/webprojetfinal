@@ -4,8 +4,6 @@ export default function CommentaireUnique({commentaire}) {
 
     //reste a teste, pour afficher un seul commentaire
 
-
-    //------------------ATTENTION!!!! DOIS CHANGER LES ATTIBUTS DANS ID="COMMENTAIRE" -> <p> & <p> ------------------
     return <>
     
         <div id="boiteCommentaire"  className="d-flex- flex-row-reverse">

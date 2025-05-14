@@ -6,6 +6,7 @@ import AddCommentaire from "./addCommentaire";
 import { useEffect, useState } from "react";
 import { use } from "react";
 import './style.sass';
+
 export default function pageDetails({params}){
     const [items, setItems] = useState([]);
     const { id }= use(params);
@@ -46,14 +47,10 @@ export default function pageDetails({params}){
                         <p>{items.description}</p>
                     </div> 
                 </div>
-        
-                {/* ------------------ au besoin mettre les composants en commentaire pour faire test unitaire ----------------*/}
                 <a className="btn btn-primary" href="/panier"><i className="bi bi-bag"></i>Ajouter au panier</a>
                 <div className="zoneCommentaire">
-                    <ListCommentaire idItems={id}/>
 
                     <AddCommentaire idMonste= {id}/>
-
 
                 </div>
             </div>
