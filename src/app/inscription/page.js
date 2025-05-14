@@ -76,10 +76,10 @@ export default function Inscription() {
     
     return <>
 
-            <div className="container">
+            <div id="imgFondForm"className="container-fluid  ">
                 <div className="row">
-                    <div className="col-4 mx-auto">
-                        <h1> Inscription </h1>
+                    <div id="BackgroundForm"className="col-4 mx-auto mt-5">
+                        <h1 className="text-center"> Inscription </h1>
                         <form onSubmit={handleSubmit} id = "formInscription">
                             <div className="mb-3">
                                 <label htmlFor="Nom" className="form-label">Nom</label>

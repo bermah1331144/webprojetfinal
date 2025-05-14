@@ -36,10 +36,8 @@ export default function pageDetails({params}){
 
     return<>
         <div>
-            <div>
+            <div id="afficheProduit" className="container py-5 mt-5 mb-5">
                 <h1>{items.Nom}</h1>
-            </div>
-            <div className="container">
                 <div className="row justify-content-center">
                     <img src={imageLien} alt="Produit" className="img-fluid col-md-3"/>
                     <div className="col-12col-md-6 justify-content-center text-center">   
