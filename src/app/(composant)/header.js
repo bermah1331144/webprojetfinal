@@ -38,7 +38,7 @@ export default function Navbar() {
               </li>
               <li>
                 <form className="d-flex row justify-content-center d-lg-none" role="search" onSubmit={(e) => e.preventDefault()}>
-                  <button className="btn col-3" type="submit"><i class="bi bi-search custom-btn icons"></i></button>
+                  <button className="btn col-3 " type="submit"><i className="bi bi-search custom-btn icons"></i></button>
                   <div className="col-8">
                     <input className="form-control custom-input py-2 " type="search" placeholder="Recherche" aria-label="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
                   </div>
@@ -51,7 +51,7 @@ export default function Navbar() {
             <div className="col-8">
               <input className="form-control custom-input py-2 " type="search" placeholder="Recherche" aria-label="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
             </div>
-            <button className="btn col-3" type="submit"><i class="bi bi-search custom-btn icons"></i></button>
+            <button className="btn col-3" type="submit"><i className="bi bi-search custom-btn icons"></i></button>
           </form>
 
           <Link href="/profil" className="btn col-1">

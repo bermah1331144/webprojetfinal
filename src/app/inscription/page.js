@@ -1,18 +1,23 @@
 "use client";
 
 import { useState } from "react";
+import './style.sass';
+import '../(style)/style.sass';
 export default function Inscription() {
+    //gestion des messages
     const [message, setMessage] = useState("");
-    //doit faire un fetch post qunad on clique sur submit dans une fonction
+
+    //gestion des utilisateurs
     const [utilisateur, setUtilisateur] = useState({
         Nom: "",
         Prenom: "",
         Pseudo: "",
         Email: "",
-        Password: ""
+        Password: "",
+        ConfirmerPassword: ""   
     });
 
-    //gestion des charmenets dans les champs du formaulaire
+    //gestion des changements dans les champs du formaulaire
     const handleCharge = (e) => {
         setUtilisateur({
             ...utilisateur,
@@ -22,17 +27,18 @@ export default function Inscription() {
 
 
     
-    //gere la soumission du formulaire
+    //gere la soumission du formulaire si champs vides
+    //------------------------------- Le message d'erreur n'apparait pas dan le navigateur -------------------------------
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if(!utilisateur.Nom || !utilisateur.Prenom || !utilisateur.Pseudo || !utilisateur.Email || !utilisateur.Password){
+        if(!utilisateur.Nom || !utilisateur.Prenom || !utilisateur.Pseudo || !utilisateur.Email || !utilisateur.Password || !utilisateur.ConfirmerPassword){
             setMessage("Veuillez remplir tous les champs");
-            return;
+            return ;
         }
         
         try{
-            const reponse = awaitfetch("http://localhost:3001/utilisateurs",{ 
+            const reponse = await fetch("http://localhost:3001/utilisateurs",{ 
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'
@@ -52,7 +58,9 @@ export default function Inscription() {
                 Prenom: "",
                 Pseudo: "",
                 Email: "",
-                Password: ""
+                Password: "",
+                ConfirmerPassword: ""   
+
             });
 
             setMessage("Inscription réussie!");
@@ -64,14 +72,14 @@ export default function Inscription() {
     }
 
 
-
+    //affiche le formulaire
     
     return <>
 
-            <div className="container">
+            <div id="imgFondForm"className="container-fluid  ">
                 <div className="row">
-                    <div className="col-4 mx-auto">
-                        <h1> Inscription </h1>
+                    <div id="BackgroundForm"className="col-4 mx-auto mt-5">
+                        <h1 className="text-center"> Inscription </h1>
                         <form onSubmit={handleSubmit} id = "formInscription">
                             <div className="mb-3">
                                 <label htmlFor="Nom" className="form-label">Nom</label>
@@ -92,7 +100,7 @@ export default function Inscription() {
                                     className="form-control" 
                                     id="Prenom" 
                                     name="Prenom"
-                                    value={utilisateur.prenom}
+                                    value={utilisateur.Prenom}
                                     onChange={handleCharge}
                                     required
                                     
@@ -105,7 +113,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Pseudo"
                                     name="Pseudo"
-                                    value={utilisateur.pseudo}
+                                    value={utilisateur.Pseudo}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -117,7 +125,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Email"
                                     name="Email"
-                                    value={utilisateur.email}
+                                    value={utilisateur.Email}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -130,7 +138,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Password"
                                     name="Password"
-                                    value={utilisateur.password}
+                                    value={utilisateur.Password}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -142,7 +150,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="ConfirmerPassword"
                                     name="ConfirmerPassword"
-                                    value={utilisateur.password}
+                                    value={utilisateur.ConfirmerPassword}
                                     onChange={handleCharge}
                                     required
                                     />
@@ -155,8 +163,16 @@ export default function Inscription() {
                                 />
                                 <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
                             </div>
-                            <button type="submit" className="btn btn-primary">Envoyer</button>
+                            <div id="btnInscription" className="container-fluid d-flex">
+                                <button  type="submit" className="btn btn-primary ">Envoyer</button>
+                            </div>
                         </form>
+                        {message && (
+                            <div className="alert alert-info mt-3">
+                                {message}
+                            </div>
+                        )}
+
                     </div>
                 </div>
             </div>
