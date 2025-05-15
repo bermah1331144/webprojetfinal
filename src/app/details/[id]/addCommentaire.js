@@ -4,6 +4,7 @@ import { Lisu_Bosa } from "next/font/google";
 import Commentaire from "./Commentaire";
 import ListCommentaire from "./listCommentaire";
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 export default function addCommentaire({idItems}) {
 
     //recupere les infos ecrit par l'usager, puis les add a la bd 
@@ -17,7 +18,7 @@ export default function addCommentaire({idItems}) {
     });
     
     const [message,setMesage] = useState("");
-
+    const {itmesId} = useParams();
     const [rafraichir, setRafraichir] = useState(false);
 
     //gestion d#e changements dans les champs du formaulaire
