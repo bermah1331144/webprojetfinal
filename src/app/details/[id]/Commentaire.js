@@ -14,9 +14,10 @@ export default function CommentaireUnique({commentaire}) {
                 
                 {commentaire ? (
                     <>
-                        <p className="col-11">Titre: {commentaire.titre}
-                        Contenu: {commentaire.contenu}
-                        Date: {commentaire.date}</p>
+                        <p className="col-11">Titre: {commentaire.titre}</p>
+                        <p className="col-11">Contenu: {commentaire.contenu}</p>
+                        <small>{new Date(commentaire.date).toLocaleString()}</small>
+
                     </>
                 ) : (
                     <p>Chargement du commentaire...</p>

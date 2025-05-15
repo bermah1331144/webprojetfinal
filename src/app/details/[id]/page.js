@@ -6,6 +6,7 @@ import AddCommentaire from "./addCommentaire";
 import { useEffect, useState } from "react";
 import { use } from "react";
 import './style.sass';
+import { useParams } from "next/navigation";
 
 export default function pageDetails({params}){
     const [items, setItems] = useState([]);
@@ -49,7 +50,7 @@ export default function pageDetails({params}){
                     <a className="btn btn-primary" href="/panier"><i className="bi bi-bag"></i>Ajouter au panier</a>
                     <div className="zoneCommentaire">
 
-                        <AddCommentaire idMonste= {id}/>
+                        <AddCommentaire idMonste= {id} idItem={id}/>
 
                     </div>
                 </div>
