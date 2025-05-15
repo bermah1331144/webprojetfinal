@@ -82,8 +82,6 @@ $transition-speed: 500ms;
       background-size: 20px 20px;
       opacity: 0.1;
     }
-
-  
   
   // Conteneur des cartes
   .carousel-stage {
@@ -196,9 +194,7 @@ $transition-speed: 500ms;
           transition: all 200ms ease;
           
           &:hover {
-            background-color:  #D98324; // orange principal
-
-            ; // Vert plus foncé au survol
+            background-color:  $primary-color; // orange principal
             transform: scale(1.1);
           }
           
@@ -212,23 +208,28 @@ $transition-speed: 500ms;
   }
 }
 
-// Boutons de navigation
+// Boutons de navigation - NOUVELLE VERSION COMPLÈTE
+// Styles simplifiés pour les boutons de navigation avec flèches
 .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: $primary-color; // orange principal
-  color: #1f2937; // gray-800
-  padding: 1rem; // Augmenté de 0.75rem à 1rem
-  border-radius: 9999px;
-  box-shadow: 0 4px 6px -1px $shadow-color, 0 2px 4px -2px $shadow-color;
-  transition: all 150ms;
-  z-index: 20;
+  background-color: #D98324; // orange principal
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border: none;
   cursor: pointer;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
   
   &:hover {
-    background-color: $hover-color;
+    background-color: #834e14; // orange foncé au survol
+    transform: translateY(-50%) scale(1.1);
   }
   
   &:disabled {
@@ -237,15 +238,41 @@ $transition-speed: 500ms;
   }
   
   &.prev-button {
-    left: 2.5rem; // Légèrement augmenté
+    left: 2.5rem;
   }
   
   &.next-button {
-    right: 2.5rem; // Légèrement augmenté
+    right: 2.5rem;
+  }
+  
+  // Style des flèches SVG
+  svg {
+    stroke: #443627; // couleur brune pour la flèche
+    width: 24px;
+    height: 24px;
   }
 }
 
-// Indicateurs de position
+@media (max-width: 768px) {
+  .nav-button {
+    width: 36px;
+    height: 36px;
+    
+    &.prev-button {
+      left: 1rem;
+    }
+    
+    &.next-button {
+      right: 1rem;
+    }
+    
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
 .carousel-indicators {
   display: flex;
   justify-content: center;
@@ -268,7 +295,6 @@ $transition-speed: 500ms;
     
     &.active {
       background-color: $primary-color; // orange principal
-      ;
       transform: scale(1.2);
     }
   }
@@ -418,41 +444,40 @@ $transition-speed: 500ms;
     }
   }
     
-      // Styles for fallback if image fails to load
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $light-bg;
-        z-index: -1;
-      }
-    }
+  // Styles for fallback if image fails to load
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $light-bg;
+    z-index: -1;
+  }
 
-    .right-section .info-card {
-      background: linear-gradient(135deg, #5c4430, #3b2b1f) !important;
-      border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    }
-    
-    /* Assurez-vous que tous les éléments enfants n'ont pas de fond blanc qui cache le dégradé */
-    .right-section .info-card * {
-      background-color: transparent !important;
-    }
-    
-    .right-section .info-card .info-header {
-      background-color: transparent !important;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-    }
-    
-    .right-section .info-card .info-item {
-      color: white !important;
-    }
-    
-    .right-section .info-card .info-item:hover {
-      background: linear-gradient(135deg, #4a3526, #2a1d14) !important;
-    }
+  .right-section .info-card {
+    background: linear-gradient(135deg, #5c4430, #3b2b1f) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Assurez-vous que tous les éléments enfants n'ont pas de fond blanc qui cache le dégradé */
+  .right-section .info-card * {
+    background-color: transparent !important;
+  }
+  
+  .right-section .info-card .info-header {
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  .right-section .info-card .info-item {
+    color: white !important;
+  }
+  
+  .right-section .info-card .info-item:hover {
+    background: linear-gradient(135deg, #4a3526, #2a1d14) !important;
+  }
     
   // Responsive adjustments
   @media (max-width: 767.98px) {
@@ -517,9 +542,10 @@ $transition-speed: 500ms;
       }
     }
   
-    // Navigation
+    // Navigation - adaptation mobile
     .nav-button {
-      padding: 0.75rem;
+      width: 36px;
+      height: 36px;
   
       &.prev-button {
         left: 0.75rem;
@@ -527,6 +553,11 @@ $transition-speed: 500ms;
   
       &.next-button {
         right: 0.75rem;
+      }
+      
+      svg {
+        width: 18px;
+        height: 18px;
       }
     }
   
@@ -637,7 +668,13 @@ $transition-speed: 500ms;
     }
   
     .nav-button {
-      padding: 0.5rem;
+      width: 32px;
+      height: 32px;
+      
+      svg {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
   .pagination-controls {
@@ -668,5 +705,92 @@ $transition-speed: 500ms;
     color: white;
   }
   
+  .cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
   
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    min-width: 20px;
+    text-align: center;
+  }
+  .cart-icon.pop {
+    animation: cart-bounce 0.3s ease;
+  }
+  
+  @keyframes cart-bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+  }
+}
+.notification-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 80%;
+  max-width: 400px;
+}
 
+.notification {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.cart-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.cart-button:hover {
+  background-color: #f57c00;
+}
+
+.cart-button:active {
+  background-color: #ef6c00;
+}
+
+.item-count {
+  background-color: #f44336;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 5px;
+  display: inline-block;
+}

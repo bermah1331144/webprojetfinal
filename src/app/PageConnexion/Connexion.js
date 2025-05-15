@@ -1,5 +1,5 @@
 'use client';
-import '../../app/(style)/style.sass';
+import '../../app/(style)/style.sass'; // Import du fichier SCSS spécifique
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
@@ -18,30 +18,38 @@ export default function ConnexionForm() {
   };
 
   return (
-    <div className="card">
-      <h1 className="title">Chasseur, connecte-toi</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Adresse email"
-          className="custom-input"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Mot de passe"
-          className="custom-input"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit" className="custom-btn">
-          Se connecter
-        </button>
-        <button type="button" className="link-btn" onClick={goToSignup}>
-          Pas encore de compte ? Inscris-toi ici
-        </button>
-      </form>
+    // Le conteneur principal contient tout, y compris l'image de fond
+    <div className="connexion-container">
+      {/* Carte de connexion au centre */}
+      <div className="connexion-card">
+        <h1 className="title">Chasseur,<br />connecte-toi</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="input-container">
+            <input
+              type="email"
+              placeholder="Adresse email"
+              className="custom-input"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="input-container">
+            <input
+              type="password"
+              placeholder="Mot de passe"
+              className="custom-input"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <button type="submit" className="connect-btn">
+            SE CONNECTER
+          </button>
+          <button type="button" className="signup-btn" onClick={goToSignup}>
+            Pas encore de compte ? Inscris-toi ici
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

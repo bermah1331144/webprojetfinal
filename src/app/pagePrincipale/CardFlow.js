@@ -6,6 +6,10 @@ export default function CardFlow() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [bgIndex, setBgIndex] = useState(0);
+  const [cartCount, setCartCount] = useState(0);
+  const [cartItems, setCartItems] = useState({});
+  const [showNotification, setShowNotification] = useState(false);
+  const [notificationMessage, setNotificationMessage] = useState('');
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -15,10 +19,11 @@ export default function CardFlow() {
   ];
 
   useEffect(() => {
-    fetch('/api/cards')
+    fetch('/api/cards?page=1&limit=100')
       .then(res => res.json())
       .then(data => {
-        const mapped = data.map(item => ({
+        const source = Array.isArray(data) ? data : data.items;
+        const mapped = source.map(item => ({
           id: item.Id,
           title: item.Nom,
           imageUrl: item.imgLien || '/api/placeholder/400/320',
@@ -51,8 +56,31 @@ export default function CardFlow() {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
-  const handleAddToCart = (cardId) => {
-    alert(`Partie de monstre ${cardId} ajoutée au panier!`);
+  const addToCart = (cardId, cardTitle) => {
+    console.log("Ajout au panier: ", cardId, cardTitle); // Vérifier dans la console
+    
+    // Augmenter le compteur global du panier
+    setCartCount(prev => prev + 1);
+    
+    // Mettre à jour le nombre d'articles pour ce produit
+    setCartItems(prev => {
+      const newItems = { ...prev };
+      if (newItems[cardId]) {
+        newItems[cardId] = newItems[cardId] + 1;
+      } else {
+        newItems[cardId] = 1;
+      }
+      return newItems;
+    });
+    
+    // Afficher la notification
+    setNotificationMessage(`${cardTitle} a été ajouté au panier!`);
+    setShowNotification(true);
+    
+    // Masquer la notification après 3 secondes
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 3000);
   };
 
   const getCardClassName = (index) => {
@@ -67,8 +95,21 @@ export default function CardFlow() {
 
   return (
     <div className="carousel-container">
+      {showNotification && (
+        <div className="notification-wrapper">
+          <div className="notification">
+            {notificationMessage}
+          </div>
+        </div>
+      )}
+      
       <div className="carousel-inner">
-        <h2 className="carousel-title">Parties de monstres</h2>
+        <div className="header-with-cart">
+          <h2 className="carousel-title">Parties de monstres</h2>
+          <div className="cart-icon">
+            🛒 <span className="cart-count">{cartCount}</span>
+          </div>
+        </div>
 
         <div className="carousel-perspective">
           <div className="carousel-background"
@@ -94,18 +135,11 @@ export default function CardFlow() {
                     <p className="card-description">{card.description}</p>
                     <div className="card-actions">
                       <button className="card-button">Voir détails</button>
-                      <button className="cart-button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleAddToCart(card.id);
-                        }}
-                        aria-label="Ajouter au panier"
+                      <button 
+                        className="cart-button"
+                        onClick={() => addToCart(card.id, card.title)}
                       >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <circle cx="9" cy="21" r="1"></circle>
-                          <circle cx="20" cy="21" r="1"></circle>
-                          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
+                        🛒 {cartItems[card.id] ? <span className="item-count">{cartItems[card.id]}</span> : ""}
                       </button>
                     </div>
                   </div>
@@ -115,34 +149,18 @@ export default function CardFlow() {
           </div>
 
           <button onClick={goToPrevious} className="nav-button prev-button" aria-label="Précédent" disabled={isAnimating}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M15 18l-6-6 6-6" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
           </button>
+
           <button onClick={goToNext} className="nav-button next-button" aria-label="Suivant" disabled={isAnimating}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M9 18l6-6-6-6" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
           </button>
         </div>
-
-              {/* Indicateurs numérotés */}
-        <div className="carousel-indicators numbered">
-          {/* {cards.map((_, index) => (
-            // <button
-            //   key={index}
-            //   className={`indicator ${index === currentIndex ? 'active' : ''}`}
-            //   onClick={() => {
-            //     if (!isAnimating) {
-            //       setIsAnimating(true);
-            //       setCurrentIndex(index);
-            //       setTimeout(() => setIsAnimating(false), 500);
-            //     }
-            //   }}
-            //   aria-label={`Aller à la carte ${index + 1}`}
-            // >
-            //   {index + 1}
-            // </button>
-          ))} */}
-        </div>
-
       </div>
     </div>
   );
-}
+};

@@ -1,15 +1,21 @@
-$primary: #443627 
+// Variables de couleur
+$primary: #443627
 $secondary: #D98324
 $tertiary: #EFDCAB
 $quarternary: #F2F6D0
 
-@font-face 
-   font-family: 'god-of-war'
-   src: url("./(fonts)/GodOfWar.ttf") format("truetype")
-    
-@import ./node_modules/bootstrap/scss/bootstrap.scss
+$hover-color: darken($primary, 10%)
+$secondary-hover: darken($secondary, 10%)
 
-// Applique un effet de hover foncé sur les boutons et liens
+// Font
+@font-face
+  font-family: 'god-of-war'
+  src: url("./(fonts)/GodOfWar.ttf") format("truetype")
+
+// Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap.scss'
+
+// Boutons personnalisés
 .custom-btn
   background-color: $secondary
   color: #fff
@@ -17,34 +23,40 @@ $quarternary: #F2F6D0
   font-weight: bold
   font-family: god-of-war
   transition: all 0.3s ease-in-out
-  &:hover
-    background-color: darken($secondary, 10%) // Plus foncé avec un effet subtil
-    transform: translateY(-3px) // Effet de mouvement léger pour un effet dynamique
 
+  &:hover
+    background-color: $secondary-hover
+    transform: translateY(-3px)
+
+// Inputs personnalisés
 .custom-input
   border-radius: 30px
   background-color: $quarternary
   border: 1px solid $secondary
   transition: border-color 0.3s ease-in-out
+
   &:focus
     border-color: $primary
     box-shadow: 0 0 5px 2px rgba($primary, 0.2)
 
-// Navbar background et texte
+// Navbar
 .navbar
   background-color: $tertiary
+
   .navbar-brand
     color: $primary
+
     &:hover
-      color: darken($primary, 10%)
+      color: $hover-color
 
 .nav-item .btn
   transition: all 0.3s ease-in-out
-  &:hover
-    background-color: darken($secondary, 10%)
-    transform: translateY(-3px) // Animation de l'élément survolé
-// Utilisation des couleurs et typographies définies dans ton fichier SASS
 
+  &:hover
+    background-color: $secondary-hover
+    transform: translateY(-3px)
+
+// Réseaux sociaux
 .socialMedia
   font-size: 2em
   color: $primary
@@ -52,8 +64,8 @@ $quarternary: #F2F6D0
   cursor: pointer
 
   &:hover
-    color: darken($primary, 15%) // Changer la couleur au survol pour un effet de fondu
-    transform: scale(1.1) // Zoom léger pour un effet de profondeur
+    color: darken($primary, 15%)
+    transform: scale(1.1)
 
 .custom-icon
   padding: 0.5rem
@@ -62,17 +74,20 @@ $quarternary: #F2F6D0
   transition: background-color 0.3s ease, transform 0.3s ease
 
   &:hover
-    background-color: $secondary // Changer l'arrière-plan au survol
-    transform: translateY(-5px) // Déplacement léger pour un effet moderne
+    background-color: $secondary
+    transform: translateY(-5px)
 
+// Footer
 footer
   background-color: $tertiary
   padding: 2rem 0
+
   .text-dark
     color: $primary
 
   .container-fluid
     padding: 0
+
     .text-center
       font-family: god-of-war
       color: $primary
@@ -85,3 +100,127 @@ footer
 .icons
   font-size: 1.5em
   padding: 1rem
+
+// Connexion
+.connexion-container
+  background-image: url('/mhco.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  height: 80vh
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0
+  padding: 0
+  position: relative
+
+.connexion-card
+  background-color: rgba(239, 220, 171, 0.9)
+  border-radius: 10px
+  padding: 1.5rem
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4)
+  max-width: 350px
+  width: 90%
+  max-height: 70vh
+  display: flex
+  flex-direction: column
+
+  .title
+    font-family: 'GodOfWar', sans-serif
+    text-align: center
+    margin-bottom: 0.8rem
+    color: $primary
+    font-size: 1.8rem
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+    letter-spacing: 1px
+
+  form
+    display: flex
+    flex-direction: column
+    flex: 1
+
+  .input-container
+    margin-bottom: 0.7rem
+    width: 100%
+
+  .custom-input
+    width: 100%
+    padding: 0.6rem
+    border: 1px solid $secondary
+    border-radius: 25px
+    background-color: rgba(255, 255, 255, 0.8)
+    color: $primary
+    font-size: 0.95rem
+    transition: all 0.3s ease
+
+    &:focus
+      outline: none
+      border-color: $hover-color
+      box-shadow: 0 0 0 2px rgba($primary, 0.3)
+
+    &::placeholder
+      color: #777
+      opacity: 0.8
+
+  .connect-btn
+    margin-top: 0.8rem
+    width: 100%
+    padding: 0.6rem
+    border: none
+    border-radius: 25px
+    background-color: $primary
+    color: white
+    font-family: 'GodOfWar', sans-serif
+    font-size: 0.95rem
+    letter-spacing: 1px
+    cursor: pointer
+    transition: background-color 0.3s ease
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+
+    &:hover
+      background-color: $hover-color
+
+  .signup-btn
+    margin-top: 0.6rem
+    width: 100%
+    padding: 0.4rem
+    border: none
+    background-color: transparent
+    color: $hover-color
+    font-size: 0.8rem
+    text-align: center
+    cursor: pointer
+    transition: color 0.3s ease
+
+    &:hover
+      color: $primary
+      text-decoration: underline
+
+// Responsive (très petits écrans)
+@media (max-height: 500px)
+  .connexion-container
+    height: 70vh
+
+  .connexion-card
+    padding: 1rem
+
+    .title
+      font-size: 1.5rem
+      margin-bottom: 0.5rem
+
+    .input-container
+      margin-bottom: 0.5rem
+
+    .custom-input
+      padding: 0.4rem
+      font-size: 0.85rem
+
+    .connect-btn
+      padding: 0.4rem
+      margin-top: 0.5rem
+      font-size: 0.85rem
+
+    .signup-btn
+      margin-top: 0.4rem
+      font-size: 0.75rem
