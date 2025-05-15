@@ -3,24 +3,40 @@
 import { Lisu_Bosa } from "next/font/google";
 import Commentaire from "./Commentaire";
 import ListCommentaire from "./listCommentaire";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useParams } from "next/navigation";
-export default function addCommentaire({idItems}) {
+export default function addCommentaire({idItem}) {
+    const [message,setMesage] = useState("");
+    //const { user } = useContext(UserContext);
+    //const userId = user.id;
+    const userId = 1;   
+    
+
 
     //recupere les infos ecrit par l'usager, puis les add a la bd 
     //Permet de refraichir la liste de commentaire
     const [commentaire,setCommentaire] = useState({
+
         date: new Date().toISOString(),
         titre: "",
         contenu: "",
-        idUser: 1,
-        idItems: idItems
+        idUser: userId,
+        idItem: idItem
+
     });
     
-    const [message,setMesage] = useState("");
-    const {itmesId} = useParams();
-    const [rafraichir, setRafraichir] = useState(false);
 
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        if (user) {
+          setCommentaire((prev) => ({
+            ...prev,
+            idUser: user.id
+          }));
+        }
+      }, []);
+      
+    
     //gestion d#e changements dans les champs du formaulaire
     const handleCharge = (e) => {
         
@@ -51,14 +67,20 @@ export default function addCommentaire({idItems}) {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ commentaire, idItems }),
+                body: JSON.stringify(commentaire),
             });
             if (response.ok) {
                 console.log("Commentaire ajouté avec succès");
-                setRafraichir(!rafraichir);
+                setCommentaires((prevCommentaires) => [...prevCommentaires, data]);
+
             }
             const data = await response.json();
-            console.log(data);
+            setCommentaire({
+                ...commentaire,
+                contenu: "",
+                titre: "",
+                date: new Date().toISOString(),
+            });
         } catch (error) {
             console.error(error);
         }
@@ -97,7 +119,7 @@ export default function addCommentaire({idItems}) {
                     
                 </div>
                 <div className="col-6" >
-                    <ListCommentaire idItems={idItems}/>
+                    <ListCommentaire/>
                 </div>
 
         </div>
