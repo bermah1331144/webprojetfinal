@@ -44,12 +44,20 @@ export function openPanierDB() {
   }
   
   // Récupère tous les articles du panier
-export async function recupererPanier() {
+  export async function recupererPanier() {
     const db = await openPanierDB();
     const tx = db.transaction("panier", "readonly");
     const store = tx.objectStore("panier");
-    return store.getAll();
-}
+  
+    const result = await new Promise((resolve, reject) => {
+      const request = store.getAll();
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+  
+    console.log(result);
+    return Array.isArray(result) ? result : [];
+  }
   
   // Supprime un article par son ID
 export async function supprimerArticle(id) {
@@ -67,4 +75,28 @@ export async function viderPanier() {
     const store = tx.objectStore("panier");
     store.clear();
     return tx.complete;
+}
+
+export async function updateQuantite(id, newQuantite) {
+  const db = await openPanierDB();
+  const tx = db.transaction("panier", "readwrite");
+  const store = tx.objectStore("panier");
+
+  const item = await new Promise((resolve, reject) => {
+    const request = store.get(id);
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+
+  if (!item) return;
+
+  item.quantite = newQuantite;
+
+  await new Promise((resolve, reject) => {
+    const request = store.put(item);
+    request.onsuccess = () => resolve();
+    request.onerror = () => reject(request.error);
+  });
+
+  return true;
 }
