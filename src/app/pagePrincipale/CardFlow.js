@@ -11,6 +11,7 @@ export default function CardFlow() {
   const [bgIndex, setBgIndex] = useState(0);
   const [notificationMessage, setNotificationMessage] = useState('');
   const [showNotification, setShowNotification] = useState(false);
+  const [search, setSearch] = useState("")
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -52,7 +53,6 @@ export default function CardFlow() {
   };
 
   const addToCart = (item) => {
-    console.log(item);
   
     ajouterOuMettreAJourArticle(item);
 
@@ -69,17 +69,19 @@ export default function CardFlow() {
     if (relativeIndex === totalCards - 2) return 'card-far-left';
     return 'card-hidden';
   };
-  console.log(items);
   return (
     <div className="carousel-container">
       <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => setShowNotification(false)} />
       
       <div className="carousel-inner">
-        <div className="header-with-cart">
-          <h2 className="carousel-title">Parties de monstres</h2>
-          <div className="cart-icon">
-            🛒
-          </div>
+        <div className="header-with-cart row justify-content-end">
+          <h2 className="carousel-title col-12">Parties de monstres</h2>
+          <form className="col-3 row justify-content-center" role="search" onSubmit={(e) => e.preventDefault()}>
+            <div className="col-8">
+              <input className="form-control custom-input py-2" type="search" placeholder="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
+            </div>
+            <button className="btn col-3" type="submit"><i className="bi bi-search custom-btn icons"></i></button>
+          </form>
         </div>
 
         <div className="carousel-perspective">

@@ -13,7 +13,7 @@ export default function PanierItem({ item, onQuantiteChange }) {
             <div className='row align-items-center'>
                 <p className='col-12 col-md-11'><strong>Prix : </strong>{item.prixVente}$</p>
                 <div className="quantite-controle col-12 col-md-1 justify-content-md-end mb-3">
-                    <button onClick={() => onQuantiteChange(item.id, item.quantite - 1)} disabled={item.quantite <= 1}>-</button>
+                    <button onClick={() => onQuantiteChange(item.id, item.quantite - 1)}>-</button>
                     <span>{item.quantite}</span>
                     <button onClick={() => onQuantiteChange(item.id, item.quantite + 1)}>+</button>
                 </div>

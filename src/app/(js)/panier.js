@@ -54,49 +54,60 @@ export function openPanierDB() {
       request.onsuccess = () => resolve(request.result);
       request.onerror = () => reject(request.error);
     });
-  
-    console.log(result);
+    
     return Array.isArray(result) ? result : [];
   }
   
   // Supprime un article par son ID
-export async function supprimerArticle(id) {
-    const db = await openPanierDB();
-    const tx = db.transaction("panier", "readwrite");
-    const store = tx.objectStore("panier");
-    store.delete(id);
-    return tx.complete;
-}
-  
   // Vide complètement le panier
-export async function viderPanier() {
+  export async function viderPanier() {
     const db = await openPanierDB();
     const tx = db.transaction("panier", "readwrite");
     const store = tx.objectStore("panier");
     store.clear();
     return tx.complete;
-}
-
+  }
+  
+  export async function supprimerArticle(id) {
+      const db = await openPanierDB();
+      const tx = db.transaction("panier", "readwrite");
+      const store = tx.objectStore("panier");
+      store.delete(id);
+      return tx.complete;
+  }
+  
 export async function updateQuantite(id, newQuantite) {
   const db = await openPanierDB();
   const tx = db.transaction("panier", "readwrite");
   const store = tx.objectStore("panier");
-
+  
   const item = await new Promise((resolve, reject) => {
     const request = store.get(id);
     request.onsuccess = () => resolve(request.result);
     request.onerror = () => reject(request.error);
   });
-
+  
   if (!item) return;
+  console.log(newQuantite);
+  
+  if (newQuantite == 0) {
+    console.log("Suppression de l'article");
+    await new Promise((resolve, reject) => {
+      const request = store.delete(id);
+      request.onsuccess = () => resolve();
+      request.onerror = () => reject(request.error);
+    });
+  }
+  else {
+    console.log("Mise à jour de la quantité");
+    // Sinon, mettre à jour la quantité
+    item.quantite = newQuantite;
 
-  item.quantite = newQuantite;
-
-  await new Promise((resolve, reject) => {
-    const request = store.put(item);
-    request.onsuccess = () => resolve();
-    request.onerror = () => reject(request.error);
-  });
-
+    await new Promise((resolve, reject) => {
+      const request = store.put(item);
+      request.onsuccess = () => resolve();
+      request.onerror = () => reject(request.error);
+    });
+  }
   return true;
 }

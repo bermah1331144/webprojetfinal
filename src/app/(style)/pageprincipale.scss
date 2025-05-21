@@ -773,3 +773,8 @@ $transition-speed: 500ms;
   margin-left: 5px;
   display: inline-block;
 }
+
+.header-with-cart {
+  position: relative;
+  z-index: 2;
+}
