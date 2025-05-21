@@ -9,12 +9,12 @@ export default function Inscription() {
 
     //gestion des utilisateurs
     const [utilisateur, setUtilisateur] = useState({
-        Nom: "",
-        Prenom: "",
-        Pseudo: "",
-        Email: "",
-        Password: "",
-        ConfirmerPassword: "",
+        nom: "",
+        prenom: "",
+        pseudo: "",
+        email: "",
+        password: "",
+        confirmerPassword: "",
         roleId: "2"
     });
 
@@ -33,7 +33,7 @@ export default function Inscription() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if(!utilisateur.Nom || !utilisateur.Prenom || !utilisateur.Pseudo || !utilisateur.Email || !utilisateur.Password || !utilisateur.ConfirmerPassword){
+        if(!utilisateur.nom || !utilisateur.prenom || !utilisateur.pseudo || !utilisateur.email || !utilisateur.password || !utilisateur.confirmerPassword){
             setMessage("Veuillez remplir tous les champs");
             return ;
         }
@@ -55,12 +55,12 @@ export default function Inscription() {
             setMessage("Utilisateur créé:", data);
 
             setUtilisateur({
-                Nom: "",
-                Prenom: "",
-                Pseudo: "",
-                Email: "",
-                Password: "",
-                ConfirmerPassword: "",
+                nom: "",
+                prenom: "",
+                pseudo: "",
+                email: "",
+                password: "",
+                confirmerPassword: "",
                 roleId: "2"
             });
 
@@ -101,7 +101,7 @@ export default function Inscription() {
                                     className="form-control" 
                                     id="Prenom" 
                                     name="Prenom"
-                                    value={utilisateur.Prenom}
+                                    value={utilisateur.prenom}
                                     onChange={handleCharge}
                                     required
                                     
@@ -114,7 +114,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Pseudo"
                                     name="Pseudo"
-                                    value={utilisateur.Pseudo}
+                                    value={utilisateur.pseudo}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -126,7 +126,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Email"
                                     name="Email"
-                                    value={utilisateur.Email}
+                                    value={utilisateur.email}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -139,7 +139,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="Password"
                                     name="Password"
-                                    value={utilisateur.Password}
+                                    value={utilisateur.password}
                                     onChange={handleCharge}
                                     required
                                 />
@@ -151,7 +151,7 @@ export default function Inscription() {
                                     className="form-control"
                                     id="ConfirmerPassword"
                                     name="ConfirmerPassword"
-                                    value={utilisateur.ConfirmerPassword}
+                                    value={utilisateur.confirmerPassword}
                                     onChange={handleCharge}
                                     required
                                     />

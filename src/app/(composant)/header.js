@@ -2,12 +2,45 @@
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 import '../(style)/style.sass'
+import { isAuthenticated, isAdmin, logout, getUserData } from './auth'
 
 export default function Navbar() {
   const [search, setSearch] = useState("")
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isAdminUser, setIsAdminUser] = useState(false)
+  const [userName, setUserName] = useState('')
   const [showDropdown, setShowDropdown] = useState(false)
   const dropdownRef = useRef(null)
+
+  // Vérifier l'état d'authentification au chargement
+  useEffect(() => {
+    checkAuthStatus();
+    
+    // Ajouter un event listener pour surveiller les changements dans localStorage
+    window.addEventListener('storage', handleStorageChange);
+    
+    return () => {
+      // Nettoyage
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
+
+  function checkAuthStatus() {
+    const authenticated = isAuthenticated();
+    const adminStatus = isAdmin();
+    const userData = getUserData();
+    
+    setIsLoggedIn(authenticated);
+    setIsAdminUser(adminStatus);
+    setUserName(userData?.name || 'Utilisateur');
+  }
+
+  function handleStorageChange(e) {
+    // Mettre à jour l'état si le localStorage change
+    if (e.key === 'userAuth') {
+      checkAuthStatus();
+    }
+  }
 
   const toggleDropdown = () => setShowDropdown(!showDropdown)
 
@@ -21,14 +54,12 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
-  const handleLogin = () => {
-    setIsLoggedIn(true)
-    setShowDropdown(false)
-  }
-
   const handleLogout = () => {
-    setIsLoggedIn(false)
-    setShowDropdown(false)
+    logout();
+    setIsLoggedIn(false);
+    setIsAdminUser(false);
+    setUserName('');
+    setShowDropdown(false);
   }
 
   return (
@@ -49,11 +80,22 @@ export default function Navbar() {
               <li className="nav-item mx-2">
                 <Link href="/" className="btn custom-btn py-2">Accueil</Link>
               </li>
+              
+              {/* Modification ici : affichage conditionnel selon le rôle */}
               <li className="nav-item mx-2">
-                <Link href="/page1" className="btn custom-btn py-2">Link 2</Link>
+                {isAdminUser ? (
+                  <Link href="/admin/ajout-item" className="btn custom-btn py-2">Ajout item</Link>
+                ) : (
+                  <Link href="/page1" className="btn custom-btn py-2">Link 2</Link>
+                )}
               </li>
+              
               <li className="nav-item mx-2">
-                <Link href="/page2" className="btn custom-btn py-2">Link 3</Link>
+                {isAdminUser ? (
+                  <Link href="/admin/modifier-item" className="btn custom-btn py-2">Modifier item</Link>
+                ) : (
+                  <Link href="/page2" className="btn custom-btn py-2">Link 3</Link>
+                )}
               </li>
             </ul>
           </div>
@@ -75,7 +117,7 @@ export default function Navbar() {
                 position: 'absolute',
                 top: '110%',
                 right: 0,
-                backgroundColor: '#EFDCAB', // $tertiary
+                backgroundColor: '#EFDCAB',
                 borderRadius: '10px',
                 minWidth: '220px',
                 zIndex: 9999,
@@ -87,24 +129,34 @@ export default function Navbar() {
                     src="/avatar.png"
                     alt="avatar"
                     className="rounded-circle me-2"
-                    style={{ width: '40px', height: '40px', objectFit: 'cover', border: '2px solid #D98324' }} // $secondary
+                    style={{ width: '40px', height: '40px', objectFit: 'cover', border: '2px solid #D98324' }}
                   />
                   <div>
-                    <div style={{ color: '#443627', fontWeight: 'bold' }}>Utilisateur</div> {/* $primary */}
+                    <div style={{ color: '#443627', fontWeight: 'bold' }}>
+                      {userName} {isAdminUser && '(Admin)'}
+                    </div>
                     <small style={{ color: '#7c4b16' }}>Voir mon profil</small>
                   </div>
                 </div>
 
                 {/* Contenu dynamique */}
                 {!isLoggedIn ? (
-                  <>
-                    <div className="mb-2"><i className="bi bi-shield-lock-fill me-2 text-warning"></i> Confidentialité</div>
+                  <> 
                     <div className="mb-3"><i className="bi bi-universal-access-circle me-2 text-success"></i> Accessibilité</div>
+                    <div className="mb-2"><i className="bi bi-shield-lock-fill me-2 text-warning"></i> Confidentialité</div>
+                   
                     <Link href="/PageConnexion" className="btn custom-btn w-100" onClick={() => setShowDropdown(false)}>Se connecter</Link>
                   </>
                 ) : (
                   <>
                     <Link href="/profil" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Mon profil</Link>
+                    {isAdminUser && (
+                      <div className="mb-2">
+                        <div className="mb-2 mt-2 text-center fw-bold" style={{ color: '#443627' }}>Administration</div>
+                        <Link href="/admin/ajout-item" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Ajout item</Link>
+                        <Link href="/admin/modifier-item" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Modifier item</Link>
+                      </div>
+                    )}
                     <button className="btn btn-danger w-100" onClick={handleLogout}>Se déconnecter</button>
                   </>
                 )}

@@ -3395,75 +3395,15 @@
       "email": "9o6oO@example.com",
       "roleId": "2"
     },
-    {
-      "id": "d844",
-      "Nom": "Bergeron",
-      "Prenom": "Mahelie",
-      "Pseudo": "mahe",
-      "Email": "mahelie.bergeron@gmail.com",
-      "Password": "qwerty123",
-      "ComfirmerPassword": "",
-      "ConfirmerPassword": "qwerty123",
-      "roleId": "2"
-    },
-    {
-      "id": "eeaf",
-      "Nom": "Bergeron",
-      "Prenom": "Mahelie",
-      "Pseudo": "mae",
-      "Email": "mahelie.bergeron@gmail.com",
-      "Password": "qwerty123",
-      "roleId": "2"
-    },
-    {
-      "id": "8716",
-      "Nom": "Bergeron",
-      "Prenom": "Mahelie",
-      "Pseudo": "mahe",
-      "Email": "mahelie.bergeron@gmail.com",
-      "Password": "qwerty123",
-      "ComfirmerPassword": "",
-      "ConfirmerPassword": "qwerty123",
-      "roleId": "2"
-    },
-    {
-      "id": "24d8",
-      "Nom": "Bergeron",
-      "Prenom": "Mahelie",
-      "Pseudo": "mahe",
-      "Email": "mahelie.bergeron@gmail.com",
-      "Password": "qwerty123",
-      "ConfirmerPassword": "qwerty123",
-      "roleId": "2"
-    },
-    {
-      "id": "2055",
-      "Nom": "Bergeron",
-      "Prenom": "Mahelie",
-      "Pseudo": "mae",
-      "Email": "mahelie.bergeron@gmail.com",
-      "Password": "qazwsx123",
-      "ConfirmerPassword": "qazwsx123",
-      "roleId": "2"
-    },
-    {
-      "id": "4107",
-      "Nom": "Bergeron",
-      "Prenom": "Mahelie",
-      "Pseudo": "bergy",
-      "Email": "mahelie.bergeron@gmail.com",
-      "Password": "qwerty",
-      "ConfirmerPassword": "qwerty",
-      "roleId": "2"
-    },
+    
     {
       "id": "a3b3",
-      "Nom": "admin",
-      "Prenom": "admin",
-      "Pseudo": "admin",
-      "Email": "admin@gmail.com",
-      "Password": "Admin123",
-      "ConfirmerPassword": "Admin123",
+      "nom": "admin",
+      "prenom": "admin",
+      "pseudo": "admin",
+      "email": "admin@gmail.com",
+      "password": "Admin123",
+      "confirmerPassword": "Admin123",
       "roleId": "1"
     }
     

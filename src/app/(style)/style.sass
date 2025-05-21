@@ -98,7 +98,7 @@ footer
     min-height: 100%
 // Connexion
 .connexion-container
-  background-image: url('/mhco.jpg')
+  background-image: url('/mhco3.jpg')
   background-size: cover
   background-position: center
   background-repeat: no-repeat
@@ -219,4 +219,35 @@ footer
     .signup-btn
       margin-top: 0.4rem
       font-size: 0.75rem
- 
+
+/* À ajouter à votre fichier style.sass pour gérer l'affichage des messages et styles supplémentaires */
+
+.message 
+  margin: 10px 0
+  padding: 10px
+  border-radius: 4px
+  text-align: center
+  font-weight: 500
+
+
+.error 
+  background-color: rgba(255, 99, 71, 0.1)
+  color: #ff6347
+  border: 1px solid #ff6347
+
+
+.success 
+  background-color: rgba(50, 205, 50, 0.1)
+  color: #32cd32
+  border: 1px solid #32cd32
+
+/* Pour résoudre le problème de l'affichage des @ dans les emails */
+.custom-input 
+  font-family: Arial, sans-serif 
+  -webkit-text-fill-color: inherit
+
+
+/* Style pour le bouton désactivé pendant le chargement */
+.connect-btn:disabled, .signup-btn:disabled 
+  opacity: 0.7
+  cursor: not-allowed
