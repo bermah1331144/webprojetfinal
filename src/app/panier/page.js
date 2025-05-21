@@ -49,7 +49,7 @@ export default function PanierPage() {
         )}
         </div>
 
-        {/* Colonne droite : sommaire */}
+        {/* EN FAIRE UN COMPOSANT A REUTILISER POUR LINTERFACE DE PAYMENT*/}
         <div className="col-12 col-lg-5 mb-4">
           <div className="border border-secondary rounded p-4 sticky-top mt-3 bg-light">
             <h3>Résumé du Panier</h3>
