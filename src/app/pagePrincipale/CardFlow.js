@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import {ajouterOuMettreAJourArticle} from '../(js)/panier';
 import Notification from '../(composant)/notification';
-import {isAuthenticated} from '../(composant)/auth';
 
 export default function CardFlow() {
   const [items, setItems] = useState([]);
@@ -13,7 +12,6 @@ export default function CardFlow() {
   const [notificationMessage, setNotificationMessage] = useState('');
   const [showNotification, setShowNotification] = useState(false);
   const [search, setSearch] = useState("")
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -29,17 +27,15 @@ export default function CardFlow() {
         const source = Array.isArray(data) ? data : data.items;
         setItems(source);
       });
-    
-    setIsLoggedIn(isAuthenticated());
-    setIntervalBg();
   }, []);
 
-  function setIntervalBg() {
+  useEffect(() => {
     const interval = setInterval(() => {
       setBgIndex((prev) => (prev + 1) % backgroundImages.length);
     }, 20000);
     return () => clearInterval(interval);
-  }
+  }, []);
+
   const totalCards = items.length;
 
   const goToPrevious = () => {
@@ -57,11 +53,7 @@ export default function CardFlow() {
   };
 
   const addToCart = (item) => {
-    if(!isLoggedIn){
-      setNotificationMessage(`Vous devez vous connecter pour ajouter un article au panier !`);
-      setShowNotification(true);
-      return
-    }
+  
     ajouterOuMettreAJourArticle(item);
 
     setNotificationMessage(`${item.nom} a été ajouté au panier!`);
@@ -84,7 +76,7 @@ export default function CardFlow() {
       <div className="carousel-inner">
         <div className="header-with-cart row justify-content-end">
           <h2 className="carousel-title col-12">Parties de monstres</h2>
-          <form className="col-12 col-md-6 col-xl-4 row justify-content-center justify-content-md-center" role="search" onSubmit={(e) => e.preventDefault()}>
+          <form className="col-3 row justify-content-center" role="search" onSubmit={(e) => e.preventDefault()}>
             <div className="col-8">
               <input className="form-control custom-input py-2" type="search" placeholder="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
             </div>
@@ -100,8 +92,8 @@ export default function CardFlow() {
               backgroundPosition: 'center',
               transition: 'background-image 1s ease-in-out'
             }}>
-          <div className="grid-pattern"></div>
-        </div>
+            <div className="grid-pattern"></div>
+          </div>
 
           <div className="carousel-stage">
             {items.map((item, index) => (
