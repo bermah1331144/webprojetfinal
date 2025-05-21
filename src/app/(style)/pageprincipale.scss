@@ -734,27 +734,6 @@ $transition-speed: 500ms;
     100% { transform: scale(1); }
   }
 }
-.notification-container {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  width: 80%;
-  max-width: 400px;
-}
-
-.notification {
-  background-color: #4CAF50;
-  color: white;
-  padding: 15px;
-  margin: 10px 0;
-  text-align: center;
-  border-radius: 4px;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: fadeInOut 3s forwards;
-}
 
 @keyframes fadeInOut {
   0% { opacity: 0; transform: translateY(-20px); }

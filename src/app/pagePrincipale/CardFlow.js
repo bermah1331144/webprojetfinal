@@ -1,16 +1,16 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import {ajouterOuMettreAJourArticle} from '../(js)/panier';
+import Notification from '../(composant)/notification';
 
 export default function CardFlow() {
-  const [cards, setCards] = useState([]);
+  const [items, setItems] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [bgIndex, setBgIndex] = useState(0);
-  const [cartCount, setCartCount] = useState(0);
-  const [cartItems, setCartItems] = useState({});
-  const [showNotification, setShowNotification] = useState(false);
   const [notificationMessage, setNotificationMessage] = useState('');
+  const [showNotification, setShowNotification] = useState(false);
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -24,13 +24,7 @@ export default function CardFlow() {
       .then(res => res.json())
       .then(data => {
         const source = Array.isArray(data) ? data : data.items;
-        const mapped = source.map(item => ({
-          id: item.Id,
-          title: item.Nom,
-          imageUrl: item.imgLien || '/api/placeholder/400/320',
-          description: item.description || `Rareté ${item.Rarity} - Prix: ${item.PrixAchat}z`
-        }));
-        setCards(mapped);
+        setItems(source);
       });
   }, []);
 
@@ -41,7 +35,7 @@ export default function CardFlow() {
     return () => clearInterval(interval);
   }, []);
 
-  const totalCards = cards.length;
+  const totalCards = items.length;
 
   const goToPrevious = () => {
     if (isAnimating) return;
@@ -57,31 +51,13 @@ export default function CardFlow() {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
-  const addToCart = (cardId, cardTitle) => {
-    console.log("Ajout au panier: ", cardId, cardTitle); // Vérifier dans la console
-    
-    // Augmenter le compteur global du panier
-    setCartCount(prev => prev + 1);
-    
-    // Mettre à jour le nombre d'articles pour ce produit
-    setCartItems(prev => {
-      const newItems = { ...prev };
-      if (newItems[cardId]) {
-        newItems[cardId] = newItems[cardId] + 1;
-      } else {
-        newItems[cardId] = 1;
-      }
-      return newItems;
-    });
-    
-    // Afficher la notification
-    setNotificationMessage(`${cardTitle} a été ajouté au panier!`);
+  const addToCart = (item) => {
+    console.log(item);
+  
+    ajouterOuMettreAJourArticle(item);
+
+    setNotificationMessage(`${item.nom} a été ajouté au panier!`);
     setShowNotification(true);
-    
-    // Masquer la notification après 3 secondes
-    setTimeout(() => {
-      setShowNotification(false);
-    }, 3000);
   };
 
   const getCardClassName = (index) => {
@@ -93,22 +69,16 @@ export default function CardFlow() {
     if (relativeIndex === totalCards - 2) return 'card-far-left';
     return 'card-hidden';
   };
-  console.log(cards);
+  console.log(items);
   return (
     <div className="carousel-container">
-      {showNotification && (
-        <div className="notification-wrapper">
-          <div className="notification">
-            {notificationMessage}
-          </div>
-        </div>
-      )}
+      <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => setShowNotification(false)} />
       
       <div className="carousel-inner">
         <div className="header-with-cart">
           <h2 className="carousel-title">Parties de monstres</h2>
           <div className="cart-icon">
-            🛒 <span className="cart-count">{cartCount}</span>
+            🛒
           </div>
         </div>
 
@@ -124,25 +94,27 @@ export default function CardFlow() {
           </div>
 
           <div className="carousel-stage">
-            {cards.map((card, index) => (
-              <div key={card.id} className={`carousel-card ${getCardClassName(index)}`}>
+            {items.map((item, index) => (
+              <div key={item.id} className={`carousel-card ${getCardClassName(index)}`}>
                 <div className="card-content">
                   <div className="card-image">
-                    <img src={card.imageUrl} alt={card.title} />
+                    <img src={item.imgLien} alt={item.title} />
                     <div className="image-overlay"></div>
                   </div>
                   <div className="card-body">
-                    <h3 className="card-title">{card.title}</h3>
-                    <p className="card-description">{card.description}</p>
+                    <h3 className="card-title">{item.title}</h3>
+                    <p className="card-description">{item.description}</p>
+                    <p className='card-description fw-bold'>Rareté: {item.rarity}</p>
+                    <p className='card-description fw-bold'>Prix: {item.prixAchat}$</p>
                     <div className="card-actions">
-                      <Link href={`/details/${card.id}`} className="card-button">
+                      <Link href={`/details/${item.id}`} className="card-button">
                         Voir détails
                       </Link>
                       <button 
                         className="cart-button"
-                        onClick={() => addToCart(card.id, card.title)}
+                        onClick={() => addToCart(item)}
                       >
-                        🛒 {cartItems[card.id] ? <span className="item-count">{cartItems[card.id]}</span> : ""}
+                        🛒 
                       </button>
                     </div>
                   </div>

@@ -6,17 +6,35 @@ body
     margin-bottom: 20px
 
 #afficheProduit
-    background-color: rgba(217, 131, 36, 0.70)
     border-radius: 10px
     
 
 
-#backgroundAfficheProduit
-    background-image: url('/imageFondProduit.jpg')
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    min-height: 100vh
+#backgroundAfficheProduit 
+  position: relative
+  background-image: url('/imageFondProduit.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  min-height: 100vh
+  overflow: hidden
+
+
+#backgroundAfficheProduit::before
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(217, 131, 36, 0.70)
+  z-index: 1
+
+
+/* Pour que le contenu ne soit pas masqué par l'overlay */
+#backgroundAfficheProduit > * 
+  position: relative
+  z-index: 2
 
 #boiteProduit
     
