@@ -23,7 +23,7 @@ export function openPanierDB() {
   
     // Vérifie si l'article existe déjà
     const existingItem = await new Promise((resolve, reject) => {
-      const request = store.get(article.id);
+      const request = store.get(parseInt(article.id));
       request.onsuccess = () => resolve(request.result);
       request.onerror = () => reject(request.error);
     });

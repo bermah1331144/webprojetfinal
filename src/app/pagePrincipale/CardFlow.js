@@ -76,7 +76,7 @@ export default function CardFlow() {
       <div className="carousel-inner">
         <div className="header-with-cart row justify-content-end">
           <h2 className="carousel-title col-12">Parties de monstres</h2>
-          <form className="col-3 row justify-content-center" role="search" onSubmit={(e) => e.preventDefault()}>
+          <form className="col-12 col-md-6 col-xl-4 row justify-content-center justify-content-md-center" role="search" onSubmit={(e) => e.preventDefault()}>
             <div className="col-8">
               <input className="form-control custom-input py-2" type="search" placeholder="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
             </div>
