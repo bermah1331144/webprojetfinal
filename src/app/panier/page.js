@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import PanierItem from './panierItem';
 import { recupererPanier, updateQuantite } from '../(js)/panier';
 import '../(style)/panier.scss';
+import Link from 'next/link';
+import DescriptionCommande from '../(composant)/descriptionCommande';
 
 export default function PanierPage() {
   const [articles, setArticles] = useState([]);
@@ -19,15 +21,9 @@ export default function PanierPage() {
   };
 
   const handleQuantiteChange = async (id, newQuantite) => {
-    if (newQuantite < 1) return;
     await updateQuantite(id, newQuantite);
     chargerPanier();
   };
-  
-  const totalArticles = articles.reduce((acc, item) => acc + item.quantite, 0);
-  const totalPrixHT = articles.reduce((acc, item) => acc + item.prixVente * item.quantite, 0);
-  const TVQ = totalPrixHT * 0.0975;
-  const TPS = totalPrixHT * 0.05;
 
   return (
     <div className="container h-80">
@@ -60,20 +56,8 @@ export default function PanierPage() {
                     <p className='col-3 border border-primary m-0 p-0 text-end pe-1'>{(item.prixVente * item.quantite).toFixed(2)} $</p>
                 </div>
             ))}
-            <div className="row">
-                <p className='col-8 border border-primary m-0 p-0 ps-1'><strong>Sous total</strong></p>
-                <p className='col-1 border border-primary m-0 p-0 text-end pe-1'>{totalArticles}</p>
-                <p className='col-3 border border-primary m-0 p-0 text-end pe-1'>{totalPrixHT} $</p>
-                <p className='col-9 border border-primary m-0 p-0 ps-1'><strong>TVQ</strong></p>
-                <p className='col-3 border border-primary m-0 p-0 text-end pe-1'>{TVQ.toFixed(2)} $</p>
-                <p className='col-9 border border-primary m-0 p-0 ps-1'><strong>TPS</strong></p>
-                <p className='col-3 border border-primary m-0 p-0 text-end pe-1'>{TPS.toFixed(2)} $</p>
-                <p className='col-9 border border-primary m-0 p-0 ps-1'><strong>Total</strong></p>
-                <p className='col-3 border border-primary m-0 p-0 text-end pe-1'><strong>{(totalPrixHT + TVQ + TPS).toFixed(2)} $</strong></p>
-            </div>
-            <button className="btn btn-primary w-100 mt-3">
-              Valider la commande
-            </button>
+            <DescriptionCommande articles={articles}/>
+            <Link href="/payment"  className="btn btn-primary w-100 mt-3">Passer commande</Link>
           </div>
         </div>
       </div>

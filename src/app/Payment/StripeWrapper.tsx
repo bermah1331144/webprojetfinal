@@ -12,23 +12,26 @@ const appearance: Appearance = {
     theme: 'stripe'
   };
 
-export default function StripeWrapper( ) {
+export default function StripeWrapper({prixTotal}) {
   const [clientSecret, setClientSecret] = useState<string | null>(null);
 
   useEffect(() => {
     const createIntent = async () => {
       try {
-        const res = await axios.post('/api/create-payment-intent', {
-          data: { amount: 89 },
-        });
-        setClientSecret(res.data); // 🔁 Assure-toi que c'est une string
+        const montant = Math.round(prixTotal * 100);
+        if(montant > 0){
+          const res = await axios.post('/api/create-payment-intent', {
+            data: { amount: montant},
+          });
+          setClientSecret(res.data); // 🔁 Assure-toi que c'est une string
+        }
       } catch (err) {
         console.error('Erreur création paiement :', err);
       }
     };
 
     createIntent();
-  }, []);
+  }, [prixTotal]);
 
   if (!clientSecret) return <p>Chargement du paiement...</p>;
 

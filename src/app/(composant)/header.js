@@ -100,13 +100,6 @@ export default function Navbar() {
             </ul>
           </div>
 
-          <form className="d-lg-flex me-3 col-3 row justify-content-center d-none" role="search" onSubmit={(e) => e.preventDefault()}>
-            <div className="col-8">
-              <input className="form-control custom-input py-2" type="search" placeholder="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
-            </div>
-            <button className="btn col-3" type="submit"><i className="bi bi-search custom-btn icons"></i></button>
-          </form>
-
           <div className="position-relative col-1 d-flex justify-content-end" ref={dropdownRef}>
             <div className="btn" onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
               <i className="bi bi-person-circle fs-4 custom-btn icons"></i>
