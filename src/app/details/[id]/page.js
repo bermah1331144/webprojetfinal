@@ -43,12 +43,13 @@ export default function pageDetails({params}){
     const imageLien = item.imgLien;
 
     return<>
-            <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => setShowNotification(false)} />
+        <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => setShowNotification(false)} />
         <div id="backgroundAfficheProduit" className="pt-5 py-5">
             <div id="afficheProduit" className="container-fluid">
                 <div id ="boiteProduit" >  
                     <h1>{item.Nom}</h1>
                     <div className="row justify-content-center ">
+                        <h1>{item.nom}</h1>
                         <img src={imageLien} alt="Produit" className="img-fluid col-md-3"/>
                         <div className="col-12col-md-6 justify-content-center text-center">   
                             <h2>Description item</h2>
