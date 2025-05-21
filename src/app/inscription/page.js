@@ -14,7 +14,8 @@ export default function Inscription() {
         Pseudo: "",
         Email: "",
         Password: "",
-        ConfirmerPassword: ""   
+        ConfirmerPassword: "",
+        roleId: "2"
     });
 
     //gestion des changements dans les champs du formaulaire
@@ -59,8 +60,8 @@ export default function Inscription() {
                 Pseudo: "",
                 Email: "",
                 Password: "",
-                ConfirmerPassword: ""   
-
+                ConfirmerPassword: "",
+                roleId: "2"
             });
 
             setMessage("Inscription réussie!");

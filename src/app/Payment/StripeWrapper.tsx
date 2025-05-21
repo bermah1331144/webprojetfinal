@@ -12,7 +12,7 @@ const appearance: Appearance = {
     theme: 'stripe'
   };
 
-export default function StripeWrapper() {
+export default function StripeWrapper( ) {
   const [clientSecret, setClientSecret] = useState<string | null>(null);
 
   useEffect(() => {

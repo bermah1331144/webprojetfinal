@@ -3727,7 +3727,8 @@
       "prenom": "Dupont",
       "pseudo": "Jdupont",
       "password": "azerty",
-      "email": "9o6oO@example.com"
+      "email": "9o6oO@example.com",
+      "roleId": "2"
     },
     {
       "id": "d844",
@@ -3737,7 +3738,8 @@
       "Email": "mahelie.bergeron@gmail.com",
       "Password": "qwerty123",
       "ComfirmerPassword": "",
-      "ConfirmerPassword": "qwerty123"
+      "ConfirmerPassword": "qwerty123",
+      "roleId": "2"
     },
     {
       "id": "eeaf",
@@ -3745,7 +3747,8 @@
       "Prenom": "Mahelie",
       "Pseudo": "mae",
       "Email": "mahelie.bergeron@gmail.com",
-      "Password": "qwerty123"
+      "Password": "qwerty123",
+      "roleId": "2"
     },
     {
       "id": "8716",
@@ -3755,7 +3758,8 @@
       "Email": "mahelie.bergeron@gmail.com",
       "Password": "qwerty123",
       "ComfirmerPassword": "",
-      "ConfirmerPassword": "qwerty123"
+      "ConfirmerPassword": "qwerty123",
+      "roleId": "2"
     },
     {
       "id": "24d8",
@@ -3764,7 +3768,8 @@
       "Pseudo": "mahe",
       "Email": "mahelie.bergeron@gmail.com",
       "Password": "qwerty123",
-      "ConfirmerPassword": "qwerty123"
+      "ConfirmerPassword": "qwerty123",
+      "roleId": "2"
     },
     {
       "id": "2055",
@@ -3773,7 +3778,8 @@
       "Pseudo": "mae",
       "Email": "mahelie.bergeron@gmail.com",
       "Password": "qazwsx123",
-      "ConfirmerPassword": "qazwsx123"
+      "ConfirmerPassword": "qazwsx123",
+      "roleId": "2"
     },
     {
       "id": "4107",
@@ -3782,7 +3788,29 @@
       "Pseudo": "bergy",
       "Email": "mahelie.bergeron@gmail.com",
       "Password": "qwerty",
-      "ConfirmerPassword": "qwerty"
+      "ConfirmerPassword": "qwerty",
+      "roleId": "2"
+    },
+    {
+      "id": "a3b3",
+      "Nom": "admin",
+      "Prenom": "admin",
+      "Pseudo": "admin",
+      "Email": "admin@gmail.com",
+      "Password": "Admin123",
+      "ConfirmerPassword": "Admin123",
+      "roleId": "1"
+    }
+    
+  ],
+  "role": [
+    {
+      "id": "1",
+      "nom": "admin"
+    },
+    {
+      "id": "2",
+      "nom": "user"
     }
   ]
 }
