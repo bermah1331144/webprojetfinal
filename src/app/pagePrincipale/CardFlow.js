@@ -93,7 +93,7 @@ export default function CardFlow() {
     if (relativeIndex === totalCards - 2) return 'card-far-left';
     return 'card-hidden';
   };
-
+  console.log(cards);
   return (
     <div className="carousel-container">
       {showNotification && (
