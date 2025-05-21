@@ -86,7 +86,7 @@ export default function Navbar() {
                 {isAdminUser ? (
                   <Link href="/admin/ajout-item" className="btn custom-btn py-2">Ajout item</Link>
                 ) : (
-                  <Link href="/page1" className="btn custom-btn py-2">Link 2</Link>
+                  <Link href="/page1" className="btn custom-btn py-2">À venir</Link>
                 )}
               </li>
               
@@ -94,7 +94,7 @@ export default function Navbar() {
                 {isAdminUser ? (
                   <Link href="/admin/modifier-item" className="btn custom-btn py-2">Modifier item</Link>
                 ) : (
-                  <Link href="/page2" className="btn custom-btn py-2">Link 3</Link>
+                  <Link href="/page2" className="btn custom-btn py-2">À venir</Link>
                 )}
               </li>
             </ul>
@@ -143,13 +143,6 @@ export default function Navbar() {
                 ) : (
                   <>
                     <Link href="/profil" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Mon profil</Link>
-                    {isAdminUser && (
-                      <div className="mb-2">
-                        <div className="mb-2 mt-2 text-center fw-bold" style={{ color: '#443627' }}>Administration</div>
-                        <Link href="/admin/ajout-item" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Ajout item</Link>
-                        <Link href="/admin/modifier-item" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Modifier item</Link>
-                      </div>
-                    )}
                     <button className="btn btn-danger w-100" onClick={handleLogout}>Se déconnecter</button>
                   </>
                 )}

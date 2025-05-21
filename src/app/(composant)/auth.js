@@ -27,18 +27,19 @@ export function isAuthenticated() {
  */
 export function isAdmin() {
   if (typeof window === 'undefined') return false;
-  
+
   const userAuth = localStorage.getItem('userAuth');
   if (!userAuth) return false;
-  
+
   try {
     const userData = JSON.parse(userAuth);
-    return userData.isLoggedIn && userData.roleId === 2; // roleId 2 pour admin
+    return userData.isLoggedIn && userData.roleId === 1; // 👈 Admin = roleId 1
   } catch (error) {
     console.error('Erreur lors de la vérification du rôle admin:', error);
     return false;
   }
 }
+
 
 /**
  * Obtient les données de l'utilisateur connecté
