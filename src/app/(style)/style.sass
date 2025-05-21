@@ -96,3 +96,171 @@ footer
 
   .min-h-100
     min-height: 100%
+<<<<<<< Updated upstream
+=======
+// Connexion
+.connexion-container
+  background-image: url('/mhco3.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  height: 80vh
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0
+  padding: 0
+  position: relative
+ 
+.connexion-card
+  background-color: rgba(239, 220, 171, 0.9)
+  border-radius: 10px
+  padding: 1.5rem
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4)
+  max-width: 350px
+  width: 90%
+  max-height: 70vh
+  display: flex
+  flex-direction: column
+ 
+  .title
+    font-family: 'GodOfWar', sans-serif
+    text-align: center
+    margin-bottom: 0.8rem
+    color: $primary
+    font-size: 1.8rem
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+    letter-spacing: 1px
+ 
+  form
+    display: flex
+    flex-direction: column
+    flex: 1
+ 
+  .input-container
+    margin-bottom: 0.7rem
+    width: 100%
+ 
+  .custom-input
+    width: 100%
+    padding: 0.6rem
+    border: 1px solid $secondary
+    border-radius: 25px
+    background-color: rgba(255, 255, 255, 0.8)
+    color: $primary
+    font-size: 0.95rem
+    transition: all 0.3s ease
+ 
+    &:focus
+      outline: none
+      border-color:  #5e3a14
+      box-shadow: 0 0 0 2px rgba($primary, 0.3)
+ 
+    &::placeholder
+      color: #777
+      opacity: 0.8
+ 
+  .connect-btn
+    margin-top: 0.8rem
+    width: 100%
+    padding: 0.6rem
+    border: none
+    border-radius: 25px
+    background-color: $primary
+    color: white
+    font-family: 'GodOfWar', sans-serif
+    font-size: 0.95rem
+    letter-spacing: 1px
+    cursor: pointer
+    transition: background-color 0.3s ease
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+ 
+    &:hover
+      background-color: #5e3a14
+ 
+  .signup-btn
+    margin-top: 0.6rem
+    width: 100%
+    padding: 0.4rem
+    border: none
+    background-color: transparent
+    color: #5e3a14
+    font-size: 0.8rem
+    text-align: center
+    cursor: pointer
+    transition: color 0.3s ease
+ 
+    &:hover
+      color: $primary
+      text-decoration: underline
+ 
+// Responsive (très petits écrans)
+@media (max-height: 500px)
+  .connexion-container
+    height: 70vh
+ 
+  .connexion-card
+    padding: 1rem
+ 
+    .title
+      font-size: 1.5rem
+      margin-bottom: 0.5rem
+ 
+    .input-container
+      margin-bottom: 0.5rem
+ 
+    .custom-input
+      padding: 0.4rem
+      font-size: 0.85rem
+ 
+    .connect-btn
+      padding: 0.4rem
+      margin-top: 0.5rem
+      font-size: 0.85rem
+ 
+    .signup-btn
+      margin-top: 0.4rem
+      font-size: 0.75rem
+
+/* À ajouter à votre fichier style.sass pour gérer l'affichage des messages et styles supplémentaires */
+
+.message 
+  margin: 10px 0
+  padding: 10px
+  border-radius: 4px
+  text-align: center
+  font-weight: 500
+
+
+.error 
+  background-color: rgba(255, 99, 71, 0.1)
+  color: #ff6347
+  border: 1px solid #ff6347
+
+
+.success 
+  background-color: rgba(50, 205, 50, 0.1)
+  color: #32cd32
+  border: 1px solid #32cd32
+
+/* Pour résoudre le problème de l'affichage des @ dans les emails */
+.custom-input 
+  font-family: Arial, sans-serif 
+  -webkit-text-fill-color: inherit
+
+
+/* Style pour le bouton désactivé pendant le chargement */
+.connect-btn:disabled, .signup-btn:disabled 
+  opacity: 0.7
+  cursor: not-allowed
+
+.badge
+  font-size: 0.75rem
+  padding: 0.4em 0.6em
+  z-index: 1
+
+  .badge-count
+  font-size: 0.7rem
+  padding: 0.3em 0.5em
+  z-index: 10
+>>>>>>> Stashed changes

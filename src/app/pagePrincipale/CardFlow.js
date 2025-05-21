@@ -53,7 +53,8 @@ export default function CardFlow() {
   };
 
   const addToCart = (item) => {
-  
+    
+    console.log(item);
     ajouterOuMettreAJourArticle(item);
 
     setNotificationMessage(`${item.nom} a été ajouté au panier!`);
