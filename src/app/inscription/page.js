@@ -3,176 +3,82 @@
 import { useState } from "react";
 import './style.sass';
 import '../(style)/style.sass';
+import bcrypt from 'bcryptjs';
 export default function Inscription() {
     //gestion des messages
     const [message, setMessage] = useState("");
-
-    //gestion des utilisateurs
-    const [utilisateur, setUtilisateur] = useState({
-        nom: "",
-        prenom: "",
-        pseudo: "",
-        email: "",
-        password: "",
-        confirmerPassword: "",
-        roleId: "2"
-    });
-
-    //gestion des changements dans les champs du formaulaire
-    const handleCharge = (e) => {
-        setUtilisateur({
-            ...utilisateur,
-            [e.target.name]: e.target.value
-        });
-    };
-
-
+    const [nom, setNom] = useState("");
+    const [prenom, setPrenom] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmerPassword, setConfirmerPassword] = useState("");
+    const [isErreur, setIsErreur] = useState(false);
     
-    //gere la soumission du formulaire si champs vides
-    //------------------------------- Le message d'erreur n'apparait pas dan le navigateur -------------------------------
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if(!utilisateur.nom || !utilisateur.prenom || !utilisateur.pseudo || !utilisateur.email || !utilisateur.password || !utilisateur.confirmerPassword){
-            setMessage("Veuillez remplir tous les champs");
-            return ;
-        }
-        
-        try{
-            const reponse = await fetch("http://localhost:3001/utilisateurs",{ 
-                method: 'POST',
-                headers: {
-                'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(utilisateur)
-            });
-
-            if (reponse.ok) {
-                setMessage("Données envoyées avec succès");
-            }
-
-            const data = await reponse.json();
-            setMessage("Utilisateur créé:", data);
-
-            setUtilisateur({
-                nom: "",
-                prenom: "",
-                pseudo: "",
-                email: "",
-                password: "",
-                confirmerPassword: "",
-                roleId: "2"
-            });
-
-            setMessage("Inscription réussie!");
-
-        }catch(error){
-            console.error("Erreur lors de la recherche du produit", error);
-            setMessage("Une erreur s'est produite lors de l'inscription.");
+        const reponse = await fetch("/api/inscription", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ nom, prenom, email, password, confirmerPassword }),
+        });
+        const data = await reponse.json();
+        if (reponse.ok) {
+            setMessage(data.message);
+            setIsErreur(false);
+            setTimeout(() => {
+                window.location.href = '/PageConnexion';
+              }, 1500);
+        } else {
+            setMessage(data.message || "Une erreur s'est produite.");
+            setIsErreur(true);
         }
     }
-
-
-    //affiche le formulaire
     
     return <>
-
-            <div id="imgFondForm"className="container-fluid  ">
-                <div className="row">
-                    <div id="BackgroundForm"className="col-4 mx-auto mt-5">
+            <div id="imgFondForm"className="container-fluid h-80">
+                <div className="row ">
+                    <div id="BackgroundForm"className="col-4 mx-auto my-5">
                         <h1 className="text-center"> Inscription </h1>
                         <form onSubmit={handleSubmit} id = "formInscription">
                             <div className="mb-3">
-                                <label htmlFor="Nom" className="form-label">Nom</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="Nom"
-                                    name="Nom"
-                                    value={utilisateur.nom}
-                                    onChange={handleCharge}
-                                    required
-                                />
-                            </div>
-                            <div> 
-                                <label htmlFor="Prenom" className="form-label">Prenom</label>
-                                <input 
-                                    type="text"    
-                                    className="form-control" 
-                                    id="Prenom" 
-                                    name="Prenom"
-                                    value={utilisateur.prenom}
-                                    onChange={handleCharge}
-                                    required
-                                    
-                                />
+                                <label htmlFor="nom" className="form-label">Nom</label>
+                                <input type="text" className="form-control" id="nom" name="nom" value={nom} onChange={(e) => setNom(e.target.value)} required />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="Pseudo" className="form-label">Pseudo</label>
-                                <input 
-                                    type="text"
-                                    className="form-control"
-                                    id="Pseudo"
-                                    name="Pseudo"
-                                    value={utilisateur.pseudo}
-                                    onChange={handleCharge}
-                                    required
-                                />
+                                <label htmlFor="prenom" className="form-label">Prénom</label>
+                                <input type="text" className="form-control" id="prenom" name="prenom" value={prenom} onChange={(e) => setPrenom(e.target.value)} required />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="Email1" className="form-label">Email address</label>
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    id="Email"
-                                    name="Email"
-                                    value={utilisateur.email}
-                                    onChange={handleCharge}
-                                    required
-                                />
-                                <div id="email" className="form-text">We'll never share your email with anyone else.</div>
+                                <label htmlFor="courriel" className="form-label">Courriel</label>
+                                <input type="email" className="form-control" id="courriel" name="courriel" value={email} onChange={(e) => setEmail(e.target.value)} required />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="Password" className="form-label">Password</label>
-                                <input 
-                                    type="password"
-                                    className="form-control"
-                                    id="Password"
-                                    name="Password"
-                                    value={utilisateur.password}
-                                    onChange={handleCharge}
-                                    required
-                                />
+                                <label htmlFor="pwd" className="form-label">Mot de passe</label>
+                                <input type="password" className="form-control" id="pwd" name="pwd" value={password} onChange={(e) => setPassword(e.target.value)} required/>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="Password" className="form-label">Confirmer le mot de passe</label>
-                                <input 
-                                    type="password"
-                                    className="form-control"
-                                    id="ConfirmerPassword"
-                                    name="ConfirmerPassword"
-                                    value={utilisateur.confirmerPassword}
-                                    onChange={handleCharge}
-                                    required
-                                    />
+                                <label htmlFor="verifPwd" className="form-label">Confirmer le mot de passe</label>
+                                <input type="password" className="form-control" id="verifPwd" name="verifPwd" value={confirmerPassword} onChange={(e) => setConfirmerPassword(e.target.value)} required/>
                             </div>
-                            <div className="mb-3 form-check">
-                                <input 
-                                    type="checkbox" 
-                                    className="form-check-input"
-                                    id="exampleCheck1"
-                                />
-                                <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-                            </div>
+
                             <div id="btnInscription" className="container-fluid d-flex">
                                 <button  type="submit" className="btn btn-primary ">Envoyer</button>
                             </div>
                         </form>
                         {message && (
-                            <div className="alert alert-info mt-3">
+                            isErreur ? (
+                                <div className="alert alert-danger mt-3">
                                 {message}
-                            </div>
-                        )}
+                                </div>
+                            ) : (
+                                <div className="alert alert-info mt-3">
+                                {message}
+                                </div>
+                            )
+                            )}
 
                     </div>
                 </div>

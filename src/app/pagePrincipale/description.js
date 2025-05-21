@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function BottomSection() {
   return (
-    <section className="bottom-content py-4">
+    <div className="bottom-content py-4">
       <div className="container">
         <div className="row">
           {/* Left Section with Rare Monsters */}
@@ -48,6 +48,6 @@ export default function BottomSection() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

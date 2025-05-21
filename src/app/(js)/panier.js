@@ -23,7 +23,7 @@ export function openPanierDB() {
   
     // Vérifie si l'article existe déjà
     const existingItem = await new Promise((resolve, reject) => {
-      const request = store.get(parseInt(article.id));
+      const request = store.get(article.id);
       request.onsuccess = () => resolve(request.result);
       request.onerror = () => reject(request.error);
     });
@@ -88,19 +88,11 @@ export async function updateQuantite(id, newQuantite) {
   });
   
   if (!item) return;
-  console.log(newQuantite);
-  
+
   if (newQuantite == 0) {
-    console.log("Suppression de l'article");
-    await new Promise((resolve, reject) => {
-      const request = store.delete(id);
-      request.onsuccess = () => resolve();
-      request.onerror = () => reject(request.error);
-    });
+    supprimerArticle(id);
   }
   else {
-    console.log("Mise à jour de la quantité");
-    // Sinon, mettre à jour la quantité
     item.quantite = newQuantite;
 
     await new Promise((resolve, reject) => {

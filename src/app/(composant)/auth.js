@@ -1,4 +1,5 @@
 'use client';
+import { viderPanier } from "../(js)/panier";
 
 // auth-utils.js - Fichier utilitaire pour la gestion de l'authentification
 
@@ -33,7 +34,7 @@ export function isAdmin() {
 
   try {
     const userData = JSON.parse(userAuth);
-    return userData.isLoggedIn && userData.roleId === 1; // 👈 Admin = roleId 1
+    return userData.isLoggedIn && userData.roleId == 1; // 👈 Admin = roleId 1
   } catch (error) {
     console.error('Erreur lors de la vérification du rôle admin:', error);
     return false;
@@ -66,5 +67,7 @@ export function logout() {
   if (typeof window === 'undefined') return;
   
   localStorage.removeItem('userAuth');
+  viderPanier();
+
   // Vous pourriez également vouloir effacer d'autres données spécifiques à l'utilisateur
 }

@@ -1,40 +1,32 @@
-// styles.scss - Styles pour le carrousel 3D
-
-// Variables 
-// Dimensions des cartes
+// ==========================
+// VARIABLES GLOBALES
+// ==========================
 $card-width: 32rem;
 $card-height: 60rem;
 $card-border-radius: 0.75rem;
-
-// Couleurs principales
-$primary-color: #D98324; // orange principal
-$hover-color: #834e14; // orange foncé
+$primary-color: #D98324;
+$hover-color: #834e14;
 $card-background: #EFDCAB;
 $dark-background: linear-gradient(to bottom, #443627, #000000);
-
-// Couleurs secondaires
 $text-color: #1f2937;
 $light-bg: #f8f9fa;
 $border-color: #e5e7eb;
-
-// Ombres et effets
 $card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 $shadow-color: rgba(0, 0, 0, 0.2);
-
-// Autres
 $transition-speed: 500ms;
 
-
-// Styles du conteneur principal
+// ==========================
+// STRUCTURE GÉNÉRALE
+// ==========================
 .carousel-container {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   position: relative;
-  height: 80vh; // Augmenté de 70vh à 80vh pour plus d'espace vertical
-  min-height: 450px; // Augmenté de 350px à 450px
+  height: 80vh;
+  min-height: 600px;
   padding: 0;
   overflow: hidden;
-  
+
   .carousel-inner {
     position: relative;
     height: 100%;
@@ -42,11 +34,10 @@ $transition-speed: 500ms;
   }
 }
 
-// Titre du carrousel
 .carousel-title {
-  font-size: 1.8rem; // Légèrement augmenté
+  font-size: 1.8rem;
   font-weight: 700;
-  margin: 1.5rem 0; // Un peu plus d'espace
+  margin: 1.5rem 0;
   text-align: center;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -54,17 +45,15 @@ $transition-speed: 500ms;
   z-index: 20;
 }
 
-// Conteneur 3D avec perspective
+// ==========================
+// PERSPECTIVE + STAGE
+// ==========================
 .carousel-perspective {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  perspective: 1200px; // Augmenté pour une meilleure profondeur
+  top: 0; left: 0; right: 0; bottom: 0;
+  perspective: 1200px;
   transform-style: preserve-3d;
-  
-  // Arrière-plan avec effet de profondeur
+
   .carousel-background {
     position: absolute;
     inset: 0;
@@ -72,37 +61,34 @@ $transition-speed: 500ms;
     background-position: center;
     transition: background-image 1s ease-in-out;
   }
-  
-    .grid-pattern {
-      position: absolute;
-      inset: 0;
-      background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-      background-size: 20px 20px;
-      opacity: 0.1;
-    }
-  
-  // Conteneur des cartes
+
+  .grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.1;
+  }
+
   .carousel-stage {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-// Style de carte individuelle
+// ==========================
+// CARTE PRINCIPALE
+// ==========================
 .carousel-card {
   position: absolute;
   width: $card-width;
   transition: all $transition-speed ease-in-out;
-  
-  // Contenu de la carte
+
   .card-content {
     background-color: $card-background;
     border-radius: $card-border-radius;
@@ -110,97 +96,91 @@ $transition-speed: 500ms;
     box-shadow: 0 10px 15px -3px $shadow-color, 0 4px 6px -4px $shadow-color;
     transition: all 300ms ease-in-out;
     transform: translateY(0);
-    
+
     &:hover {
       box-shadow: 0 20px 25px -5px $shadow-color, 0 8px 10px -6px $shadow-color;
       transform: translateY(-0.25rem);
     }
-    
-    // Image de la carte
+
     .card-image {
-      height: 16rem; // Doublé de 8rem à 16rem
-      background-color: #e5e7eb; // gray-200
+      height: 16rem;
+      background-color: #e5e7eb;
       position: relative;
       overflow: hidden;
-      
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-      
-      // Dégradé sur l'image pour améliorer la lisibilité
+
       .image-overlay {
         position: absolute;
         inset: 0;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
       }
     }
-    
-    // Contenu textuel de la carte
+
     .card-body {
-      padding: 1.25rem; // Augmenté de 0.75rem à 1.25rem
-      
+      padding: 1.25rem;
+
       .card-title {
         font-weight: 700;
-        font-size: 1.5rem; // Augmenté de 1.125rem à 1.5rem
-        margin-bottom: 0.5rem; // Augmenté de 0.25rem à 0.5rem
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
       }
-      
+
       .card-description {
-        color: #4b5563; // gray-600
-        font-size: 1rem; // Augmenté de 0.75rem à 1rem
-        margin-bottom: 0.75rem; // Augmenté de 0.5rem à 0.75rem
-        max-height: 4.5rem; // Augmenté pour afficher plus de texte
+        color: #4b5563;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        max-height: 4.5rem;
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 3; // Augmenté de 2 à 3 lignes
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
-      
-      // Conteneur des boutons
+
       .card-actions {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1rem; // Augmenté de 0.5rem à 1rem
-        
-        // Bouton d'action principal
+        margin-top: 1rem;
+
         .card-button {
           background-color: $primary-color;
           color: white;
-          padding: 0.5rem 1rem; // Augmenté pour un bouton plus grand
+          padding: 0.5rem 1rem;
           border-radius: 0.25rem;
-          font-size: 1rem; // Augmenté de 0.75rem à 1rem
+          font-size: 1rem;
           transition: background-color 150ms;
-          
+
           &:hover {
             background-color: $hover-color;
           }
         }
-        
-        // Bouton du panier
+
         .cart-button {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 3rem; // Augmenté de 2rem à 3rem
-          height: 3rem; // Augmenté de 2rem à 3rem
+          width: 3rem;
+          height: 3rem;
           border-radius: 50%;
-          background-color: #443627; // vert émeraude
+          background-color: #443627;
           color: white;
           border: none;
           cursor: pointer;
           transition: all 200ms ease;
-          
+
           &:hover {
-            background-color:  $primary-color; // orange principal
+            background-color: $primary-color;
             transform: scale(1.1);
           }
-          
+
           svg {
-            width: 1.5rem; // Augmenté de 1rem à 1.5rem
-            height: 1.5rem; // Augmenté de 1rem à 1.5rem
+            width: 1.5rem;
+            height: 1.5rem;
           }
         }
       }
@@ -208,99 +188,54 @@ $transition-speed: 500ms;
   }
 }
 
-// Boutons de navigation - NOUVELLE VERSION COMPLÈTE
-// Styles simplifiés pour les boutons de navigation avec flèches
+// ==========================
+// BOUTONS DE NAVIGATION
+// ==========================
 .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #D98324; // orange principal
+  background-color: $primary-color;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border: none;
-  cursor: pointer;
-  z-index: 20;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 20;
+  cursor: pointer;
   transition: all 0.2s ease;
-  
+
   &:hover {
-    background-color: #834e14; // orange foncé au survol
+    background-color: $hover-color;
     transform: translateY(-50%) scale(1.1);
   }
-  
+
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
   }
-  
+
   &.prev-button {
     left: 2.5rem;
   }
-  
+
   &.next-button {
     right: 2.5rem;
   }
-  
-  // Style des flèches SVG
+
   svg {
-    stroke: #443627; // couleur brune pour la flèche
+    stroke: #443627;
     width: 24px;
     height: 24px;
   }
 }
 
-@media (max-width: 768px) {
-  .nav-button {
-    width: 36px;
-    height: 36px;
-    
-    &.prev-button {
-      left: 1rem;
-    }
-    
-    &.next-button {
-      right: 1rem;
-    }
-    
-    svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 1.5rem; // Augmenté de 1rem à 1.5rem
-  left: 0;
-  right: 0;
-  z-index: 20;
-  
-  .indicator {
-    height: 0.75rem; // Augmenté de 0.5rem à 0.75rem
-    width: 0.75rem; // Augmenté de 0.5rem à 0.75rem
-    margin-left: 0.375rem; // Légèrement augmenté
-    margin-right: 0.375rem; // Légèrement augmenté
-    border-radius: 9999px;
-    transition: background-color 150ms;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    cursor: pointer;
-    
-    &.active {
-      background-color: $primary-color; // orange principal
-      transform: scale(1.2);
-    }
-  }
-}
-
-// Classes pour les différentes positions de cartes - Ajustées pour la nouvelle taille
+// ==========================
+// POSITION DES CARTES 3D
+// ==========================
 .card-active {
   z-index: 10;
   transform: translateX(0) scale(1);
@@ -310,30 +245,30 @@ $transition-speed: 500ms;
 
 .card-adjacent-left {
   z-index: 5;
-  transform: translateX(-75%) scale(0.85) translateZ(-50px); // Ajusté
-  opacity: 0.75; // Légèrement augmenté
-  filter: brightness(75%); // Légèrement augmenté
+  transform: translateX(-75%) scale(0.85) translateZ(-50px);
+  opacity: 0.75;
+  filter: brightness(75%);
 }
 
 .card-adjacent-right {
   z-index: 5;
-  transform: translateX(75%) scale(0.85) translateZ(-50px); // Ajusté
-  opacity: 0.75; // Légèrement augmenté
-  filter: brightness(75%); // Légèrement augmenté
+  transform: translateX(75%) scale(0.85) translateZ(-50px);
+  opacity: 0.75;
+  filter: brightness(75%);
 }
 
 .card-far-left {
   z-index: 1;
-  transform: translateX(-130%) scale(0.65) translateZ(-100px); // Ajusté
-  opacity: 0.5; // Légèrement augmenté
-  filter: brightness(60%); // Légèrement augmenté
+  transform: translateX(-130%) scale(0.65) translateZ(-100px);
+  opacity: 0.5;
+  filter: brightness(60%);
 }
 
 .card-far-right {
   z-index: 1;
-  transform: translateX(130%) scale(0.65) translateZ(-100px); // Ajusté
-  opacity: 0.5; // Légèrement augmenté
-  filter: brightness(60%); // Légèrement augmenté
+  transform: translateX(130%) scale(0.65) translateZ(-100px);
+  opacity: 0.5;
+  filter: brightness(60%);
 }
 
 .card-hidden {
@@ -342,109 +277,126 @@ $transition-speed: 500ms;
   opacity: 0;
 }
 
-// Adaptation responsive
+// ==========================
+// MEDIA QUERIES RESPONSIVE
+// ==========================
 @media (max-width: 1200px) {
-  // Pour écrans moyens
-  $card-width-md: 32rem; // Version légèrement réduite
-  
   .carousel-card {
-    width: $card-width-md;
-    
-    .card-content {
-      .card-image {
-        height: 12rem; // Réduit pour écrans moyens
-      }
+    width: 30rem;
+
+    .card-content .card-image {
+      height: 12rem;
     }
   }
 }
 
-// Adaptation responsive
 @media (max-width: 768px) {
-  // Pour petits écrans
-  $card-width-sm: 24rem; // Version mobile
-  
   .carousel-container {
-    height: 60vh; // Plus haut sur mobile
+    height: 60vh;
+    padding: 0;
   }
-  
+
   .carousel-card {
-    width: $card-width-sm;
-    
+    width: 22rem;
+
     .card-content {
       .card-image {
-        height: 10rem; // Réduit pour mobile
+        height: 10rem;
       }
-      
+
       .card-body {
         padding: 0.75rem;
-        
+
         .card-title {
           font-size: 1.25rem;
         }
-        
+
         .card-description {
           font-size: 0.875rem;
+        }
+
+        .card-actions {
+          flex-direction: row;
+          gap: 0.5rem;
+
+          .card-button {
+            font-size: 0.875rem;
+            padding: 0.5rem 0.75rem;
+          }
+
+          .cart-button {
+            width: 2.5rem;
+            height: 2.5rem;
+
+            svg {
+              width: 1.25rem;
+              height: 1.25rem;
+            }
+          }
         }
       }
     }
   }
-  
+
   .nav-button {
-    padding: 0.75rem;
-    
+    width: 32px;
+    height: 32px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
     &.prev-button {
-      left: 0.75rem;
+      left: 1rem;
     }
-    
+
     &.next-button {
-      right: 0.75rem;
+      right: 1rem;
     }
-  }
-  
-  .card-adjacent-left {
-    transform: translateX(-65%) scale(0.75) translateZ(-50px);
-  }
-  
-  .card-adjacent-right {
-    transform: translateX(65%) scale(0.75) translateZ(-50px);
   }
 }
-.bottom-content {
-  padding: 2rem 0;
-  background: linear-gradient(to bottom, #443627, #000000);
-  .section-title,
-  .section-text,
-  .info-item,
-  .info-header {
-    color: white;
-  }
-  
-  // Common styles for titles
-  .section-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .section-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  
-  // Left section styles
-  .left-section {
-    .image-container {
-      background-color: transparent;
 
-      img {
-        max-width: 80px;
-        height: auto;
-        filter: brightness(0.95); // pour éviter qu'elle paraisse trop pâle sur fond sombre
+@media (max-width: 480px) {
+  .carousel-card {
+    width: 18rem;
+
+    .card-content {
+      .card-image {
+        height: 8rem;
+      }
+
+      .card-body {
+        padding: 0.5rem;
+
+        .card-title {
+          font-size: 1rem;
+        }
+
+        .card-description {
+          font-size: 0.75rem;
+        }
       }
     }
   }
-    
-  // Styles for fallback if image fails to load
+
+  .nav-button {
+    width: 28px;
+    height: 28px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+// Section d'informations sous le carrousel : .bottom-content
+.bottom-content {
+  position: relative;
+  padding: 2rem 0;
+  background: $dark-background;
+
   &::before {
     content: '';
     position: absolute;
@@ -456,325 +408,102 @@ $transition-speed: 500ms;
     z-index: -1;
   }
 
-  .right-section .info-card {
-    background: linear-gradient(135deg, #5c4430, #3b2b1f) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  .section-title,
+  .section-text,
+  .info-item,
+  .info-header {
+    color: white;
   }
-  
-  /* Assurez-vous que tous les éléments enfants n'ont pas de fond blanc qui cache le dégradé */
-  .right-section .info-card * {
-    background-color: transparent !important;
+
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
-  
-  .right-section .info-card .info-header {
-    background-color: transparent !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+
+  .section-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
-  
-  .right-section .info-card .info-item {
-    color: white !important;
+
+  .left-section {
+    margin-bottom: 1.5rem;
+
+    .image-container {
+      background-color: transparent;
+
+      img {
+        max-width: 80px;
+        height: auto;
+        filter: brightness(0.95);
+      }
+    }
   }
-  
-  .right-section .info-card .info-item:hover {
-    background: linear-gradient(135deg, #4a3526, #2a1d14) !important;
+
+  .right-section {
+    .info-card {
+      background: linear-gradient(135deg, #5c4430, #3b2b1f) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      padding: 1rem;
+
+      * {
+        background-color: transparent !important;
+      }
+
+      .info-header {
+        background-color: transparent !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+      }
+
+      .info-item {
+        color: white !important;
+
+        &:hover {
+          background: linear-gradient(135deg, #4a3526, #2a1d14) !important;
+        }
+      }
+    }
   }
-    
-  // Responsive adjustments
-  @media (max-width: 767.98px) {
+}
+@media (max-width: 768px) {
+  .bottom-content {
+    padding: 1.5rem 1rem;
+
+    .section-title {
+      font-size: 1rem;
+    }
+
+    .section-text {
+      font-size: 0.85rem;
+    }
+
     .left-section {
       margin-bottom: 1.5rem;
-      
+
       .image-container {
-        max-width: 250px;
+        max-width: 200px;
         margin: 0 auto;
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    // Container
-    .carousel-container {
-      height: 60vh;
-      min-height: 350px;
-      padding: 0 1rem; // Ajoute du padding horizontal
-    }
-  
-    // Cartes
-    .carousel-card {
-      width: 24rem;
-  
-      .card-content {
-        .card-image {
-          height: 10rem;
-        }
-  
-        .card-body {
-          padding: 0.75rem;
-  
-          .card-title {
-            font-size: 1.25rem;
-            line-height: 1.4;
-          }
-  
-          .card-description {
-            font-size: 0.875rem;
-            line-height: 1.4;
-          }
-  
-          .card-actions {
-            margin-top: 0.75rem;
-  
-            .card-button {
-              font-size: 0.875rem;
-              padding: 0.4rem 0.75rem;
-            }
-  
-            .cart-button {
-              width: 2.5rem;
-              height: 2.5rem;
-  
-              svg {
-                width: 1.25rem;
-                height: 1.25rem;
-              }
-            }
-          }
+
+        img {
+          max-width: 100%;
+          height: auto;
         }
       }
     }
-  
-    // Navigation - adaptation mobile
-    .nav-button {
-      width: 36px;
-      height: 36px;
-  
-      &.prev-button {
-        left: 0.75rem;
-      }
-  
-      &.next-button {
-        right: 0.75rem;
-      }
-      
-      svg {
-        width: 18px;
-        height: 18px;
-      }
-    }
-  
-    // Classes de position 3D mobile (moins de profondeur)
-    .card-adjacent-left {
-      transform: translateX(-65%) scale(0.75) translateZ(-30px);
-    }
-  
-    .card-adjacent-right {
-      transform: translateX(65%) scale(0.75) translateZ(-30px);
-    }
-  
-    .card-far-left {
-      transform: translateX(-110%) scale(0.6) translateZ(-80px);
-    }
-  
-    .card-far-right {
-      transform: translateX(110%) scale(0.6) translateZ(-80px);
-    }
-  
-    // Indicateurs
-    .carousel-indicators {
-      bottom: 1rem;
-  
-      .indicator {
-        height: 0.5rem;
-        width: 0.5rem;
-        margin: 0 0.25rem;
-      }
-    }
-  
-    // Bas de page
-    .bottom-content {
-      padding: 1.5rem 1rem;
-  
-      .left-section {
-        margin-bottom: 1.5rem;
-  
-        .image-container {
-          max-width: 200px;
-          margin: 0 auto;
-  
-          img {
-            max-width: 100%;
-            height: auto;
-          }
-        }
-      }
-  
-      .section-title {
-        font-size: 1rem;
-      }
-  
-      .section-text {
-        font-size: 0.85rem;
-      }
-  
-      .right-section .info-card {
+
+    .right-section {
+      .info-card {
         padding: 1rem;
-      }
-  
-      .right-section .info-item {
-        font-size: 0.85rem;
-      }
-    }
-  }
-  @media (max-width: 480px) {
-    .carousel-card {
-      width: 20rem;
-  
-      .card-content {
-        .card-image {
-          height: 8rem;
-        }
-  
-        .card-body {
-          padding: 0.5rem;
-  
-          .card-title {
-            font-size: 1rem;
-          }
-  
-          .card-description {
-            font-size: 0.75rem;
-          }
-  
-          .card-actions {
-            flex-direction: column;
-            gap: 0.5rem;
-  
-            .card-button {
-              width: 100%;
-              text-align: center;
-            }
-  
-            .cart-button {
-              width: 2rem;
-              height: 2rem;
-  
-              svg {
-                width: 1rem;
-                height: 1rem;
-              }
-            }
-          }
+
+        .info-item {
+          font-size: 0.85rem;
         }
       }
     }
-  
-    .nav-button {
-      width: 32px;
-      height: 32px;
-      
-      svg {
-        width: 16px;
-        height: 16px;
-      }
-    }
   }
-  .pagination-controls {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  
-  .pagination-controls button {
-    padding: 4px 10px;
-    font-size: 0.9rem;
-    border: 1px solid #aaa;
-    background: #f1f1f1;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  
-  .pagination-controls button:hover {
-    background-color: #ddd;
-  }
-  
-  .pagination-controls .active-page {
-    font-weight: bold;
-    background-color: #222;
-    color: white;
-  }
-  
-  .cart-icon {
-    position: relative;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .cart-count {
-    position: absolute;
-    top: -8px;
-    right: -12px;
-    background: red;
-    color: white;
-    border-radius: 50%;
-    font-size: 0.75rem;
-    padding: 2px 6px;
-    min-width: 20px;
-    text-align: center;
-  }
-  .cart-icon.pop {
-    animation: cart-bounce 0.3s ease;
-  }
-  
-  @keyframes cart-bounce {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.4); }
-    100% { transform: scale(1); }
-  }
-}
-
-@keyframes fadeInOut {
-  0% { opacity: 0; transform: translateY(-20px); }
-  10% { opacity: 1; transform: translateY(0); }
-  90% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(-20px); }
-}
-
-.cart-button {
-  background-color: #ff9800;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-}
-
-.cart-button:hover {
-  background-color: #f57c00;
-}
-
-.cart-button:active {
-  background-color: #ef6c00;
-}
-
-.item-count {
-  background-color: #f44336;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 12px;
-  margin-left: 5px;
-  display: inline-block;
 }
 
 .header-with-cart {
   position: relative;
-  z-index: 2;
+  z-index: 30; // Doit être plus élevé que .carousel-background
 }

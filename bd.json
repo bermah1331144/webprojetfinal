@@ -3,7 +3,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/3/3d/MHWilds-Shell_Icon_Green.png",
       "description": "Robuste plaque de bras de Chatacabra. Le frottement constant avec le sol l'a poli jusqu'à ce qu'elle brille.",
-      "id": 1,
+      "id": "1",
       "nom": "Chatacabra Carapace",
       "rarity": 6,
       "recette": [],
@@ -13,7 +13,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b7/MHWilds-Scale_Icon_Green.png",
       "description": "Une écaille Chatacabra de haute qualité. Sa durabilité accrue la rend insensible à la plupart des chocs.",
-      "id": 2,
+      "id": "2",
       "nom": "Chatacabra Scale +",
       "rarity": 6,
       "recette": [],
@@ -23,7 +23,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
       "description": "Une peau de Chatacabra de haute qualité. Résistante à son environnement hostile, elle constitue un excellent matériau d'artisanat.",
-      "id": 3,
+      "id": "3",
       "nom": "Chatacabra Hide +",
       "rarity": 6,
       "recette": [],
@@ -33,7 +33,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1f/MHWilds-Head_Icon_Green.png",
       "description": "Belle plaque provenant de la mâchoire massive d'un Chatacabra. Sa densité et son poids sont impressionnants.",
-      "id": 4,
+      "id": "4",
       "nom": "Chatacabra Jaw +",
       "rarity": 6,
       "recette": [],
@@ -43,7 +43,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/fd/MHWilds-Ticket_Icon_Green.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé le Chatacabra. Utilisé pour fabriquer de l'équipement.",
-      "id": 5,
+      "id": "5",
       "nom": "Chatacabra Certificate S",
       "rarity": 6,
       "recette": [],
@@ -53,7 +53,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/3/3d/MHWilds-Shell_Icon_Green.png",
       "description": "Plaque recouvrant les membres antérieurs du Chatacabra. Après une vie de léchage, elle est devenue à la fois lisse et robuste.",
-      "id": 6,
+      "id": "6",
       "nom": "Chatacabra Shell",
       "rarity": 4,
       "recette": [],
@@ -63,7 +63,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b7/MHWilds-Scale_Icon_Green.png",
       "description": "Une écaille dentelée provenant de la peau d'un Chatacabra, particulièrement résistante et bien adaptée à la fabrication d'armures.",
-      "id": 7,
+      "id": "7",
       "nom": "Chatacabra Scale",
       "rarity": 4,
       "recette": [],
@@ -73,7 +73,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
       "description": "La peau épaisse d'un Chatacabra. Élastique et facile à modeler grâce à son régime alimentaire gourmand.",
-      "id": 8,
+      "id": "8",
       "nom": "Chatacabra Hide",
       "rarity": 4,
       "recette": [],
@@ -83,7 +83,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1f/MHWilds-Head_Icon_Green.png",
       "description": "La plaque mandibulaire d'un Chatacabra. Des protubérances dures parsèment le cuir épais mais souple.",
-      "id": 9,
+      "id": "9",
       "nom": "Chatacabra Jaw",
       "rarity": 4,
       "recette": [],
@@ -93,7 +93,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/fd/MHWilds-Ticket_Icon_Green.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé le Chatacabra. Utilisé pour fabriquer de l'équipement.",
-      "id": 10,
+      "id": "10",
       "nom": "Chatacabra Certificate",
       "rarity": 4,
       "recette": [],
@@ -103,7 +103,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
       "description": "Une mystérieuse gemme formée dans un Arkveld. Sa lumière blanche pulsée semble absorber la vie.",
-      "id": 11,
+      "id": "11",
       "nom": "Arkveld Gem",
       "rarity": 7,
       "recette": [],
@@ -113,7 +113,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/93/MHWilds-Wing_Icon_White.png",
       "description": "Une carapace Arkveld liée qui est reliée par un tendon flexible, lui permettant de se déplacer comme une chaîne.",
-      "id": 12,
+      "id": "12",
       "nom": "Arkveld Calloushell",
       "rarity": 6,
       "recette": [],
@@ -123,7 +123,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une balance Arkveld de haute qualité. Malgré sa densité et sa dureté exceptionnelles, ses bords s'écaillent facilement.",
-      "id": 13,
+      "id": "13",
       "nom": "Arkveld Scale +",
       "rarity": 6,
       "recette": [],
@@ -133,7 +133,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Une corne d'Arkveld pointue et acérée. Si menaçante que sa simple vue décourage quiconque doit lui résister.",
-      "id": 14,
+      "id": "14",
       "nom": "Arkveld Horn +",
       "rarity": 6,
       "recette": [],
@@ -143,7 +143,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
       "description": "La queue d'un Arkveld. Très prisée pour ses muscles épais cachés sous sa peau et ses poils.",
-      "id": 15,
+      "id": "15",
       "nom": "Arkveld tail",
       "rarity": 4,
       "recette": [],
@@ -153,7 +153,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "Une carapace d'Arkveld résistante. Nommée ainsi en raison de la superposition de ses écailles, telle une armure de plaques.",
-      "id": 16,
+      "id": "16",
       "nom": "Arkveld Armorplate",
       "rarity": 6,
       "recette": [],
@@ -163,7 +163,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Une fourrure blanche d'Arkveld. Ses brins robustes et naturellement entrelacés offrent une protection supplémentaire contre les attaques.",
-      "id": 17,
+      "id": "17",
       "nom": "White Arkveld Pelt",
       "rarity": 6,
       "recette": [],
@@ -173,7 +173,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/5/55/MHWilds-Bone_Icon_Red.png",
       "description": "Os précieux obtenu sur de grands monstres de haut rang. Leur rareté les rend très recherchés.",
-      "id": 18,
+      "id": "18",
       "nom": "Monster Hardbone",
       "rarity": 4,
       "recette": [],
@@ -183,7 +183,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Arkveld. Utilisé pour fabriquer de l'équipement.",
-      "id": 19,
+      "id": "19",
       "nom": "Arkveld Certificate S",
       "rarity": 6,
       "recette": [],
@@ -193,7 +193,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2a/MHWilds-Chemical_Icon_Gray.png",
       "description": "Liquide céphalo-rachidien d'un Xu Wu. Une grande quantité d'énergie est dissimulée à l'intérieur, ce qui le fait briller.",
-      "id": 20,
+      "id": "20",
       "nom": "Xu Wu Cerebrospinal Fluid",
       "rarity": 5,
       "recette": [],
@@ -203,7 +203,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Ball_Icon_Gray.png",
       "description": "Un joyau rare s'est développé dans le corps de Xu Wu. Il recèle une obscurité profonde et impénétrable.",
-      "id": 21,
+      "id": "21",
       "nom": "Xu Wu Umbragem",
       "rarity": 7,
       "recette": [],
@@ -213,7 +213,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
       "description": "Un corneum doré et scintillant de Xu Wu. Renforcé par ses sécrétions extrêmement pures.",
-      "id": 22,
+      "id": "22",
       "nom": "Golden Corneum +",
       "rarity": 6,
       "recette": [],
@@ -223,7 +223,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Une griffe acérée de Xu Wu. Plus longue et plus acérée, elle lui permet d'abattre plus facilement ses proies.",
-      "id": 23,
+      "id": "23",
       "nom": "Xu Wu Claw +",
       "rarity": 6,
       "recette": [],
@@ -233,7 +233,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
       "description": "Une peau de Xu Wu de haute qualité. Suffisamment résistante pour repousser les griffes et les crocs d'un Gardien.",
-      "id": 24,
+      "id": "24",
       "nom": "Xu Wu Hide +",
       "rarity": 6,
       "recette": [],
@@ -243,7 +243,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
       "description": "Un tentacule de Xu Wu de haute qualité. Il continue de se tortiller pendant le traitement, témoignant de sa vitalité.",
-      "id": 25,
+      "id": "25",
       "nom": "Xu Wu Tentacle +",
       "rarity": 6,
       "recette": [],
@@ -253,7 +253,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Un croc acéré d'un Xu Wu. Teint avec le sang de toutes les proies qu'il a impitoyablement écrasées.",
-      "id": 26,
+      "id": "26",
       "nom": "Xu Wu Fang +",
       "rarity": 6,
       "recette": [],
@@ -263,7 +263,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Xu Wu. Utilisé pour fabriquer de l'équipement.",
-      "id": 27,
+      "id": "27",
       "nom": "Xu Wu Certificate S",
       "rarity": 6,
       "recette": [],
@@ -273,7 +273,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
       "description": "La cornée dorée d'un Xu Wu. Formé de sécrétions durcies qui scintillent d'une lumière inquiétante.",
-      "id": 28,
+      "id": "28",
       "nom": "Golden Corneum",
       "rarity": 4,
       "recette": [],
@@ -283,7 +283,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Une griffe d'un Xu Wu. Aiguisée comme un couteau et capable de percer une proie sans un bruit.",
-      "id": 29,
+      "id": "29",
       "nom": "Xu Wu Claw",
       "rarity": 4,
       "recette": [],
@@ -293,7 +293,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
       "description": "La peau d'un Xu Wu. Recouverte de mucus et particulièrement flexible, c'est un véritable défi de travailler avec elle.",
-      "id": 30,
+      "id": "30",
       "nom": "Xu Wu Hide",
       "rarity": 4,
       "recette": [],
@@ -303,7 +303,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
       "description": "Un tentacule de Xu Wu. Sa musculature flexible le rend idéal pour la fabrication d'armes et d'armures.",
-      "id": 31,
+      "id": "31",
       "nom": "Xu Wu Tentacle",
       "rarity": 4,
       "recette": [],
@@ -313,7 +313,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Un croc de Xu Wu. Assez résistant pour écraser n'importe quelle proie.",
-      "id": 32,
+      "id": "32",
       "nom": "Xu Wu Fang",
       "rarity": 4,
       "recette": [],
@@ -323,7 +323,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Xu Wu. Utilisé pour fabriquer de l'équipement.",
-      "id": 33,
+      "id": "33",
       "nom": "Xu Wu Certificate",
       "rarity": 4,
       "recette": [],
@@ -333,7 +333,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Wing_Icon_Gray.png",
       "description": "Une aile horrible qui projette une ombre affamée sur sa proie et la rend folle.",
-      "id": 34,
+      "id": "34",
       "nom": "Gore Magala Wing +",
       "rarity": 6,
       "recette": [],
@@ -343,7 +343,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a4/MHWilds-Claw_Icon_Gray.png",
       "description": "Un organe sensoriel bien affûté issu d'un Gore Magala qui suinte une mélancolie violette de son extrémité infectée.",
-      "id": 35,
+      "id": "35",
       "nom": "Gore Magala Feeler +",
       "rarity": 6,
       "recette": [],
@@ -353,7 +353,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Tail_Icon_Gray.png",
       "description": "Une queue souple recouverte d'écailles inversées qui frappe comme un fouet, pas comme une lame.",
-      "id": 36,
+      "id": "36",
       "nom": "Gore Magala Tail",
       "rarity": 4,
       "recette": [],
@@ -363,7 +363,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
       "description": "Une écaille noire profonde qui semble dévorer la lumière environnante, sans la refléter.",
-      "id": 37,
+      "id": "37",
       "nom": "Gore Magala Scale +",
       "rarity": 6,
       "recette": [],
@@ -373,7 +373,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
       "description": "La belle armure noire du Gore Magala, censée annuler tous les coups",
-      "id": 38,
+      "id": "38",
       "nom": "Gore Magala Carapace",
       "rarity": 6,
       "recette": [],
@@ -383,7 +383,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a4/MHWilds-Claw_Icon_Gray.png",
       "description": "Une griffe provenant de la deuxième patte avant d'un Gore Magala. Elle inflige la frénésie et des générations de souffrance.",
-      "id": 39,
+      "id": "39",
       "nom": "Gore Magala Ripclaw +",
       "rarity": 6,
       "recette": [],
@@ -393,7 +393,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Crystal_Icon_Purple.png",
       "description": "Un cristal troublant, enveloppé d'une puissance frénétique. À manipuler avec une extrême précaution.",
-      "id": 40,
+      "id": "40",
       "nom": "Frenzy Crystal",
       "rarity": 7,
       "recette": [],
@@ -403,7 +403,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Gore Magala. Utilisé pour fabriquer de l'équipement.",
-      "id": 41,
+      "id": "41",
       "nom": "Gore Magala Certificate S",
       "rarity": 4,
       "recette": [],
@@ -413,7 +413,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Ball_Icon_Gray.png",
       "description": "Un joyau pur, noir de jais, qui emprisonne et avale toute lumière proche.",
-      "id": 42,
+      "id": "42",
       "nom": "Gore Magala Nyctgem",
       "rarity": 7,
       "recette": [],
@@ -423,7 +423,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Wing_Icon_Red.png",
       "description": "L'aile d'un Rathalos. Des artisans qualifiés peuvent la transformer en un équipement robuste.",
-      "id": 43,
+      "id": "43",
       "nom": "Rathalos Wing",
       "rarity": 6,
       "recette": [],
@@ -433,7 +433,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/89/MHWilds-Scale_Icon_Red.png",
       "description": "Une écaille extraordinairement durable sculptée dans le corps d'un Rathalos.",
-      "id": 44,
+      "id": "44",
       "nom": "Rathalos Scale +",
       "rarity": 6,
       "recette": [],
@@ -443,7 +443,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c3/MHWilds-Shell_Icon_Red.png",
       "description": "Cette carapace de Rathalos émane une noblesse digne du Roi des Cieux.",
-      "id": 45,
+      "id": "45",
       "nom": "Rathalos Carapace",
       "rarity": 6,
       "recette": [],
@@ -453,7 +453,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7d/MHWilds-Tail_Icon_Red.png",
       "description": "Une queue de Rathalos sectionnée, recouverte de plaques et d'épines acérées. Ses usages sont multiples.",
-      "id": 46,
+      "id": "46",
       "nom": "Rathalos Tail",
       "rarity": 6,
       "recette": [],
@@ -463,7 +463,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Sac_Icon_Red.png",
       "description": "Un organe de monstre rempli de poudre qui s'enflamme au moindre contact avec l'air. Danger !",
-      "id": 47,
+      "id": "47",
       "nom": "Inferno Sac",
       "rarity": 6,
       "recette": [],
@@ -473,7 +473,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/5/5b/MHWilds-Ticket_Icon_Red.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Rathalos. Utilisé pour fabriquer de l'équipement.",
-      "id": 48,
+      "id": "48",
       "nom": "Rathalos Certificate S",
       "rarity": 6,
       "recette": [],
@@ -483,7 +483,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
       "description": "Extractible récemment grâce aux progrès des techniques de sculpture. Difficile à forger.",
-      "id": 49,
+      "id": "49",
       "nom": "Rath Medulla",
       "rarity": 6,
       "recette": [],
@@ -493,7 +493,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/49/MHWilds-Ball_Icon_Red.png",
       "description": "Un joyau rare et précieux provenant d'un Rathalos. Trop beau pour être utilisé.",
-      "id": 50,
+      "id": "50",
       "nom": "Rathalos Ruby",
       "rarity": 7,
       "recette": [],
@@ -503,7 +503,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/93/MHWilds-Wing_Icon_White.png",
       "description": "L'aile imposante d'un Gravios. La demande et la valeur de ce matériau ont récemment augmenté.",
-      "id": 51,
+      "id": "51",
       "nom": "Gravios Wing",
       "rarity": 6,
       "recette": [],
@@ -513,7 +513,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "La carapace robuste d'un Gravios. Fusionnée avec du minerai par une chaleur intense, elle est devenue anormalement résistante.",
-      "id": 52,
+      "id": "52",
       "nom": "Gravios Carapace",
       "rarity": 6,
       "recette": [],
@@ -523,7 +523,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8a/MHWilds-Head_Icon_White.png",
       "description": "L'armure de tête d'un Gravios, durcie par sa propre chaleur. Elle est également difficile à manipuler.",
-      "id": 53,
+      "id": "53",
       "nom": "Gravios Skull",
       "rarity": 6,
       "recette": [],
@@ -533,7 +533,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "Coquille recouvrant le torse d'un Gravios. Elle est devenue si épaisse au fil du temps que les attaques classiques ne lui font aucun effet.",
-      "id": 54,
+      "id": "54",
       "nom": "Gravios Pleura +",
       "rarity": 6,
       "recette": [],
@@ -543,7 +543,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/15/MHWilds-Ore_Icon_Orange.png",
       "description": "Un dépôt semblable à du magma que seules des mains expertes peuvent manipuler. L'armure qui en est issue est de première classe.",
-      "id": 55,
+      "id": "55",
       "nom": "Firecell Stone",
       "rarity": 7,
       "recette": [],
@@ -553,7 +553,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Gravios. Utilisé pour fabriquer de l'équipement.",
-      "id": 56,
+      "id": "56",
       "nom": "Gravios Certificate S",
       "rarity": 6,
       "recette": [],
@@ -563,7 +563,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
       "description": "Bien que difficile à extraire et à fabriquer, le tronc cérébral est une partie particulièrement précieuse de Gravios.",
-      "id": 57,
+      "id": "57",
       "nom": "Gravios Medulla",
       "rarity": 7,
       "recette": [],
@@ -573,7 +573,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8d/MHWilds-Sac_Icon_Light_Blue.png",
       "description": "Un organe de monstre rempli d'une poudre dangereuse. Une seule bouffée peut provoquer un coma.",
-      "id": 58,
+      "id": "58",
       "nom": "Coma Sac",
       "rarity": 6,
       "recette": [],
@@ -583,7 +583,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/97/MHWilds-Ball_Icon_Light_Blue.png",
       "description": "Tout au long de la vie d'une wyverne, les impuretés s'accumulent et forment cette gemme particulière.",
-      "id": 59,
+      "id": "59",
       "nom": "Wyvern Gem",
       "rarity": 7,
       "recette": [],
@@ -593,7 +593,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Une canine de Blangonga. Aussi gros qu'une cuisse humaine, c'est déjà une arme.",
-      "id": 60,
+      "id": "60",
       "nom": "Blangonga Fang +",
       "rarity": 6,
       "recette": [],
@@ -603,7 +603,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Fourrure raffinée de Blangonga. Sa souplesse et sa chaleur en font un animal très apprécié dans les régions froides.",
-      "id": 61,
+      "id": "61",
       "nom": "Blangonga Pelt +",
       "rarity": 6,
       "recette": [],
@@ -613,7 +613,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
       "description": "La queue d'un Blangonga. Son pelage soyeux et brillant est un vrai plaisir au toucher.",
-      "id": 62,
+      "id": "62",
       "nom": "Blangonga Tail",
       "rarity": 6,
       "recette": [],
@@ -623,7 +623,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
       "description": "Une moustache glorieuse est la marque et la fierté d’un leader Blangonga, un symbole de sa puissance.",
-      "id": 63,
+      "id": "63",
       "nom": "Blangonga Whisker",
       "rarity": 6,
       "recette": [],
@@ -633,7 +633,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Blangonga. Utilisé pour fabriquer du matériel.",
-      "id": 64,
+      "id": "64",
       "nom": "Blangonga Certificate S",
       "rarity": 6,
       "recette": [],
@@ -643,7 +643,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c1/MHWilds-Ball_Icon_Orange.png",
       "description": "Un joyau précieux formé à partir des sucs coagulés à l'intérieur d'un monstre. Il brille intensément.",
-      "id": 65,
+      "id": "65",
       "nom": "Beast Gem",
       "rarity": 7,
       "recette": [],
@@ -653,7 +653,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/91/MHWilds-Scale_Icon_Blue.png",
       "description": "Une balance Quematrice de haute qualité. Ses arêtes vives lui permettent de fendre la pierre d'un seul coup.",
-      "id": 66,
+      "id": "66",
       "nom": "Quematrice Scale +",
       "rarity": 6,
       "recette": [],
@@ -663,7 +663,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
       "description": "Peau de Quematrice raffinée, endurcie par la lutte pour la survie. Offre une protection exceptionnelle contre le feu.",
-      "id": 67,
+      "id": "67",
       "nom": "Quematrice Hide +",
       "rarity": 6,
       "recette": [],
@@ -673,7 +673,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/aa/MHWilds-Head_Icon_Red.png",
       "description": "La grande crête d'un Quematrice. Colorée d'un rouge furieux, elle est violemment secouée en signe d'agression.",
-      "id": 68,
+      "id": "68",
       "nom": "Quematrice Crest +",
       "rarity": 6,
       "recette": [],
@@ -683,7 +683,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Tail_Icon_Blue.png",
       "description": "La queue d'une Quematrice. Ses nombreux plis se frottent les uns contre les autres pour créer des étincelles.",
-      "id": 69,
+      "id": "69",
       "nom": "Quematrice Tail",
       "rarity": 4,
       "recette": [],
@@ -693,7 +693,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f4/MHWilds-Chemical_Icon_Red.png",
       "description": "Fluide particulièrement visqueux provenant d'une Quematrice. Le gaz qu'il libère brûle à une température dangereuse.",
-      "id": 70,
+      "id": "70",
       "nom": "Quematrice Igniter +",
       "rarity": 6,
       "recette": [],
@@ -703,7 +703,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4e/MHWilds-Ticket_Icon_Blue.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Quematrice. Utilisé pour fabriquer de l'équipement.",
-      "id": 71,
+      "id": "71",
       "nom": "Quematrice Certificate S",
       "rarity": 6,
       "recette": [],
@@ -713,7 +713,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/91/MHWilds-Scale_Icon_Blue.png",
       "description": "L'écaille d'une Quematrice. Sa texture fine agit comme une lime naturelle utilisée pour meuler et polir les armures.",
-      "id": 72,
+      "id": "72",
       "nom": "Quematrice Scale",
       "rarity": 4,
       "recette": [],
@@ -723,7 +723,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
       "description": "La peau d'un Quematrice. Assez épaisse malgré sa forme ridée, elle est très résistante au feu.",
-      "id": 73,
+      "id": "73",
       "nom": "Quematrice Hide",
       "rarity": 4,
       "recette": [],
@@ -733,7 +733,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/aa/MHWilds-Head_Icon_Red.png",
       "description": "La crête d'un Quematrice. Sa couleur rouge flamboyante sert d'appât aux prédateurs potentiels.",
-      "id": 74,
+      "id": "74",
       "nom": "Quematrice Crest",
       "rarity": 4,
       "recette": [],
@@ -743,7 +743,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f4/MHWilds-Chemical_Icon_Red.png",
       "description": "Fluides inflammables provenant d'une Quematrice, expulsés sous forme de gaz puis enflammés par des étincelles provenant de sa queue grossière.",
-      "id": 75,
+      "id": "75",
       "nom": "Quematrice Igniter",
       "rarity": 4,
       "recette": [],
@@ -753,7 +753,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4e/MHWilds-Ticket_Icon_Blue.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Quematrice. Utilisé pour fabriquer de l'équipement.",
-      "id": 76,
+      "id": "76",
       "nom": "Quematrice Certificate",
       "rarity": 4,
       "recette": [],
@@ -763,7 +763,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_Rose.png",
       "description": "Une griffe acérée de Lala Barina. Sa pointe d'un rouge profond reflète le sang d'innombrables victimes.",
-      "id": 77,
+      "id": "77",
       "nom": "Lala Barina Claw +",
       "rarity": 6,
       "recette": [],
@@ -773,7 +773,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Des cheveux de haute qualité de Lala Barina. Leurs mèches délicates et transparentes dansent au vent.",
-      "id": 78,
+      "id": "78",
       "nom": "Lala Barina Floret +",
       "rarity": 6,
       "recette": [],
@@ -783,7 +783,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
       "description": "Le dard acéré d'un Lala Barina. Capable de percer les armures les plus épaisses.",
-      "id": 79,
+      "id": "79",
       "nom": "Lala Barina Stinger +",
       "rarity": 6,
       "recette": [],
@@ -793,7 +793,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
       "description": "La carapace dure d'un Lala Barina. Un peu de polish la fera briller d'un noir absolu.",
-      "id": 80,
+      "id": "80",
       "nom": "Lala Barina Carapace",
       "rarity": 6,
       "recette": [],
@@ -803,7 +803,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/fe/MHWilds-Chemical_Icon_Rose.png",
       "description": "Liquide corporel épais provenant d'une Lala Barina. Rouge comme du sang frais, il contient un puissant paralysant.",
-      "id": 81,
+      "id": "81",
       "nom": "Lala Barina Mucus +",
       "rarity": 6,
       "recette": [],
@@ -813,7 +813,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/0e/MHWilds-Chemical_Icon_Blue.png",
       "description": "Un bouillon composé uniquement du jus le plus épais d'un monstre. Assez riche.",
-      "id": 82,
+      "id": "82",
       "nom": "Monster Broth",
       "rarity": 6,
       "recette": [],
@@ -823,7 +823,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/5/53/MHWilds-Ticket_Icon_Rose.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Lala Barina. Utilisé pour fabriquer de l'équipement.",
-      "id": 83,
+      "id": "83",
       "nom": "Lala Barina Certificate S",
       "rarity": 6,
       "recette": [],
@@ -833,7 +833,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_Rose.png",
       "description": "Une griffe de Lala Barina. Un écarlate vif orne son tranchant acéré.",
-      "id": 84,
+      "id": "84",
       "nom": "Lala Barina Claw",
       "rarity": 4,
       "recette": [],
@@ -843,7 +843,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Poil de Lala Barina. Si blanc et immaculé qu'il pourrait passer pour une peau de haute qualité.",
-      "id": 85,
+      "id": "85",
       "nom": "Lala Barina Floret",
       "rarity": 4,
       "recette": [],
@@ -853,7 +853,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
       "description": "Le dard d'un Lala Barina. Aiguisé comme une épée, un seul coup suffit pour maîtriser sa proie.",
-      "id": 86,
+      "id": "86",
       "nom": "Lala Barina Stinger",
       "rarity": 4,
       "recette": [],
@@ -863,7 +863,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
       "description": "La carapace d'un Lala Barina. Son éclat sombre et sa légèreté sont remarquables.",
-      "id": 87,
+      "id": "87",
       "nom": "Lala Barina Shell",
       "rarity": 4,
       "recette": [],
@@ -873,7 +873,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/fe/MHWilds-Chemical_Icon_Rose.png",
       "description": "Liquide corporel d'une Lala Barina. Un liquide rouge et collant qui provoque une paralysie.",
-      "id": 88,
+      "id": "88",
       "nom": "Lala Barina Mucus",
       "rarity": 4,
       "recette": [],
@@ -883,7 +883,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Chemical_Icon_Light_Blue.png",
       "description": "Un liquide que les insectes sucent sur les monstres. Il se mélange aux fluides des insectes pour former un adhésif.Un liquide que les insectes sucent sur les monstres. Il se mélange aux fluides des insectes pour former un adhésif.",
-      "id": 89,
+      "id": "89",
       "nom": "Monster Fluid",
       "rarity": 4,
       "recette": [],
@@ -893,7 +893,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/5/53/MHWilds-Ticket_Icon_Rose.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Lala Barina. Utilisé pour fabriquer de l'équipement.",
-      "id": 90,
+      "id": "90",
       "nom": "Lala Barina Certificate",
       "rarity": 4,
       "recette": [],
@@ -903,7 +903,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
       "description": "Une écaille Balahara de haute qualité. Épaisse et suffisamment résistante pour sculpter la pierre sans la rayer.",
-      "id": 91,
+      "id": "91",
       "nom": "Balahara Scale +",
       "rarity": 6,
       "recette": [],
@@ -913,7 +913,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
       "description": "Une carapace dure de Balahara. Un matériau de qualité provenant d'un spécimen enveloppé de fulgurite pure.",
-      "id": 92,
+      "id": "92",
       "nom": "Balahara Carapace",
       "rarity": 6,
       "recette": [],
@@ -923,7 +923,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/07/MHWilds-Head_Icon_Gray.png",
       "description": "Le crâne pointu d'un Balahara. Une carapace incroyablement résistante qui perce facilement la roche dure.",
-      "id": 93,
+      "id": "93",
       "nom": "Balahara Skull +",
       "rarity": 6,
       "recette": [],
@@ -933,7 +933,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Tail_Icon_Gray.png",
       "description": "Une queue de Balahara. Sa forme unique et torsadée lui permet de se propulser à travers le sol avec une force considérable.",
-      "id": 94,
+      "id": "94",
       "nom": "Balahara Tail",
       "rarity": 4,
       "recette": [],
@@ -943,7 +943,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/fc/MHWilds-Sac_Icon_Blue.png",
       "description": "Un organe de monstre conçu pour contenir et conserver de grandes quantités d'eau.",
-      "id": 95,
+      "id": "95",
       "nom": "Torrent Sac",
       "rarity": 6,
       "recette": [],
@@ -953,7 +953,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Balahara. Utilisé pour fabriquer de l'équipement.",
-      "id": 96,
+      "id": "96",
       "nom": "Balahara Certificate S",
       "rarity": 4,
       "recette": [],
@@ -963,7 +963,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
       "description": "Un joyau formé à partir de minerai ayant séjourné des années dans un Balahara. D'une beauté envoûtante.",
-      "id": 97,
+      "id": "97",
       "nom": "Balahara Black Pearl",
       "rarity": 4,
       "recette": [],
@@ -973,7 +973,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Scale_Icon_Gray.png",
       "description": "Une écaille de Balahara. L'érosion causée par le creusement constant limite son utilité pour l'artisanat.",
-      "id": 98,
+      "id": "98",
       "nom": "Balahara Scale",
       "rarity": 4,
       "recette": [],
@@ -983,7 +983,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bb/MHWilds-Shell_Icon_Gray.png",
       "description": "Un coquillage Balahara. La fulgurite qu'il a absorbée renforce sa dureté.",
-      "id": 99,
+      "id": "99",
       "nom": "Balahara Shell",
       "rarity": 4,
       "recette": [],
@@ -993,7 +993,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/07/MHWilds-Head_Icon_Gray.png",
       "description": "Le crâne d'un Balahara. Plus solide que la plupart des autres, il est conçu pour résister aux plongées difficiles dans le sable.",
-      "id": 100,
+      "id": "100",
       "nom": "Balahara Skull",
       "rarity": 4,
       "recette": [],
@@ -1003,7 +1003,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/fc/MHWilds-Sac_Icon_Blue.png",
       "description": "Un organe de monstre conçu pour retenir et conserver l'eau.",
-      "id": 101,
+      "id": "101",
       "nom": "Aqua Sac",
       "rarity": 4,
       "recette": [],
@@ -1013,7 +1013,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Balahara. Utilisé pour fabriquer de l'équipement.",
-      "id": 102,
+      "id": "102",
       "nom": "Balahara Certificate",
       "rarity": 4,
       "recette": [],
@@ -1023,7 +1023,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
       "description": "Fourrure de Congalala de haute qualité. Robuste et résistante, elle constitue un matériau d'artisanat important une fois transformée.",
-      "id": 103,
+      "id": "103",
       "nom": "Congalala Pelt +",
       "rarity": 6,
       "recette": [],
@@ -1033,7 +1033,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
       "description": "Une griffe longue, dure et acérée provenant du plus sauvage des Congalala, et non moins difficile à gérer que sa source.",
-      "id": 104,
+      "id": "104",
       "nom": "Congalala Claw +",
       "rarity": 6,
       "recette": [],
@@ -1043,7 +1043,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/0c/MHWilds-Hide_Icon_Yellow.png",
       "description": "Cheveux éclatants provenant de la tête d'un Congalala. La touffe fait office de couronne, affirmant son statut de chef.",
-      "id": 105,
+      "id": "105",
       "nom": "Vibrant Pelt +",
       "rarity": 6,
       "recette": [],
@@ -1053,7 +1053,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
       "description": "Une très grande défense de Congalala. Sa robustesse le rend plus apte à écraser qu'à déchirer.",
-      "id": 106,
+      "id": "106",
       "nom": "Congalala Fang +",
       "rarity": 6,
       "recette": [],
@@ -1063,7 +1063,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Ticket_Icon_Pink.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé le Congalala. Utilisé pour fabriquer de l'équipement.",
-      "id": 107,
+      "id": "107",
       "nom": "Congalala Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1073,7 +1073,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
       "description": "La fourrure rose d'un Congalala. Ses touffes de poils duveteux sont idéales pour la confection de vêtements.",
-      "id": 108,
+      "id": "108",
       "nom": "Congalala Pelt",
       "rarity": 4,
       "recette": [],
@@ -1083,7 +1083,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
       "description": "La longue griffe d'un Congalala. Grande et pointue, elle entaille tout ce qu'elle touche.",
-      "id": 109,
+      "id": "109",
       "nom": "Congalala Claw",
       "rarity": 4,
       "recette": [],
@@ -1093,7 +1093,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/0c/MHWilds-Hide_Icon_Yellow.png",
       "description": "Un Congalala arbore une chevelure éclatante. Ses jolies couleurs témoignent de sa position au sein de la meute.",
-      "id": 110,
+      "id": "110",
       "nom": "Vibrant Pelt",
       "rarity": 4,
       "recette": [],
@@ -1103,7 +1103,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Claw_Icon_Pink.png",
       "description": "Une incisive de Congalala. Bien que non tranchante, elle est suffisamment robuste pour écraser les substances les plus dures.",
-      "id": 111,
+      "id": "111",
       "nom": "Congalala Fang",
       "rarity": 4,
       "recette": [],
@@ -1113,7 +1113,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Ticket_Icon_Pink.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé le Congalala. Utilisé pour fabriquer de l'équipement.",
-      "id": 112,
+      "id": "112",
       "nom": "Congalala Certificate",
       "rarity": 4,
       "recette": [],
@@ -1123,7 +1123,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ec/MHWilds-Claw_Icon_Violet.png",
       "description": "Une griffe acérée d'Uth Duna. Assez lourde pour écraser facilement les arbres les plus épais.",
-      "id": 113,
+      "id": "113",
       "nom": "Uth Duna Claw +",
       "rarity": 6,
       "recette": [],
@@ -1133,7 +1133,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4f/MHWilds-Scale_Icon_Violet.png",
       "description": "Poils Uth Duna de haute qualité. Peu coupants, mais capables de retenir une grande quantité d'eau.",
-      "id": 114,
+      "id": "114",
       "nom": "Uth Duna Scale +",
       "rarity": 6,
       "recette": [],
@@ -1143,7 +1143,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
       "description": "Poils Uth Duna de haute qualité. Peu coupants, mais capables de retenir une grande quantité d'eau.",
-      "id": 115,
+      "id": "115",
       "nom": "Uth Duna Cilla +",
       "rarity": 6,
       "recette": [],
@@ -1153,7 +1153,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/95/MHWilds-Monster_Part_Icon_Pink.png",
       "description": "Un tentacule élégant et flexible d'un Uth Duna. Une membrane d'eau l'entoure tel un voile.",
-      "id": 116,
+      "id": "116",
       "nom": "Uth Duna Tentacle +",
       "rarity": 6,
       "recette": [],
@@ -1163,7 +1163,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/00/MHWilds-Hide_Icon_Violet.png",
       "description": "Une peau de haute qualité provenant d'un Uth Duna. Son motif est d'une beauté presque divine.",
-      "id": 117,
+      "id": "117",
       "nom": "Uth Duna Hide +",
       "rarity": 6,
       "recette": [],
@@ -1173,7 +1173,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f2/MHWilds-Ticket_Icon_Violet.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Uth Duna. Utilisé pour fabriquer de l'équipement.",
-      "id": 118,
+      "id": "118",
       "nom": "Uth Duna Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1183,7 +1183,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/e6/MHWilds-Plate_Icon_Violet.png",
       "description": "Une plaque rare provenant d'un Uth Duna. Considérée comme un symbole d'abondance en raison de la quantité d'eau qu'elle contient.",
-      "id": 119,
+      "id": "119",
       "nom": "Uth Duna Plate",
       "rarity": 5,
       "recette": [],
@@ -1193,7 +1193,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d2/MHWilds-Ball_Icon_Violet.png",
       "description": "Un joyau rare formée dans une Duna d'Uth. On dit qu'il possède le pouvoir d'une inondation dévastatrice.",
-      "id": 120,
+      "id": "120",
       "nom": "Uth Duna Watergem",
       "rarity": 7,
       "recette": [],
@@ -1203,7 +1203,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ec/MHWilds-Claw_Icon_Violet.png",
       "description": "Une griffe d'Uth Duna. Sa courbure lui permet de résister aux vagues qu'elle crée.",
-      "id": 121,
+      "id": "121",
       "nom": "Uth Duna Claw",
       "rarity": 4,
       "recette": [],
@@ -1213,7 +1213,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4f/MHWilds-Scale_Icon_Violet.png",
       "description": "Une écaille d'Uth Duna. Scintillante dans un kaléidoscope de couleurs.",
-      "id": 122,
+      "id": "122",
       "nom": "Uth Duna Scale",
       "rarity": 4,
       "recette": [],
@@ -1223,7 +1223,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/92/MHWilds-Hide_Icon_Pink.png",
       "description": "Poils extrêmement fins provenant d'un Uth Duna. Une fois tissés, ils forment une fine membrane aqueuse.",
-      "id": 123,
+      "id": "123",
       "nom": "Uth Duna Cilla",
       "rarity": 4,
       "recette": [],
@@ -1233,7 +1233,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/95/MHWilds-Monster_Part_Icon_Pink.png",
       "description": "Un tentacule provenant du dos d'un Uth Duna. Recouvert d'un mélange gélatineux d'eau et de fluides corporels.",
-      "id": 124,
+      "id": "124",
       "nom": "Uth Duna Tentacle",
       "rarity": 4,
       "recette": [],
@@ -1243,7 +1243,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/00/MHWilds-Hide_Icon_Violet.png",
       "description": "La peau d'un Uth Duna. Très prisée pour sa densité et ses motifs spectaculairement vibrants.",
-      "id": 125,
+      "id": "125",
       "nom": "Uth Duna Hide",
       "rarity": 4,
       "recette": [],
@@ -1253,7 +1253,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f2/MHWilds-Ticket_Icon_Violet.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Uth Duna. Utilisé pour fabriquer de l'équipement.",
-      "id": 126,
+      "id": "126",
       "nom": "Uth Duna Certificate",
       "rarity": 4,
       "recette": [],
@@ -1263,7 +1263,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
       "description": "Fourrure de Doshaguma de haute qualité. Tellement habituée aux climats rigoureux qu'elle s'apparente à une armure.",
-      "id": 127,
+      "id": "127",
       "nom": "Doshaguma Fur +",
       "rarity": 6,
       "recette": [],
@@ -1273,7 +1273,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
       "description": "Une griffe acérée de Doshaguma. Un coup transperce la peau, un coup arrache la chair des os.",
-      "id": 128,
+      "id": "128",
       "nom": "Doshaguma Claw +",
       "rarity": 6,
       "recette": [],
@@ -1283,7 +1283,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
       "description": "Peau de Doshaguma de haute qualité. Son poids épais et confortable rassure ceux qui la portent.",
-      "id": 129,
+      "id": "129",
       "nom": "Doshaguma Hide +",
       "rarity": 6,
       "recette": [],
@@ -1293,7 +1293,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
       "description": "Un croc de Doshaguma acéré. Preuve de la nature sauvage de son propriétaire : sa capacité à ronger même les os.",
-      "id": 130,
+      "id": "130",
       "nom": "Doshaguma Fang +",
       "rarity": 6,
       "recette": [],
@@ -1303,7 +1303,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Ticket_Icon_Brown.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Doshaguma. Utilisé pour fabriquer de l'équipement.",
-      "id": 131,
+      "id": "131",
       "nom": "Doshaguma Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1313,7 +1313,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
       "description": "Fourrure de Doshaguma. Sa texture rigide et hérissée en fait un matériau d'artisanat durable.",
-      "id": 132,
+      "id": "132",
       "nom": "Doshaguma Fur",
       "rarity": 4,
       "recette": [],
@@ -1323,7 +1323,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
       "description": "Une griffe de Doshaguma. Aussi tranchante que résistante, elle peut couper des proies musclées sans laisser de trace.",
-      "id": 133,
+      "id": "133",
       "nom": "Doshaguma Claw",
       "rarity": 4,
       "recette": [],
@@ -1333,7 +1333,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Brown.png",
       "description": "Une peau de Doshaguma. Les nombreuses cicatrices sur son corps témoignent de sa nature bestiale et agressive.",
-      "id": 134,
+      "id": "134",
       "nom": "Doshaguma Hide",
       "rarity": 4,
       "recette": [],
@@ -1343,7 +1343,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
       "description": "Un croc de Doshaguma. Grand et pointu, il peut facilement percer sa proie.",
-      "id": 135,
+      "id": "135",
       "nom": "Doshaguma Fang",
       "rarity": 4,
       "recette": [],
@@ -1353,7 +1353,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Ticket_Icon_Brown.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Doshaguma. Utilisé pour fabriquer de l'équipement.",
-      "id": 136,
+      "id": "136",
       "nom": "Doshaguma Certificate",
       "rarity": 4,
       "recette": [],
@@ -1363,7 +1363,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/ca/MHWilds-Claw_Icon_Blue.png",
       "description": "Une griffe ailée de Rey Dau à l'éclat azur. Recouverte de fulgurite pure et tranchante comme un rasoir.",
-      "id": 137,
+      "id": "137",
       "nom": "Rey Dau Fulguralon",
       "rarity": 6,
       "recette": [],
@@ -1373,7 +1373,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/da/MHWilds-Scale_Icon_Yellow.png",
       "description": "Une écaille Rey Dau de haute qualité. Son exposition constante au sable lui confère une robustesse et une douceur exceptionnelles.",
-      "id": 138,
+      "id": "138",
       "nom": "Rey Dau Scale +",
       "rarity": 6,
       "recette": [],
@@ -1383,7 +1383,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7f/MHWilds-Shell_Icon_Yellow.png",
       "description": "La carapace résistante d'un Rey Dau. Son motif complexe mais constant améliore sa conductivité.",
-      "id": 139,
+      "id": "139",
       "nom": "Rey Dau Carapace",
       "rarity": 6,
       "recette": [],
@@ -1393,7 +1393,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Une corne de Rey Dau crépitante d'éclairs. Assez résistant pour supporter de violents éclairs.",
-      "id": 140,
+      "id": "140",
       "nom": "Rey Dau Bolthorn",
       "rarity": 6,
       "recette": [],
@@ -1403,7 +1403,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Tail_Icon_Yellow.png",
       "description": "Une queue de Rey Dau. Ses épines couvertes de fulgurite se frottent les unes contre les autres pour produire une mélodie menaçante.",
-      "id": 141,
+      "id": "141",
       "nom": "Rey Dau Tail",
       "rarity": 4,
       "recette": [],
@@ -1413,7 +1413,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/70/MHWilds-Ticket_Icon_Yellow.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Rey Dau. Utilisé pour fabriquer de l'équipement.",
-      "id": 142,
+      "id": "142",
       "nom": "Rey Dau Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1423,7 +1423,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f7/MHWilds-Plate_Icon_Yellow.png",
       "description": "Une plaque Rey Dau. L'échelle orientée vers l'arrière accumule une quantité considérable d'énergie.",
-      "id": 143,
+      "id": "143",
       "nom": "Rey Dau Plate",
       "rarity": 5,
       "recette": [],
@@ -1433,7 +1433,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/89/MHWilds-Ball_Icon_Yellow.png",
       "description": "Un joyau rare formée au sein d'un Rey Dau. On dit qu'il possède le pouvoir de dix mille tempêtes.",
-      "id": 144,
+      "id": "144",
       "nom": "Rey Dau Boltgerm",
       "rarity": 7,
       "recette": [],
@@ -1443,7 +1443,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/ca/MHWilds-Claw_Icon_Blue.png",
       "description": "Le conduit énergétique en forme de griffe d'un Rey Dau. Recouvert de lames de fulgurite acérées formées par des décharges électriques.",
-      "id": 145,
+      "id": "145",
       "nom": "Rey Dau Wingtalon",
       "rarity": 4,
       "recette": [],
@@ -1453,7 +1453,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/da/MHWilds-Scale_Icon_Yellow.png",
       "description": "Une échelle Rey Dau. Sa forme unique permet le passage de l'électricité provenant de ses organes.",
-      "id": 146,
+      "id": "146",
       "nom": "Rey Dau Scale",
       "rarity": 4,
       "recette": [],
@@ -1463,7 +1463,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7f/MHWilds-Shell_Icon_Yellow.png",
       "description": "Coque d'un Rey Dau. Hautement conductrice, elle est capable de produire des courants électriques importants.",
-      "id": 147,
+      "id": "147",
       "nom": "Rey Dau Shell",
       "rarity": 4,
       "recette": [],
@@ -1473,7 +1473,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Une corne de Rey Dau chargée électriquement. Le muscle épais et flexible à sa base lui permet de bouger librement.",
-      "id": 148,
+      "id": "148",
       "nom": "Rey Dau Thunderhorn",
       "rarity": 4,
       "recette": [],
@@ -1483,7 +1483,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/70/MHWilds-Ticket_Icon_Yellow.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Rey Dau. Utilisé pour fabriquer de l'équipement.",
-      "id": 149,
+      "id": "149",
       "nom": "Rey Dau Certificate",
       "rarity": 4,
       "recette": [],
@@ -1493,7 +1493,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
       "description": "Une peau Rompopolo de haute qualité. Peut s'étendre jusqu'à des dimensions extrêmes lorsqu'elle est remplie de gaz.",
-      "id": 150,
+      "id": "150",
       "nom": "Rompopolo Hide +",
       "rarity": 6,
       "recette": [],
@@ -1503,7 +1503,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/19/MHWilds-Claw_Icon_Dark_Blue.png",
       "description": "Une griffe acérée de Rompopolo. Parfaitement adaptée pour percer les organes vitaux avec une précision extrême.",
-      "id": 151,
+      "id": "151",
       "nom": "Rompopolo Claw +",
       "rarity": 6,
       "recette": [],
@@ -1513,7 +1513,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
       "description": "Une peau hautement toxique provenant d'un Rompopolo. Plus le motif est frappant, plus elle est toxique.",
-      "id": 152,
+      "id": "152",
       "nom": "Spotted Poison Hide +",
       "rarity": 6,
       "recette": [],
@@ -1523,7 +1523,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9d/MHWilds-Sac_Icon_Purple.png",
       "description": "Un organe monstrueux rempli d'une toxine extrêmement puissante. Un seul contact peut le rendre bleu clair.",
-      "id": 153,
+      "id": "153",
       "nom": "Toxin Sac",
       "rarity": 6,
       "recette": [],
@@ -1533,7 +1533,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/e2/MHWilds-Head_Icon_Dark_Blue.png",
       "description": "Un grand bec de Rompopolo. Sa pointe acérée et sa courbe douce inspirent une peur indicible à sa proie.",
-      "id": 154,
+      "id": "154",
       "nom": "Rompopolo Beak +",
       "rarity": 6,
       "recette": [],
@@ -1543,7 +1543,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cf/MHWilds-Ticket_Icon_Dark_Blue.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Rompopolo. Utilisé pour fabriquer de l'équipement.",
-      "id": 155,
+      "id": "155",
       "nom": "Rompopolo Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1553,7 +1553,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
       "description": "Une peau de Rompopolo. Elle reprend sa forme initiale même étirée au maximum.",
-      "id": 156,
+      "id": "156",
       "nom": "Rompopolo Hide",
       "rarity": 4,
       "recette": [],
@@ -1563,7 +1563,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/19/MHWilds-Claw_Icon_Dark_Blue.png",
       "description": "Griffe de Rompopolo. Spécialement conçue pour percer ses proies.",
-      "id": 157,
+      "id": "157",
       "nom": "Rompopolo Claw",
       "rarity": 4,
       "recette": [],
@@ -1573,7 +1573,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/e2/MHWilds-Head_Icon_Dark_Blue.png",
       "description": "Le bec d'un Rompopolo. Sa forme inquiétante évoque un indescriptible sentiment de malaise.",
-      "id": 158,
+      "id": "158",
       "nom": "Rompopolo Beak",
       "rarity": 4,
       "recette": [],
@@ -1583,7 +1583,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Hide_Icon_Dark_Blue.png",
       "description": "Une peau venimeuse de Rompopolo. Ses taches vives préviennent du danger inhérent.",
-      "id": 159,
+      "id": "159",
       "nom": "Spotted Poison Hide",
       "rarity": 4,
       "recette": [],
@@ -1593,7 +1593,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9d/MHWilds-Sac_Icon_Purple.png",
       "description": "Un organe monstrueux rempli d'une toxine mortelle. À manipuler avec une extrême prudence.",
-      "id": 160,
+      "id": "160",
       "nom": "Poison Sac",
       "rarity": 4,
       "recette": [],
@@ -1603,7 +1603,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cf/MHWilds-Ticket_Icon_Dark_Blue.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Rompopolo. Utilisé pour fabriquer de l'équipement.",
-      "id": 161,
+      "id": "161",
       "nom": "Rompopolo Certificate",
       "rarity": 4,
       "recette": [],
@@ -1613,7 +1613,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/02/MHWilds-Claw_Icon_Purple.png",
       "description": "Une griffe de la queue d'un Hirabami. Sa forme incurvée lui permet de piéger facilement ses proies.",
-      "id": 162,
+      "id": "162",
       "nom": "Hirabami Tail Claw",
       "rarity": 4,
       "recette": [],
@@ -1623,7 +1623,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c7/MHWilds-Scale_Icon_Purple.png",
       "description": "Une écaille d'Hirabami. Bien que petite et légère, elle est très solide et facile à manipuler.",
-      "id": 163,
+      "id": "163",
       "nom": "Hirabami Scale",
       "rarity": 4,
       "recette": [],
@@ -1633,7 +1633,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Purple.png",
       "description": "La peau d'un Hirabami. Légère et douce comme du tissu, elle est réputée pour sa texture unique.",
-      "id": 164,
+      "id": "164",
       "nom": "Hirabami Hide",
       "rarity": 4,
       "recette": [],
@@ -1643,7 +1643,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Webbing_Icon_Purple.png",
       "description": "Toile d'Hirabami. Son élasticité exceptionnelle permet au monstre de flotter dans les airs.",
-      "id": 165,
+      "id": "165",
       "nom": "Hirabami Webbing",
       "rarity": 4,
       "recette": [],
@@ -1653,7 +1653,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Sac_Icon_White.png",
       "description": "Un organe de monstre rempli d'un liquide extrêmement froid. À manipuler avec précaution.",
-      "id": 166,
+      "id": "166",
       "nom": "Frost Sac",
       "rarity": 4,
       "recette": [],
@@ -1663,7 +1663,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Ticket_Icon_Purple.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Hirabami. Utilisé pour fabriquer de l'équipement.",
-      "id": 167,
+      "id": "167",
       "nom": "Hirabami Certificate",
       "rarity": 4,
       "recette": [],
@@ -1673,7 +1673,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/02/MHWilds-Claw_Icon_Purple.png",
       "description": "Une griffe de haute qualité provenant de la queue d'un Hirabami. Aucune proie ne peut échapper à sa morsure semblable à une faux.",
-      "id": 168,
+      "id": "168",
       "nom": "Hirabami Tail Claw +",
       "rarity": 6,
       "recette": [],
@@ -1683,7 +1683,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c7/MHWilds-Scale_Icon_Purple.png",
       "description": "Une écaille d'Hirabami de haute qualité. Non seulement elle est robuste, mais aussi extrêmement légère.",
-      "id": 169,
+      "id": "169",
       "nom": "Hirabami Scale +",
       "rarity": 6,
       "recette": [],
@@ -1693,7 +1693,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9c/MHWilds-Hide_Icon_Purple.png",
       "description": "Une peau Hirabami de haute qualité. Douce comme un tissu de la plus haute qualité, elle offre la chaleur nécessaire pour affronter le blizzard.",
-      "id": 170,
+      "id": "170",
       "nom": "Hirabami Hide +",
       "rarity": 6,
       "recette": [],
@@ -1703,7 +1703,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/13/MHWilds-Webbing_Icon_Purple.png",
       "description": "Toile d'Hirabami de haute qualité. Peut manipuler les courants d'air même lors des tempêtes de neige les plus violentes.",
-      "id": 171,
+      "id": "171",
       "nom": "Hirabami Webbing +",
       "rarity": 6,
       "recette": [],
@@ -1713,7 +1713,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/01/MHWilds-Sac_Icon_White.png",
       "description": "Un organe de monstre au pouvoir glacial incroyable. Il gèle instantanément son environnement.",
-      "id": 172,
+      "id": "172",
       "nom": "Freezer Sac",
       "rarity": 6,
       "recette": [],
@@ -1723,7 +1723,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Ticket_Icon_Purple.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Hirabami. Utilisé pour fabriquer de l'équipement.",
-      "id": 173,
+      "id": "173",
       "nom": "Hirabami Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1733,7 +1733,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Une griffe légère, semblable à une faux, qui permet les attaques rapides et mortelles du Nerscylla.",
-      "id": 174,
+      "id": "174",
       "nom": "Nerscylla Claw",
       "rarity": 4,
       "recette": [],
@@ -1743,7 +1743,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
       "description": "Peau élastique et résistante à l'électricité portée par une Nerscylla. Probablement celle d'un autre monstre.",
-      "id": 175,
+      "id": "175",
       "nom": "Rubbery Hide",
       "rarity": 4,
       "recette": [],
@@ -1753,7 +1753,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "Coquille extérieure d'une Nerscylla. Extrêmement claire, avec une coloration nettement aposématique.",
-      "id": 176,
+      "id": "176",
       "nom": "Nerscylla Shell",
       "rarity": 4,
       "recette": [],
@@ -1763,7 +1763,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
       "description": "Une pointe dorsale et un sac à poison utilisés pour faire couler du poison sur les proies passant sous le nid du Nerscylla.",
-      "id": 177,
+      "id": "177",
       "nom": "Nerscylla Spike",
       "rarity": 4,
       "recette": [],
@@ -1773,7 +1773,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Le croc venimeux rétractable d'une Nerscylla. À manipuler avec précaution !",
-      "id": 178,
+      "id": "178",
       "nom": "Nerscylla Chelicera",
       "rarity": 4,
       "recette": [],
@@ -1783,7 +1783,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8d/MHWilds-Sac_Icon_Light_Blue.png",
       "description": "Un organe de monstre rempli d'une poudre assommante capable d'induire le sommeil.",
-      "id": 179,
+      "id": "179",
       "nom": "Sleep Sac",
       "rarity": 4,
       "recette": [],
@@ -1793,7 +1793,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé une Nerscylla. Utilisé pour fabriquer de l'équipement.",
-      "id": 180,
+      "id": "180",
       "nom": "Nerscylla Certificate",
       "rarity": 4,
       "recette": [],
@@ -1803,7 +1803,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Cette griffe acérée de Nerscylla sort de l'ombre pour faire une liste toujours plus longue de victimes.",
-      "id": 181,
+      "id": "181",
       "nom": "Nerscylla Claw +",
       "rarity": 6,
       "recette": [],
@@ -1813,7 +1813,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "Une carapace de Nerscylla robuste. Sa matière blanche porcelaine est très prisée, notamment par les femmes.",
-      "id": 182,
+      "id": "182",
       "nom": "Nerscylla Carapace",
       "rarity": 6,
       "recette": [],
@@ -1823,7 +1823,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d7/MHWilds-Hide_Icon_Blue.png",
       "description": "La peau de qualité de Gypceros. Sa texture ample et extensible est étonnamment agréable à porter.",
-      "id": 183,
+      "id": "183",
       "nom": "Rubbery Hide +",
       "rarity": 6,
       "recette": [],
@@ -1833,7 +1833,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
       "description": "Une pointe de Nerscylla particulièrement grande, plus prisée pour sa poche de poison mortelle que pour son tranchant.",
-      "id": 184,
+      "id": "184",
       "nom": "Nerscylla Spike +",
       "rarity": 6,
       "recette": [],
@@ -1843,7 +1843,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Un croc de Nerscylla flexible et venimeux. Attention à son poison mortel en le manipulant !",
-      "id": 185,
+      "id": "185",
       "nom": "Nerscylla Shear",
       "rarity": 6,
       "recette": [],
@@ -1853,7 +1853,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé une Nerscylla. Utilisé pour fabriquer de l'équipement.",
-      "id": 186,
+      "id": "186",
       "nom": "Nerscylla Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1863,7 +1863,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
       "description": "Une peau Nu Udra très élastique. Son aspect est lisse, mais elle présente une légère rugosité.",
-      "id": 187,
+      "id": "187",
       "nom": "Nu Udra Hide",
       "rarity": 4,
       "recette": [],
@@ -1873,7 +1873,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2a/MHWilds-Chemical_Icon_Gray.png",
       "description": "Un liquide visqueux fabriqué à partir des fluides corporels et de l'huile d'un Nu Udra. L'ajout d'huile le rend plus inflammable.",
-      "id": 188,
+      "id": "188",
       "nom": "Nu Udra Oilmucus",
       "rarity": 4,
       "recette": [],
@@ -1883,7 +1883,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Une corne de Nu Udra. Courbée pour protéger les yeux et parsemée de petites épines.",
-      "id": 189,
+      "id": "189",
       "nom": "Nu Udra Horn",
       "rarity": 4,
       "recette": [],
@@ -1893,7 +1893,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Un pic Nu Udra. Sa forme torsadée et irrégulière nécessite une main experte pour le manipuler.",
-      "id": 190,
+      "id": "190",
       "nom": "Nu Udra Spike",
       "rarity": 4,
       "recette": [],
@@ -1903,7 +1903,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
       "description": "Un tentacule de Nu Udra. Incroyablement flexible et élastique, seule la lame la plus tranchante peut le percer.",
-      "id": 191,
+      "id": "191",
       "nom": "Nu Udra Tentacle",
       "rarity": 4,
       "recette": [],
@@ -1913,7 +1913,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Nu Udra. Utilisé pour fabriquer de l'équipement.",
-      "id": 192,
+      "id": "192",
       "nom": "Nu Udra Certificate",
       "rarity": 4,
       "recette": [],
@@ -1923,7 +1923,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Chemical_Icon_Light_Blue.png",
       "description": "Un étrange fluide s'est formé à l'intérieur d'un Nu Udra. Il brille en bleu et peut renforcer les matériaux.",
-      "id": 193,
+      "id": "193",
       "nom": "Nu Udra Cerebrospinal Fluid",
       "rarity": 5,
       "recette": [],
@@ -1933,7 +1933,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/12/MHWilds-Hide_Icon_Gray.png",
       "description": "Peau Nu Udra de haute qualité. Particulièrement élastique et résistante au feu. Éternellement visqueuse.",
-      "id": 194,
+      "id": "194",
       "nom": "Nu Udra Hide +",
       "rarity": 6,
       "recette": [],
@@ -1943,7 +1943,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Une corne Nu Udra pointue. Chacune se tord étrangement vers l'extérieur, comme à la recherche de quelque chose.",
-      "id": 195,
+      "id": "195",
       "nom": "Nu Udra Horn +",
       "rarity": 6,
       "recette": [],
@@ -1953,7 +1953,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2a/MHWilds-Chemical_Icon_Gray.png",
       "description": "Huile dense de mucus Nu Udra. Brûle incroyablement fort et longtemps une fois allumée.",
-      "id": 196,
+      "id": "196",
       "nom": "Nu Udra Oilmucus +",
       "rarity": 6,
       "recette": [],
@@ -1963,7 +1963,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/2d/MHWilds-Claw_Icon_Yellow.png",
       "description": "Une pointe Nu Udra de qualité. Elle arrache la chair environnante lorsqu'elle est retirée de sa victime.",
-      "id": 197,
+      "id": "197",
       "nom": "Nu Udra Spike +",
       "rarity": 6,
       "recette": [],
@@ -1973,7 +1973,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b4/MHWilds-Monster_Part_Icon_Gray.png",
       "description": "Un grand tentacule de Nu Udra. Un énorme morceau de muscle qui se débattra de manière incontrôlable même coupé.",
-      "id": 198,
+      "id": "198",
       "nom": "Nu Udra Tentacle +",
       "rarity": 6,
       "recette": [],
@@ -1983,7 +1983,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/cc/MHWilds-Ticket_Icon_Gray.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Nu Udra. Utilisé pour fabriquer de l'équipement.",
-      "id": 199,
+      "id": "199",
       "nom": "Nu Udra Certificate S",
       "rarity": 6,
       "recette": [],
@@ -1993,7 +1993,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/49/MHWilds-Ball_Icon_Red.png",
       "description": "Une mystérieuse gemme formée à l'intérieur d'un Nu Udra. On dit qu'elle détient le pouvoir de réduire le monde en cendres.",
-      "id": 200,
+      "id": "200",
       "nom": "Nu Udra Flamegem",
       "rarity": 7,
       "recette": [],
@@ -2003,7 +2003,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/03/MHWilds-Scale_Icon_Vermilion.png",
       "description": "Une écaille de haute qualité provenant d'un Ajarakan. Ses pointes enflammées projettent la fureur ardente du monstre.",
-      "id": 201,
+      "id": "201",
       "nom": "Ajarakan Scale +",
       "rarity": 6,
       "recette": [],
@@ -2013,7 +2013,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Monster_Part_Icon_Vermilion.png",
       "description": "Une crête solide comme le roc d'un Ajarakan. Sa couleur et ses courbes irrégulières évoquent un incendie.",
-      "id": 202,
+      "id": "202",
       "nom": "Ajarakan Ridge +",
       "rarity": 6,
       "recette": [],
@@ -2023,7 +2023,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d3/MHWilds-Tail_Icon_Vermilion.png",
       "description": "La queue d'un Ajarakan. Ses pointes irrégulières sont hautement combustibles.",
-      "id": 203,
+      "id": "203",
       "nom": "Ajarakan Tail",
       "rarity": 4,
       "recette": [],
@@ -2033,7 +2033,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f4/MHWilds-Shell_Icon_Vermilion.png",
       "description": "Une carapace d'Ajarakan résistante. Même les explosions violentes ne peuvent l'endommager.",
-      "id": 204,
+      "id": "204",
       "nom": "Ajarakan Carapace",
       "rarity": 6,
       "recette": [],
@@ -2043,7 +2043,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Ore_Icon_Vermilion.png",
       "description": "Un grand joyau formée dans un Ajarakan. Il brille d'un rouge intense, comme s'il contenait un brasier.",
-      "id": 205,
+      "id": "205",
       "nom": "Ajarakan Jewel +",
       "rarity": 6,
       "recette": [],
@@ -2053,7 +2053,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c8/MHWilds-Ticket_Icon_Vermilion.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Ajarakan. Utilisé pour fabriquer de l'équipement.",
-      "id": 206,
+      "id": "206",
       "nom": "Ajarakan Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2063,7 +2063,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Monster_Part_Icon_Vermilion.png",
       "description": "Moelle osseuse d'un Ajarakan. Presque trop chaude pour être manipulée.",
-      "id": 207,
+      "id": "207",
       "nom": "Ajarakan Marrow",
       "rarity": 5,
       "recette": [],
@@ -2073,7 +2073,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Monster_Part_Icon_Vermilion.png",
       "description": "Le tronc cérébral d'un Ajarakan. Brûlant constamment, comme si toute sa chaleur corporelle était concentrée à l'intérieur.",
-      "id": 208,
+      "id": "208",
       "nom": "Ajarakan Medulla",
       "rarity": 7,
       "recette": [],
@@ -2083,7 +2083,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/03/MHWilds-Scale_Icon_Vermilion.png",
       "description": "Une écaille d'Ajarakan. Extrêmement résistante, même la pierre la plus dure ne la rayera pas.",
-      "id": 209,
+      "id": "209",
       "nom": "Ajarakan Scale",
       "rarity": 4,
       "recette": [],
@@ -2093,7 +2093,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f4/MHWilds-Shell_Icon_Vermilion.png",
       "description": "La carapace d'un Ajarakan. Capable de produire une pluie d'étincelles au moindre frottement.",
-      "id": 210,
+      "id": "210",
       "nom": "Ajarakan Shell",
       "rarity": 4,
       "recette": [],
@@ -2103,7 +2103,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/10/MHWilds-Monster_Part_Icon_Vermilion.png",
       "description": "La carcasse rigide qui longe le dos d'un Ajarakan. Sa couleur écarlate vif rappelle un feu déchaîné.",
-      "id": 211,
+      "id": "211",
       "nom": "Ajarakan Ridge",
       "rarity": 4,
       "recette": [],
@@ -2113,7 +2113,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Ore_Icon_Vermilion.png",
       "description": "Un grand joyau formée dans un Ajarakan. Il brille d'un rouge intense, comme s'il contenait un brasier.",
-      "id": 212,
+      "id": "212",
       "nom": "Ajarakan Jewel",
       "rarity": 4,
       "recette": [],
@@ -2123,7 +2123,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c8/MHWilds-Ticket_Icon_Vermilion.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Ajarakan. Utilisé pour fabriquer de l'équipement.",
-      "id": 213,
+      "id": "213",
       "nom": "Ajarakan Certificate",
       "rarity": 4,
       "recette": [],
@@ -2133,7 +2133,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Fourrure de haute qualité provenant d'un Doshaguma Gardien. L'énergie qui la traverse la rend dure comme l'acier.",
-      "id": 214,
+      "id": "214",
       "nom": "Guardian Doshaguma Fur +",
       "rarity": 6,
       "recette": [],
@@ -2143,7 +2143,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Une griffe particulièrement acérée d'un Doshaguma Gardien. Débordante d'énergie, elle traverse facilement les armures.",
-      "id": 215,
+      "id": "215",
       "nom": "Guardian Doshaguma Claw +",
       "rarity": 6,
       "recette": [],
@@ -2153,7 +2153,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Une peau de haute qualité provenant d'un Doshaguma Gardien. Robuste comme le fer et capable de résister à toutes les attaques.",
-      "id": 216,
+      "id": "216",
       "nom": "Guardian Doshaguma Hide +",
       "rarity": 6,
       "recette": [],
@@ -2163,7 +2163,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Un croc particulièrement acéré d'un Doshaguma Gardien. Il écrase sans pitié tout sur son passage.",
-      "id": 217,
+      "id": "217",
       "nom": "Guardian Doshaguma Fang +",
       "rarity": 6,
       "recette": [],
@@ -2173,7 +2173,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/72/MHWilds-Chemical_Icon_White.png",
       "description": "Peut être obtenu sur certains grands monstres. Peut amplifier les effets de certains médicaments.",
-      "id": 218,
+      "id": "218",
       "nom": "Nourishing Extract",
       "rarity": 4,
       "recette": [],
@@ -2183,7 +2183,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Doshaguma Gardien. Utilisé pour la fabrication d'équipement.",
-      "id": 219,
+      "id": "219",
       "nom": "G Doshaguma Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2193,7 +2193,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Une fourrure de Gardien de haute qualité. Exceptionnellement lisse et résistante.",
-      "id": 220,
+      "id": "220",
       "nom": "Guardian Pelt +",
       "rarity": 6,
       "recette": [],
@@ -2203,7 +2203,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/72/MHWilds-Chemical_Icon_White.png",
       "description": "Sang de gardien aux propriétés particulières. Nécessite des recherches plus approfondies.",
-      "id": 221,
+      "id": "221",
       "nom": "Guardian Blood +",
       "rarity": 6,
       "recette": [],
@@ -2213,7 +2213,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "La fourrure d'un Doshaguma Gardien. L'énergie qui la traverse l'a blanchie et renforcée.",
-      "id": 222,
+      "id": "222",
       "nom": "Guardian Doshaguma Fur",
       "rarity": 4,
       "recette": [],
@@ -2223,7 +2223,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "La griffe d'un Doshaguma Gardien. L'énergie qui la traverse l'a rendue blanche et rigide.",
-      "id": 223,
+      "id": "223",
       "nom": "Guardian Doshaguma Claw",
       "rarity": 4,
       "recette": [],
@@ -2233,7 +2233,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "La peau d'un Doshaguma Gardien. Elle est particulièrement épaisse et résistante, avec un motif blanc distinctif.",
-      "id": 224,
+      "id": "224",
       "nom": "Guardian Doshaguma Hide",
       "rarity": 4,
       "recette": [],
@@ -2243,7 +2243,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Le croc d'un Doshaguma Gardien. Assez résistant pour résister à la salive extrêmement acide du Doshaguma.",
-      "id": 225,
+      "id": "225",
       "nom": "Guardian Doshaguma Fang",
       "rarity": 4,
       "recette": [],
@@ -2253,7 +2253,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Doshaguma Gardien. Utilisé pour la fabrication d'équipement.",
-      "id": 226,
+      "id": "226",
       "nom": "G Doshaguma Certificate",
       "rarity": 4,
       "recette": [],
@@ -2263,7 +2263,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Contient une substance inconnue. Elle a perdu toute sa couleur et se transforme en énergie.",
-      "id": 227,
+      "id": "227",
       "nom": "Guardian Pelt",
       "rarity": 4,
       "recette": [],
@@ -2273,7 +2273,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/72/MHWilds-Chemical_Icon_White.png",
       "description": "Sang de gardien contenant une substance inconnue. Un précieux matériau de recherche.",
-      "id": 228,
+      "id": "228",
       "nom": "Guardian Blood",
       "rarity": 4,
       "recette": [],
@@ -2283,7 +2283,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/93/MHWilds-Wing_Icon_White.png",
       "description": "Une aile de Rathalos Gardien. L'énergie circule dans chaque veine, produisant des vents violents.",
-      "id": 229,
+      "id": "229",
       "nom": "Guardian Rathalos Wing",
       "rarity": 6,
       "recette": [],
@@ -2293,7 +2293,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une écaille de haute qualité provenant d'un Rathalos Gardien. L'énergie accumulée l'a rendue brûlante.",
-      "id": 230,
+      "id": "230",
       "nom": "Guardian Rathalos Scale +",
       "rarity": 6,
       "recette": [],
@@ -2303,7 +2303,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
       "description": "La queue d'un Rathalos Gardien. L'énergie qui la traverse en fait un matériau adaptable.",
-      "id": 231,
+      "id": "231",
       "nom": "Guardian Rathalos Tail",
       "rarity": 4,
       "recette": [],
@@ -2313,7 +2313,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "La carapace robuste d'un Rathalos Gardien. Suffisamment résistante pour résister aux flammes les plus féroces.",
-      "id": 232,
+      "id": "232",
       "nom": "Guardian Rathalos Carapace",
       "rarity": 6,
       "recette": [],
@@ -2323,7 +2323,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Rathalos Gardien. Utilisé pour fabriquer de l'équipement.",
-      "id": 233,
+      "id": "233",
       "nom": "G Rathalos Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2333,7 +2333,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/80/MHWilds-Plate_Icon_White.png",
       "description": "Une plaque d'un Rathalos Gardien. Renforcée par le flux d'énergie, sa chaleur intrinsèque jaillit.",
-      "id": 234,
+      "id": "234",
       "nom": "Guardian Rathalos Plate",
       "rarity": 5,
       "recette": [],
@@ -2343,7 +2343,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
       "description": "Un joyau rare formée dans le corps d'un Rathalos Gardien. On dit qu'il possède le pouvoir d'un enfer.",
-      "id": 235,
+      "id": "235",
       "nom": "Guardian Rathalos Ruby",
       "rarity": 7,
       "recette": [],
@@ -2353,7 +2353,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une écaille de Gardien de haute qualité. Scintillante comme la neige, comme si elle avait toujours été d'un blanc immaculé.",
-      "id": 236,
+      "id": "236",
       "nom": "Guardian Scale +",
       "rarity": 6,
       "recette": [],
@@ -2363,7 +2363,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/93/MHWilds-Wing_Icon_White.png",
       "description": "Sangle d'un Rathalos Gardien. L'énergie qui la traverse améliore ses capacités de vol.",
-      "id": 237,
+      "id": "237",
       "nom": "Guardian Rathalos Webbing",
       "rarity": 4,
       "recette": [],
@@ -2373,7 +2373,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une écaille de Rathalos Gardien. Rendue épaisse et résistante par l'énergie qui la traverse.",
-      "id": 238,
+      "id": "238",
       "nom": "Guardian Rathalos Scale",
       "rarity": 4,
       "recette": [],
@@ -2383,7 +2383,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "La carapace d'un Rathalos Gardien. Elle dégage encore de la chaleur grâce à l'énergie qui la traverse.",
-      "id": 239,
+      "id": "239",
       "nom": "Guardian Rathalos Shell",
       "rarity": 4,
       "recette": [],
@@ -2393,7 +2393,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Sac_Icon_Red.png",
       "description": "Un organe de monstre rempli de poudre inflammable. À manipuler avec une extrême prudence.",
-      "id": 240,
+      "id": "240",
       "nom": "Flame Sac",
       "rarity": 4,
       "recette": [],
@@ -2403,7 +2403,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Un certificat de guilde décerné à ceux qui ont chassé un Rathalos Gardien. Utilisé pour fabriquer de l'équipement.",
-      "id": 241,
+      "id": "241",
       "nom": "G Rathalos Certificate",
       "rarity": 4,
       "recette": [],
@@ -2413,7 +2413,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Contient une substance inconnue. Elle a perdu toute sa couleur et possède des propriétés uniques.",
-      "id": 242,
+      "id": "242",
       "nom": "Guardian Scale",
       "rarity": 4,
       "recette": [],
@@ -2423,7 +2423,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Une griffe acérée d'un Odogaron Gardien d'Ébène. Sa forme en scie lui permet de déchiqueter sans pitié sa proie.",
-      "id": 243,
+      "id": "243",
       "nom": "Guardian Ebony Claw +",
       "rarity": 6,
       "recette": [],
@@ -2433,7 +2433,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Un croc d'Odogaron d'ébène gardien acéré. Enveloppé de malheur, seuls les plus courageux osent le toucher.",
-      "id": 244,
+      "id": "244",
       "nom": "Guardian Ebony Fang +",
       "rarity": 6,
       "recette": [],
@@ -2443,7 +2443,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une écaille d'Odogaron en ébène gardien de haute qualité. Renforcée par un flux d'énergie pure.",
-      "id": 245,
+      "id": "245",
       "nom": "Guardian Ebony Scale +",
       "rarity": 6,
       "recette": [],
@@ -2453,7 +2453,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
       "description": "Un gros morceau de tendon d'Odogaron ébène gardien. Un excès d'énergie l'a considérablement renforcé.",
-      "id": 246,
+      "id": "246",
       "nom": "Guardian Ebony Sinew +",
       "rarity": 6,
       "recette": [],
@@ -2463,7 +2463,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
       "description": "La queue d'un Odogaron Gardien en ébène. Couverte d'écailles hérissées, elle évoque sa terrible rage.",
-      "id": 247,
+      "id": "247",
       "nom": "Guardian Ebony Tail",
       "rarity": 4,
       "recette": [],
@@ -2473,7 +2473,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Odogaron ébène gardien. Utilisé pour la fabrication d'équipement.",
-      "id": 248,
+      "id": "248",
       "nom": "G Ebony Odogaron Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2483,7 +2483,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/80/MHWilds-Plate_Icon_White.png",
       "description": "Une plaque d'Odogaron en ébène gardien. L'énergie a renforcé sa puissance draconique à des niveaux incroyables.",
-      "id": 249,
+      "id": "249",
       "nom": "Guardian Ebony Plate",
       "rarity": 5,
       "recette": [],
@@ -2493,7 +2493,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
       "description": "Un joyau rare formée dans un Odogaron Gardien d'Ébène. On dit qu'il détient un étrange pouvoir draconique.",
-      "id": 250,
+      "id": "250",
       "nom": "Guardian Ebony Gem",
       "rarity": 7,
       "recette": [],
@@ -2503,7 +2503,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Une griffe d'Odogaron en ébène gardien. Conçue pour déchirer tout, le moindre contact est dangereux.",
-      "id": 251,
+      "id": "251",
       "nom": "Guardian Ebony Claw",
       "rarity": 4,
       "recette": [],
@@ -2513,7 +2513,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Un croc d'Odogaron en ébène gardien. Sa pointe acérée lui permet de percer les entrailles de n'importe quelle proie.",
-      "id": 252,
+      "id": "252",
       "nom": "Guardian Ebony Fang",
       "rarity": 4,
       "recette": [],
@@ -2523,7 +2523,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une écaille d'un Odogaron ébène gardien. L'énergie qui la traverse a blanchi certaines parties",
-      "id": 253,
+      "id": "253",
       "nom": "Guardian Ebony Scale",
       "rarity": 3,
       "recette": [],
@@ -2533,7 +2533,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/df/MHWilds-Monster_Part_Icon_White.png",
       "description": "Tendon serré d'un Odogaron ébène gardien. Particulièrement résistant et lourd.",
-      "id": 254,
+      "id": "254",
       "nom": "Guardian Ebony Sinew",
       "rarity": 3,
       "recette": [],
@@ -2543,7 +2543,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Odogaron ébène gardien. Utilisé pour la fabrication d'équipement.",
-      "id": 255,
+      "id": "255",
       "nom": "G Ebony Odogaron Certificate",
       "rarity": 4,
       "recette": [],
@@ -2553,7 +2553,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
       "description": "Une griffe acérée de Jin Dahaad. Terriblement froide, elle gèle tout ce qu'elle touche.",
-      "id": 256,
+      "id": "256",
       "nom": "Jin Dahaad Claw +",
       "rarity": 6,
       "recette": [],
@@ -2563,7 +2563,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a3/MHWilds-Shell_Icon_Brown.png",
       "description": "Depuis l'arrière d'un Jin Dahaad, les propriétés métalliques de cette plaque lui permettent de geler l'air environnant.",
-      "id": 257,
+      "id": "257",
       "nom": "Jin Dahaad Iceplate",
       "rarity": 6,
       "recette": [],
@@ -2573,7 +2573,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b5/MHWilds-Scale_Icon_Brown.png",
       "description": "Une balance Jin Dahaad de haute qualité. Ses propriétés métalliques l'empêchent de geler.",
-      "id": 258,
+      "id": "258",
       "nom": "Jin Dahaad Scale +",
       "rarity": 6,
       "recette": [],
@@ -2583,7 +2583,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ea/MHWilds-Claw_Icon_Brown.png",
       "description": "Corne stratifiée provenant d'un Jin Dahaad. Sert également d'évent thermique.",
-      "id": 259,
+      "id": "259",
       "nom": "Jin Dahaad Horn",
       "rarity": 6,
       "recette": [],
@@ -2593,7 +2593,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/3/32/MHWilds-Tail_Icon_Brown.png",
       "description": "La queue d'un Jin Dahaad. Elle possède un organe de refroidissement qui continue de produire de l'air froid même lorsqu'elle est sectionnée.",
-      "id": 260,
+      "id": "260",
       "nom": "Jin Dahaad Tail",
       "rarity": 6,
       "recette": [],
@@ -2603,7 +2603,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a3/MHWilds-Shell_Icon_Brown.png",
       "description": "La carapace robuste d'un Jin Dahaad. Aussi solide que l'acier, sans entraver ses mouvements.",
-      "id": 261,
+      "id": "261",
       "nom": "Jin Dahaad Carapace",
       "rarity": 6,
       "recette": [],
@@ -2613,7 +2613,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/8f/MHWilds-Ticket_Icon_Brown.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Jin Dahaad. Utilisé pour fabriquer de l'équipement.",
-      "id": 262,
+      "id": "262",
       "nom": "Jin Dahaad Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2623,7 +2623,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/97/MHWilds-Ball_Icon_Light_Blue.png",
       "description": "Un joyau rare développé au sein d'un Jin Dahaad. On dit qu'il possède le pouvoir de geler des falaises entières.",
-      "id": 263,
+      "id": "263",
       "nom": "Jin Dahaad Icegem",
       "rarity": 7,
       "recette": [],
@@ -2633,7 +2633,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Griffes de Zoh Shia, semblables à des piquets, prolongées par un Wylk durci. Les excroissances de Wylkcrystal sont étrangement uniformes.",
-      "id": 264,
+      "id": "264",
       "nom": "Zoh Shia Stakeclaw",
       "rarity": 6,
       "recette": [],
@@ -2643,7 +2643,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ef/MHWilds-Question_Mark_Icon_Gray.png",
       "description": "Une petite masse gonflée provenant de l'intérieur de Zoh Shia. Elle vibre avec une énergie extraterrestre.",
-      "id": 265,
+      "id": "265",
       "nom": "Blackember Mass",
       "rarity": 6,
       "recette": [],
@@ -2653,7 +2653,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Une corne Zoh Shia recouverte de cristal. Lourde et cunéiforme, comme si elle servait à sceller quelque chose.",
-      "id": 266,
+      "id": "266",
       "nom": "Zoh Shia Crystalhorn",
       "rarity": 6,
       "recette": [],
@@ -2663,7 +2663,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
       "description": "Une queue de Zoh Shia recouverte de cristaux. Les cristaux continuent de croître même après la section de la queue.",
-      "id": 267,
+      "id": "267",
       "nom": "Zoh Shia Crystaltail",
       "rarity": 6,
       "recette": [],
@@ -2673,7 +2673,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une écaille de Zoh Shia cristallisée. Sa faible lueur témoigne de la grande énergie qu'elle contient.",
-      "id": 268,
+      "id": "268",
       "nom": "Zoh Shia Crystalscale",
       "rarity": 6,
       "recette": [],
@@ -2683,7 +2683,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bf/MHWilds-Shell_Icon_White.png",
       "description": "La nature enroulée de la coquille en couches de Zoh Shia semble protéger autant qu'elle resserre.",
-      "id": 269,
+      "id": "269",
       "nom": "Zoh Shia Layershell",
       "rarity": 6,
       "recette": [],
@@ -2693,7 +2693,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné aux chasseurs de Zoh Shia. Utilisé pour la fabrication d'équipement.",
-      "id": 270,
+      "id": "270",
       "nom": "Zoh Shia Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2703,7 +2703,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
       "description": "Un orbe inorganique provenant de Zoh Shia. Quelque chose frémit au plus profond de sa structure complexe.",
-      "id": 271,
+      "id": "271",
       "nom": "Faux Whitegleam Orb",
       "rarity": 7,
       "recette": [],
@@ -2713,7 +2713,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/84/MHWilds-Scale_Icon_Pink.png",
       "description": "Balance de qualité d'un Yian Kut-Ku. Sa taille et son poids la rendent encore plus impressionnante que la normale.",
-      "id": 272,
+      "id": "272",
       "nom": "Kut-Ku Scale +",
       "rarity": 6,
       "recette": [],
@@ -2723,7 +2723,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9b/MHWilds-Shell_Icon_Pink.png",
       "description": "Carapace de Yian Kut-Ku inflexible. Sa teinte rouge vif ne s'estompe pas, même exposée à une chaleur intense.",
-      "id": 273,
+      "id": "273",
       "nom": "Kut-Ku Carapace",
       "rarity": 6,
       "recette": [],
@@ -2733,7 +2733,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/95/MHWilds-Monster_Part_Icon_Pink.png",
       "description": "L'oreille caractéristique du Yian Kut-Ku. Extensible et résistante au feu, elle constitue une excellente doublure d'armure.",
-      "id": 274,
+      "id": "274",
       "nom": "Kut-Ku Ear",
       "rarity": 6,
       "recette": [],
@@ -2743,7 +2743,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f2/MHWilds-Wing_Icon_Pink.png",
       "description": "Membrane d'aile Yian Kut-Ku de qualité. Une triple protection : robustesse, flexibilité et résistance au feu.",
-      "id": 275,
+      "id": "275",
       "nom": "Kut-Ku Wing",
       "rarity": 6,
       "recette": [],
@@ -2753,7 +2753,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/bc/MHWilds-Ticket_Icon_Pink.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Yian Kut-Ku. Utilisé pour la fabrication d'équipement.",
-      "id": 276,
+      "id": "276",
       "nom": "Yian Kut-Ku Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2763,7 +2763,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/0/0c/MHWilds-Head_Icon_Pink.png",
       "description": "Le bec massif d'un Yian Kut-Ku. Assez robuste pour percer même les terrains les plus rocailleux.",
-      "id": 277,
+      "id": "277",
       "nom": "Giant Beak",
       "rarity": 6,
       "recette": [],
@@ -2773,7 +2773,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d9/MHWilds-Ball_Icon_Blue.png",
       "description": "Une gemme précieuse pouvant être récoltée sur les oiseaux wyvernes. On dit qu'elle atteint un prix élevé sur le marché.",
-      "id": 278,
+      "id": "278",
       "nom": "Bird Wyvern Gem",
       "rarity": 7,
       "recette": [],
@@ -2783,7 +2783,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/74/MHWilds-Head_Icon_Blue.png",
       "description": "La tête de gypcéros à la forme unique. Un incontournable pour les amateurs de gypcéros!",
-      "id": 279,
+      "id": "279",
       "nom": "Gypceros Head",
       "rarity": 4,
       "recette": [],
@@ -2793,7 +2793,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/74/MHWilds-Wing_Icon_Blue.png",
       "description": "Une membrane d'aile en Gypceros de qualité. Offre la même protection contre les chocs et les poisons, désormais avec une extensibilité confortable!",
-      "id": 280,
+      "id": "280",
       "nom": "Gypceros Wing",
       "rarity": 6,
       "recette": [],
@@ -2803,7 +2803,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Tail_Icon_Blue.png",
       "description": "La queue d'un gypcéros. La partie du corps la plus souple, et donc la plus difficile à endommager.",
-      "id": 281,
+      "id": "281",
       "nom": "Gypceros Tail",
       "rarity": 6,
       "recette": [],
@@ -2813,7 +2813,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9d/MHWilds-Sac_Icon_Purple.png",
       "description": "Un organe monstrueux rempli d'une toxine extrêmement puissante. Un seul contact peut le rendre bleu clair.",
-      "id": 282,
+      "id": "282",
       "nom": "Toxin Sac",
       "rarity": 6,
       "recette": [],
@@ -2823,7 +2823,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c6/MHWilds-Ore_Icon_White.png",
       "description": "Cristal de Lumière de haute qualité. Très convoité pour sa rareté, il est utilisé uniquement pour le travail des métaux de haute qualité.",
-      "id": 283,
+      "id": "283",
       "nom": "Novacrystal",
       "rarity": 7,
       "recette": [],
@@ -2833,7 +2833,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4e/MHWilds-Ticket_Icon_Blue.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un gypcéros. Utilisé pour fabriquer de l'équipement.",
-      "id": 284,
+      "id": "284",
       "nom": "Gypceros Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2843,7 +2843,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/23/MHWilds-Wing_Icon_Green.png",
       "description": "Une membrane d'aile Rathian de qualité. Ce matériau résistant à la chaleur est souvent utilisé comme doublure de blindage.",
-      "id": 285,
+      "id": "285",
       "nom": "Rathian Webbing",
       "rarity": 6,
       "recette": [],
@@ -2853,7 +2853,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b7/MHWilds-Scale_Icon_Green.png",
       "description": "Une écaille Rathian supérieure. Ressemble à une écaille Rathian normale, mais beaucoup plus dure.",
-      "id": 286,
+      "id": "286",
       "nom": "Rathian Scale +",
       "rarity": 6,
       "recette": [],
@@ -2863,7 +2863,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/3/3d/MHWilds-Shell_Icon_Green.png",
       "description": "Carapace de Rathian prisée pour sa riche coloration verte. Excellent matériau pour de l'armure.",
-      "id": 287,
+      "id": "287",
       "nom": "Rathian Carapace",
       "rarity": 6,
       "recette": [],
@@ -2873,7 +2873,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Monster_Part_Icon_Green.png",
       "description": "Poils Rathiens, acérés comme une épée. Plus longs et plus résistants que la normale, ils contiennent également plus de poison.",
-      "id": 288,
+      "id": "288",
       "nom": "Rathian Spike +",
       "rarity": 6,
       "recette": [],
@@ -2883,7 +2883,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/fd/MHWilds-Ticket_Icon_Green.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un Rathian. Utilisé pour fabriquer de l'équipement.",
-      "id": 289,
+      "id": "289",
       "nom": "Rathian Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2893,7 +2893,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
       "description": "Extractible récemment grâce aux progrès des techniques de sculpture. Difficile à forger.",
-      "id": 290,
+      "id": "290",
       "nom": "Rath Medulla",
       "rarity": 6,
       "recette": [],
@@ -2903,7 +2903,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1c/MHWilds-Ball_Icon_Green.png",
       "description": "Un joyau rare et précieux provenant d'une Rathian. Trop beau pour être utilisé.",
-      "id": 291,
+      "id": "291",
       "nom": "Rathian Ruby",
       "rarity": 7,
       "recette": [],
@@ -2913,7 +2913,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/4d/MHWilds-Scale_Icon_White.png",
       "description": "Une écaille de Gardien Fulgur Anjanath de haute qualité. Étonnamment lourde, elle vous électrocute au toucher.",
-      "id": 292,
+      "id": "292",
       "nom": "Guardian Fulgur Scale +",
       "rarity": 6,
       "recette": [],
@@ -2923,7 +2923,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/20/MHWilds-Bone_Icon_White.png",
       "description": "L'os nasal d'un gardien Fulgur Anjanath. Son mucus est chargé d'électricité.",
-      "id": 293,
+      "id": "293",
       "nom": "Guardian Fulgur Nosebone +",
       "rarity": 6,
       "recette": [],
@@ -2933,7 +2933,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
       "description": "La queue d'un Fulgur Anjanath gardien. Dotée de muscles épais qui lui permettent de maintenir son équilibre.",
-      "id": 294,
+      "id": "294",
       "nom": "Guardian Fulgur Tail",
       "rarity": 6,
       "recette": [],
@@ -2943,7 +2943,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/6b/MHWilds-Hide_Icon_White.png",
       "description": "Une peau de Fulgur Anjanath Gardien de haute qualité. Ses motifs sauvages ont éclipsé sa forme originale.",
-      "id": 295,
+      "id": "295",
       "nom": "Guardian Fulgur Pelt +",
       "rarity": 6,
       "recette": [],
@@ -2953,7 +2953,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/1/1b/MHWilds-Claw_Icon_White.png",
       "description": "Un croc acéré d'un Gardien Fulgur Anjanath. Conçu pour résister à la puissance écrasante de sa mâchoire.",
-      "id": 296,
+      "id": "296",
       "nom": "Guardian Fulgur Fang +",
       "rarity": 6,
       "recette": [],
@@ -2963,7 +2963,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d1/MHWilds-Sac_Icon_Yellow.png",
       "description": "A monster organ that can store up large amounts of high voltage electricity.",
-      "id": 297,
+      "id": "297",
       "nom": "Thunder Sac",
       "rarity": 6,
       "recette": [],
@@ -2973,7 +2973,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ticket_Icon_White.png",
       "description": "Certificat de guilde décerné à ceux qui ont chassé un gardien Fulgur Anjanath. Utilisé pour fabriquer de l'équipement.",
-      "id": 298,
+      "id": "298",
       "nom": "Guardian Fulgur Certificate S",
       "rarity": 6,
       "recette": [],
@@ -2983,7 +2983,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/78/MHWilds-Ball_Icon_White.png",
       "description": "Un joyau rare formée au sein d'un Gardien, Fulgur Anjanath. On dit qu'il détient la puissance des cieux.",
-      "id": 299,
+      "id": "299",
       "nom": "Guardian Fulgur Gem",
       "rarity": 7,
       "recette": [],
@@ -2993,7 +2993,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Bone_Icon_Light_Blue.png",
       "description": "Un os découvert dans les ruines de Wyveria. Sa forme particulière est propre à la faune locale.",
-      "id": 300,
+      "id": "300",
       "nom": "Tough Guardian Bone",
       "rarity": 4,
       "recette": [],
@@ -3003,7 +3003,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b1/MHWilds-Hide_Icon_Tan.png",
       "description": "Un matériau rare, taillé dans des dragons ailés. À la fois résistant et facile à travailler.",
-      "id": 301,
+      "id": "301",
       "nom": "Wingdrake Hide +",
       "rarity": 6,
       "recette": [],
@@ -3013,7 +3013,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b1/MHWilds-Hide_Icon_Tan.png",
       "description": "Un matériau taillé dans des dragons ailés. Léger, il est souvent utilisé pour la fabrication d'armures.",
-      "id": 302,
+      "id": "302",
       "nom": "Wingdrake Hide",
       "rarity": 4,
       "recette": [],
@@ -3023,7 +3023,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
       "description": "Un coquillage Bulaqchi. Idéal pour les loisirs créatifs grâce à sa durabilité et sa légèreté exceptionnelles.",
-      "id": 303,
+      "id": "303",
       "nom": "Bulaqchi Shell",
       "rarity": 4,
       "recette": [],
@@ -3033,7 +3033,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Bone_Icon_Gray.png",
       "description": "Un os érodé provenant d'un tas d'os. L'érosion l'a rendu trop fragile pour être utilisé en artisanat.",
-      "id": 304,
+      "id": "304",
       "nom": "Mystery Bone",
       "rarity": 4,
       "recette": [],
@@ -3043,7 +3043,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c1/MHWilds-Webbing_Icon_Orange.png",
       "description": "Miel hautement nutritif. À combiner avec des potions pour obtenir une méga potion encore plus puissante.",
-      "id": 305,
+      "id": "305",
       "nom": "Honey",
       "rarity": 2,
       "recette": [],
@@ -3053,7 +3053,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
       "description": "Une carapace de Bulaqchi de haute qualité. Facile à travailler et incroyablement résistante.",
-      "id": 306,
+      "id": "306",
       "nom": "Bulaqchi Carapace",
       "rarity": 6,
       "recette": [],
@@ -3063,7 +3063,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/20/MHWilds-Bone_Icon_White.png",
       "description": "Os rigide provenant d'un tas d'os. Résistant, mais léger et facile à manipuler.",
-      "id": 307,
+      "id": "307",
       "nom": "Sturdy Bone",
       "rarity": 4,
       "recette": [],
@@ -3073,7 +3073,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a3/MHWilds-Shell_Icon_Brown.png",
       "description": "Partie de carapace d'un herbivore. Matériau relativement robuste pour un petit monstre.",
-      "id": 308,
+      "id": "308",
       "nom": "Herbivore Shell",
       "rarity": 4,
       "recette": [],
@@ -3083,7 +3083,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a3/MHWilds-Shell_Icon_Brown.png",
       "description": "Une épaisse carapace d'herbivore. Même les plus petites sont incroyablement résistantes.",
-      "id": 309,
+      "id": "309",
       "nom": "Herbivore Carapace",
       "rarity": 6,
       "recette": [],
@@ -3093,7 +3093,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f0/MHWilds-Bug_Icon_Pink.png",
       "description": "Un coquillage Comaqchi. Incroyablement lisse et au lustre attrayant.",
-      "id": 310,
+      "id": "310",
       "nom": "Comaqchi Shell",
       "rarity": 4,
       "recette": [],
@@ -3103,7 +3103,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/b/b2/MHWilds-Herb_Icon_Light_Blue.png",
       "description": "Une plante contenant des somnifères. Nécessaire à la fabrication de munitions somnifères et de bombes tranquillisantes.",
-      "id": 311,
+      "id": "311",
       "nom": "Sleep Herb",
       "rarity": 4,
       "recette": [],
@@ -3113,7 +3113,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/20/MHWilds-Bone_Icon_White.png",
       "description": "Un os découvert dans les falaises d'Icestone. Forgé au fil des millénaires dans les profondeurs de la terre gelée.",
-      "id": 312,
+      "id": "312",
       "nom": "Frozen Icebone",
       "rarity": 4,
       "recette": [],
@@ -3123,7 +3123,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f0/MHWilds-Bug_Icon_Pink.png",
       "description": "Un coquillage Comaqchi de haute qualité. Sa couleur éclatante envoûte tous ceux qui le voient.",
-      "id": 313,
+      "id": "313",
       "nom": "Comaqchi Carapace",
       "rarity": 6,
       "recette": [],
@@ -3133,7 +3133,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/81/MHWilds-Claw_Icon_Orange.png",
       "description": "Les crocs existent sous différentes formes et tailles. Choisissez le croc adapté à votre tâche.",
-      "id": 314,
+      "id": "314",
       "nom": "Sharp Fang",
       "rarity": 4,
       "recette": [],
@@ -3143,7 +3143,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/8/81/MHWilds-Claw_Icon_Orange.png",
       "description": "Les crocs sont de formes et de tailles variées. Celui-ci est petit, mais peut néanmoins percer les écailles.",
-      "id": 315,
+      "id": "315",
       "nom": "Acute Fang",
       "rarity": 6,
       "recette": [],
@@ -3153,7 +3153,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/6/69/MHWilds-Bone_Icon_Gray.png",
       "description": "Un os découvert dans le bassin d'Oilwell. Recouvert d'une épaisse couche de pétrole accumulée au fil des ans.",
-      "id": 316,
+      "id": "316",
       "nom": "Charred Oilbone",
       "rarity": 4,
       "recette": [],
@@ -3163,7 +3163,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9f/MHWilds-Head_Icon_Purple.png",
       "description": "Un crâne de Kranodath. Son incroyable résistance en fait un matériau idéal pour les armures.",
-      "id": 317,
+      "id": "317",
       "nom": "Kranodath Skull",
       "rarity": 4,
       "recette": [],
@@ -3173,7 +3173,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
       "description": "Pyrite de cuivre provenant d'une coquille de Kranodath. Son éclat en fait un matériau de choix pour la décoration.",
-      "id": 318,
+      "id": "318",
       "nom": "Krano Copper",
       "rarity": 4,
       "recette": [],
@@ -3183,7 +3183,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/a7/MHWilds-Ore_Icon_Green.png?20241201033247",
       "description": "Minerai provenant d'affleurements miniers. Un matériau rare et recherché pour sa durabilité dans la fabrication d'armures.",
-      "id": 319,
+      "id": "319",
       "nom": "Dragonite Ore",
       "rarity": 4,
       "recette": [],
@@ -3193,7 +3193,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/9/9f/MHWilds-Head_Icon_Purple.png",
       "description": "Un crâne de Kranodath extra-dur. Tellement résistant qu'il ne se fissurera pas, même en le frappant de toutes ses forces.",
-      "id": 320,
+      "id": "320",
       "nom": "Kranodath Skull +",
       "rarity": 6,
       "recette": [],
@@ -3203,7 +3203,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/e8/MHWilds-Ore_Icon_Yellow.png",
       "description": "Pyrite de cuivre de haute qualité provenant d'une coquille de Kranodath. Son éclat brillant est époustouflant.",
-      "id": 321,
+      "id": "321",
       "nom": "Krano Pyrite",
       "rarity": 6,
       "recette": [],
@@ -3213,7 +3213,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
       "description": "Une nageoire de Piragill de haute qualité. D'un rouge écarlate profond, elle tranche la chair au moindre contact.",
-      "id": 322,
+      "id": "322",
       "nom": "Piragill Fin +",
       "rarity": 6,
       "recette": [],
@@ -3223,7 +3223,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/d/d5/MHWilds-Mushroom_Icon_Lemon.png",
       "description": "Un champignon paralysant. Nécessaire pour fabriquer des munitions paralysantes et des bombes tranquillisantes.",
-      "id": 323,
+      "id": "323",
       "nom": "Parashroom",
       "rarity": 3,
       "recette": [],
@@ -3233,7 +3233,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/a/af/MHWilds-Ore_Icon_Purple.png",
       "description": "Une nageoire de Piragill. Son bord tranchant coupe sa proie comme un couteau dans du beurre.",
-      "id": 324,
+      "id": "324",
       "nom": "Carbalite Ore",
       "rarity": 6,
       "recette": [],
@@ -3243,7 +3243,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/7/7c/MHWilds-Monster_Part_Icon_Red.png",
       "description": "",
-      "id": 325,
+      "id": "325",
       "nom": "Piragill Fin",
       "rarity": 4,
       "recette": [],
@@ -3253,7 +3253,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/f/f0/MHWilds-Ore_Icon_Blue.png",
       "description": "Minerai extrait d'affleurements miniers. Encore en cours de recherche, mais connu pour produire un métal d'une grande pureté.",
-      "id": 326,
+      "id": "326",
       "nom": "Machalite Ore",
       "rarity": 4,
       "recette": [],
@@ -3263,7 +3263,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
       "description": "Une plume Guardian Seikret de haute qualité. Incroyablement légère et pourtant parfaitement résistante.",
-      "id": 327,
+      "id": "327",
       "nom": "Guardian Seikret Feather +",
       "rarity": 6,
       "recette": [],
@@ -3273,7 +3273,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/e/ee/MHWilds-Hide_Icon_Green.png",
       "description": "Une plume de Seikret Gardien. Assez résistante pour dévier les lames.",
-      "id": 328,
+      "id": "328",
       "nom": "Guardian Seikret Feather",
       "rarity": 4,
       "recette": [],
@@ -3283,7 +3283,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/24/MHWilds-Scale_Icon_Orange.png",
       "description": "Une échelle Talioth de haute qualité. Conçue pour survivre à des combats acharnés, elle n'en reste pas moins discrète.",
-      "id": 329,
+      "id": "329",
       "nom": "Talioth Scale +",
       "rarity": 6,
       "recette": [],
@@ -3293,7 +3293,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/c/c6/MHWilds-Ore_Icon_White.png",
       "description": "Microbes cristallisés provenant d'affleurements miniers. Apprécié comme abrasif pour les équipements de polissage.",
-      "id": 330,
+      "id": "330",
       "nom": "Earth Crystal",
       "rarity": 4,
       "recette": [],
@@ -3303,7 +3303,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/24/MHWilds-Scale_Icon_Orange.png",
       "description": "Une écaille de Talioth. Adaptée aux environnements difficiles, elle est conçue pour protéger le corps comme une armure.",
-      "id": 331,
+      "id": "331",
       "nom": "Talioth Scale",
       "rarity": 4,
       "recette": [],
@@ -3313,7 +3313,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
       "description": "La carapace dure d'un vespoidé. Elle acquiert une qualité unique une fois transformée.",
-      "id": 332,
+      "id": "332",
       "nom": "Vespoid Carapace",
       "rarity": 6,
       "recette": [],
@@ -3323,7 +3323,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/48/MHWilds-Webbing_Icon_Yellow.png",
       "description": "L'aile intérieure d'un Vespoïde. Aiguisée et élégante, telle une lame.",
-      "id": 333,
+      "id": "333",
       "nom": "Vespoid Innerwing",
       "rarity": 6,
       "recette": [],
@@ -3333,7 +3333,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/2/26/MHWilds-Bug_Icon_Yellow.png",
       "description": "Une carapace de Vespoïde. Correctement traitée, elle peut devenir aussi résistante que la peau d'une wyverne",
-      "id": 334,
+      "id": "334",
       "nom": "Vespoid Shell",
       "rarity": 4,
       "recette": [],
@@ -3343,7 +3343,7 @@
     {
       "imgLien": "https://monsterhunterwiki.org/images/4/48/MHWilds-Webbing_Icon_Yellow.png",
       "description": "Aile de Vespoïde. Extrêmement difficile à traiter, elle produit des résultats très variables.",
-      "id": 335,
+      "id": "335",
       "nom": "Vespoid Wing",
       "rarity": 4,
       "recette": [],
@@ -3387,26 +3387,37 @@
   ],
   "utilisateurs": [
     {
-      "id": "1",
-      "nom": "Jean",
-      "prenom": "Dupont",
-      "pseudo": "Jdupont",
-      "password": "azerty",
-      "email": "9o6oO@example.com",
+      "id": "c99d",
+      "nom": "Gobeil",
+      "prenom": "Éthan",
+      "email": "ethan.gobeil@outlook.com",
+      "password": "$2b$10$QguWlSK/seMUSnjIaN2Lj.EtPWLktBlf1hdmQ7W7eGKGIIg9Q3SG.",
       "roleId": "2"
     },
-    
     {
-      "id": "a3b3",
+      "id": "a757",
       "nom": "admin",
       "prenom": "admin",
-      "pseudo": "admin",
       "email": "admin@gmail.com",
-      "password": "Admin123",
-      "confirmerPassword": "Admin123",
+      "password": "$2b$10$xo3816QmXdhceUG.LNZiC..5hOs4ow2SK4wvWZjfmGWk/5J74WbU.",
       "roleId": "1"
+    },
+    {
+      "id": "cce9",
+      "nom": "Gobeil",
+      "prenom": "Éthan",
+      "email": "ethan@outlook.com",
+      "password": "$2b$10$FyycoIlKilGXVNeRAHkSi.xt8ED/TmUvUwe46hIPAvsX8X45Et8ye",
+      "roleId": "2"
+    },
+    {
+      "id": "05e5",
+      "nom": "Gobeil",
+      "prenom": "Éthan",
+      "email": "allo@outlook.com",
+      "password": "$2b$10$7v2Z58tg.SyT7y.MnP.h.en2MLazoXXeVwfI3sW2Mj8DOcTLLAUvO",
+      "roleId": "2"
     }
-    
   ],
   "role": [
     {

@@ -6,7 +6,7 @@ import { isAuthenticated, isAdmin, logout, getUserData } from './auth'
 import {recupererPanier} from '../(js)/panier';
 
 
-export default function Navbar() {
+export default function header() {
   const [cartCount, setCartCount] = useState(0)
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [isAdminUser, setIsAdminUser] = useState(false)
@@ -83,100 +83,103 @@ export default function Navbar() {
   }
 
   return  (
-    <nav className="navbar navbar-expand-lg navbar-dark py-3 shadow-sm" style={{ backgroundColor: '#EFDCAB' }}>
-  <div className="container-fluid d-flex align-items-center justify-content-between">
-    
-    {/* Logo */}
-    <Link href="/" className="navbar-brand d-flex align-items-center m-0">
-      <img src="/logo.png" alt="GrindHunter" className="me-2" height={40} />
-      <span className="fw-bold fs-4 d-none d-sm-inline" style={{ color: '#443627' }}>GrindHunter</span>
-    </Link>
-
-    {/* Collapse (liens) */}
-    <div className="collapse navbar-collapse pe-5" id="navbarNav">
-      <ul className="navbar-nav mx-auto justify-content-center">  {/* Ajout de 'mx-auto' ici */}
-        <li className="nav-item mx-2">
-          <Link href="/" className="btn custom-btn py-2">Accueil</Link>
-        </li>
-        <li className="nav-item mx-2">
-          {isAdminUser ? (
-            <Link href="/admin/ajout-item" className="btn custom-btn py-2">Ajout item</Link>
-          ) : (
-            <Link href="/page1" className="btn custom-btn py-2">À venir</Link>
-          )}
-        </li>
-        <li className="nav-item mx-2">
-          {isAdminUser ? (
-            <Link href="/admin/modifier-item" className="btn custom-btn py-2">Modifier item</Link>
-          ) : (
-            <Link href="/page2" className="btn custom-btn py-2">À venir</Link>
-          )}
-        </li>
-      </ul>
-    </div>
-
-    {/* Icônes à droite */}
-    <div className="d-flex align-items-center gap-3" ref={dropdownRef}>
-      {/* Panier */}
-      <div className="position-relative">
-        <Link href="/panier">
-          <i className="bi bi-cart-fill fs-4 custom-btn icons"></i>
-          {cartCount > 0 && (
-            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              {cartCount}
-            </span>
-          )}
-        </Link>
-      </div>
-
-      {/* Utilisateur */}
-      <div className="position-relative">
-        <div className="btn" onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
-          <i className="bi bi-person-circle fs-4 custom-btn icons"></i>
-        </div>
-
-        {showDropdown && (
-          <div className="dropdown-menu show shadow border-0" style={{
-            position: 'absolute',
-            top: '110%',
-            right: 0,
-            backgroundColor: '#EFDCAB',
-            borderRadius: '10px',
-            minWidth: '220px',
-            zIndex: 9999,
-            padding: '1rem'
-          }}>
-            {/* Dropdown content */}
-            <div className="d-flex align-items-center mb-3 pb-3 border-bottom" style={{ borderColor: '#F2F6D0' }}>
-              <img src="/avatar.png" alt="avatar" className="rounded-circle me-2"
-                style={{ width: '40px', height: '40px', objectFit: 'cover', border: '2px solid #D98324' }} />
-              <div>
-                <div style={{ color: '#443627', fontWeight: 'bold' }}>{userName} {isAdminUser && '(Admin)'}</div>
-                <small style={{ color: '#7c4b16' }}>Voir mon profil</small>
-              </div>
-            </div>
-
-            {!isLoggedIn ? (
-              <>
-                <div className="mb-3"><i className="bi bi-universal-access-circle me-2 text-success"></i> Accessibilité</div>
-                <div className="mb-2"><i className="bi bi-shield-lock-fill me-2 text-warning"></i> Confidentialité</div>
-                <Link href="/PageConnexion" className="btn custom-btn w-100" onClick={() => setShowDropdown(false)}>Se connecter</Link>
-              </>
+    <nav className="navbar navbar-expand-lg navbar-dark py-2 shadow-sm" style={{ backgroundColor: '#EFDCAB' }}>
+    <div className="container-fluid justify-content-end">
+      {/* Logo - aligné à gauche */}
+      <Link href="/" className="navbar-brand d-flex align-items-center w-25">
+        <img src="/logo.png" alt="GrindHunter" className="me-2" height={40} />
+        <span className="fw-bold fs-4 d-none d-sm-inline" style={{ color: '#443627' }}>GrindHunter</span>
+      </Link>
+  
+      {/* Hamburger menu - déplacé à sa position correcte */}
+      <button 
+        className="navbar-toggler ms-auto me-2" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+  
+      {/* Menu de navigation - collapsible et centré */}
+      <div className="collapse navbar-collapse pe-custom" id="navbarNav">
+        <ul className="navbar-nav justify-content-center mx-auto text-end text-lg-center w-100">
+          <li className="nav-item mx-2">
+            <Link href="/" className="btn custom-btn py-2 mt-2">Accueil</Link>
+          </li>
+          <li className="nav-item mx-2">
+            {isAdminUser ? (
+              <Link href="/admin/ajout-item" className="btn custom-btn py-2 mt-2">Ajout item</Link>
             ) : (
-              <>
-                <Link href="/profil" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Mon profil</Link>
-                <button className="btn btn-danger w-100" onClick={handleLogout}>Se déconnecter</button>
-              </>
+              <Link href="/page1" className="btn custom-btn py-2 mt-2">À venir</Link>
             )}
+          </li>
+          <li className="nav-item mx-2">
+            {isAdminUser ? (
+              <Link href="/admin/modifier-item" className="btn custom-btn py-2 my-2">Modifier item</Link>
+            ) : (
+              <Link href="/page2" className="btn custom-btn py-2 my-2">À venir</Link>
+            )}
+          </li>
+        </ul>
+      </div>
+  
+      {/* Boutons (panier et user) - alignés à droite */}
+      <div className="d-flex align-items-center justify-content-end w-25" ref={dropdownRef}>
+        {/* Panier - conditionnel */}
+        {isLoggedIn && (
+          <div className="position-relative me-3">
+            <Link href="/panier">
+              <i className="bi bi-cart-fill fs-4 custom-btn icons"></i>
+              {cartCount > 0 && (
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  {cartCount}
+                </span>
+              )}
+            </Link>
           </div>
         )}
+  
+        {/* Utilisateur */}
+        <div className="position-relative">
+          <div className="btn p-1" onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
+            <i className="bi bi-person-circle fs-4 custom-btn icons"></i>
+          </div>
+  
+          {showDropdown && (
+            <div className="dropdown-menu show shadow border-0" style={{
+              position: 'absolute',
+              top: '110%',
+              right: 0,
+              backgroundColor: '#EFDCAB',
+              borderRadius: '10px',
+              minWidth: '200px',
+              maxWidth: '90vw',
+              zIndex: 9999,
+              padding: '1rem'
+            }}>
+              {!isLoggedIn ? (
+                <>
+                  <Link href="/inscription" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>S'inscrire</Link>
+                  <Link href="/PageConnexion" className="btn custom-btn w-100" onClick={() => setShowDropdown(false)}>Se connecter</Link>
+                </>
+              ) : (
+                <>
+                  <div>
+                    <div style={{ color: '#443627', fontWeight: 'bold' }}>{userName} {isAdminUser && '(Admin)'}</div>
+                    <small style={{ color: '#7c4b16' }}>Voir mon profil</small>
+                  </div>
+                  <Link href="/profil" className="btn custom-btn w-100 mb-2" onClick={() => setShowDropdown(false)}>Mon profil</Link>
+                  <button className="btn btn-danger w-100" onClick={handleLogout}>Se déconnecter</button>
+                </>
+              )}
+            </div>
+          )}
+        </div>
       </div>
-      {/* Toggler (toujours visible sur mobile) */}
-      <button className="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span className="navbar-toggler-icon" style={{ backgroundColor: '#D98324' }}></span>
-      </button>
     </div>
-  </div>
-</nav>
+  </nav>
   )
 }

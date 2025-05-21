@@ -13,6 +13,7 @@ export default function PaymentForm() {
     e.preventDefault();
     if (!stripe || !elements) return;
 
+    
     setShowNotification(true);
     const { error } = await stripe.confirmPayment({
       elements,

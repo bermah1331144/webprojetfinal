@@ -3,6 +3,7 @@
 import '../../app/(style)/style.sass';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
+import bcrypt from 'bcryptjs';
 
 export default function ConnexionForm() {
   const [email, setEmail] = useState('');
@@ -21,64 +22,45 @@ export default function ConnexionForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true);
     setMessage('');
 
     if (!email || !password) {
       setMessage('Veuillez remplir tous les champs');
-      setIsLoading(false);
       return;
     }
 
     try {
-      const response = await fetch('/api/login', {
+      const response = await fetch('/api/connexion', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password })
       });
 
-      const contentType = response.headers.get('content-type');
-      if (!contentType || !contentType.includes('application/json')) {
-        throw new Error('Réponse inattendue du serveur');
-      }
-
       const data = await response.json();
-      console.log("Réponse API :", data);
 
-      if (!data.user || !data.user.roleId) {
-        console.error('Rôle utilisateur invalide:', data.user);
-        throw new Error("Le rôle de l'utilisateur est invalide ou manquant");
+      if (!response.ok) {
+        throw new Error(data.message);
       }
 
-      const roleId = Number(data.user.roleId);
-      if (isNaN(roleId)) {
-        throw new Error("Le rôle de l'utilisateur est non numérique");
-      }
-
-      const userData = {
-        email: data.user.email,
-        roleId: roleId,
-        name: data.user.nom || email.split('@')[0],
+      const utilisateur = {
+        id: data.utilisateur.id,
+        nom: data.utilisateur.nom,
+        prenom: data.utilisateur.prenom,
+        email: data.utilisateur.email,
+        roleId: data.utilisateur.roleId,
         isLoggedIn: true,
         loginTime: new Date().toISOString()
       };
 
-      localStorage.setItem('userAuth', JSON.stringify(userData));
-
-      window.location.reload();
-
-      setMessage('Connexion réussie ! Redirection...');
+      setMessage('Connexion réussie !');
+      localStorage.setItem('userAuth', JSON.stringify(utilisateur));
       setTimeout(() => {
         window.location.href = '/pagePrincipale';
       }, 1500);
-
-    } catch (error) {
-      console.error('Erreur lors de la connexion:', error);
-      setMessage(`Erreur de connexion: ${error.message}`);
-    } finally {
-      setIsLoading(false);
+    } catch (err) {
+      setMessage(`Erreur de connexion: ${err.message}`);
     }
   };
 
@@ -87,7 +69,7 @@ export default function ConnexionForm() {
   };
 
   return (
-    <div className="connexion-container">
+    <div className="connexion-container h-80">
       <div className="connexion-card">
         <h1 className="title">Chasseur,<br />connecte-toi</h1>
 
