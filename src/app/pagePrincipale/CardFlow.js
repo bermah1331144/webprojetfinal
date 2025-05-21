@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function CardFlow() {
   const [cards, setCards] = useState([]);
@@ -134,7 +135,9 @@ export default function CardFlow() {
                     <h3 className="card-title">{card.title}</h3>
                     <p className="card-description">{card.description}</p>
                     <div className="card-actions">
-                      <button className="card-button">Voir détails</button>
+                      <Link href={`/details/${card.id}`} className="card-button">
+                        Voir détails
+                      </Link>
                       <button 
                         className="cart-button"
                         onClick={() => addToCart(card.id, card.title)}
