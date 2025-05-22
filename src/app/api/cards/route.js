@@ -8,6 +8,6 @@ export async function GET() {
   const fileData = await fs.readFile(filePath, 'utf-8');
   const data = JSON.parse(fileData);
 
-  const items = data.items.slice(0, 100); // ou plus si tu veux
-  return NextResponse.json(items);
+  const shuffled = data.items.sort(() => 0.5 - Math.random()).slice(0, 10);
+  return NextResponse.json(shuffled);
 }

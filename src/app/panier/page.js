@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import PanierItem from './panierItem';
-import { recupererPanier, updateQuantite } from '../(js)/panier';
+import { recupererPanier, updateQuantite } from '../(hook)/panier';
 import '../(style)/panier.scss';
 import Link from 'next/link';
 import DescriptionCommande from '../(composant)/descriptionCommande';

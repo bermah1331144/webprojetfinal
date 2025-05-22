@@ -1,6 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import useCart from "../(hook)/useCart";
+import Notification from "../(composant)/notification";
+import React, { useEffect, useState} from "react";
 import "../(style)/catalogue.scss";
+import Card from "./card";
 
 export default function Catalogue() {
     const [items, setItems] = useState([]);
@@ -9,6 +12,8 @@ export default function Catalogue() {
     const [sortOption, setSortOption] = useState("");
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(1000);
+
+    const { addToCart, notificationMessage, showNotification, closeNotification } = useCart();
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -54,7 +59,8 @@ export default function Catalogue() {
   };
 
   return (
-    <div className="catalogue-layout">
+      <div className="catalogue-layout">
+        <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => closeNotification()}/>
       {/* Barre de recherche */}
       <div className="top-search-bar">
         <input
@@ -128,18 +134,7 @@ export default function Catalogue() {
 
         <div className="catalogue-grid">
             {items.map(item => (
-            <div className="catalogue-card" key={item.id}>
-                <div className="image-wrapper">
-                <img src={item.imgLien} alt={item.nom} />
-                </div>
-                <div className="card-content">
-                <h3>{item.nom}</h3>
-                <p className="description">{item.description}</p>
-                <p><strong>Rareté :</strong> {item.rarity}</p>
-                <p className="prix"><strong>Prix :</strong> {item.prixAchat} $</p>
-                <button>🛒 Ajouter au panier</button>
-                </div>
-            </div>
+            <Card key={item.id} item={item} addToCart={addToCart} />
             ))}
         </div>
         </section>

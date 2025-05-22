@@ -1,7 +1,8 @@
 "use client";
+import useCart from '../(hook)/useCart';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import {ajouterOuMettreAJourArticle} from '../(js)/panier';
+import {ajouterOuMettreAJourArticle} from '../(hook)/panier';
 import Notification from '../(composant)/notification';
 
 export default function CardFlow() {
@@ -9,9 +10,8 @@ export default function CardFlow() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [bgIndex, setBgIndex] = useState(0);
-  const [notificationMessage, setNotificationMessage] = useState('');
-  const [showNotification, setShowNotification] = useState(false);
-  const [search, setSearch] = useState("")
+  
+  const { addToCart, notificationMessage, showNotification, closeNotification } = useCart();
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -21,7 +21,7 @@ export default function CardFlow() {
   ];
 
   useEffect(() => {
-    fetch('/api/cards?page=1&limit=100')
+    fetch('/api/cards')
       .then(res => res.json())
       .then(data => {
         const source = Array.isArray(data) ? data : data.items;
@@ -52,14 +52,6 @@ export default function CardFlow() {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
-  const addToCart = (item) => {
-  
-    ajouterOuMettreAJourArticle(item);
-
-    setNotificationMessage(`${item.nom} a été ajouté au panier!`);
-    setShowNotification(true);
-  };
-
   const getCardClassName = (index) => {
     const relativeIndex = (index - currentIndex + totalCards) % totalCards;
     if (relativeIndex === 0) return 'card-active';
@@ -71,17 +63,12 @@ export default function CardFlow() {
   };
   return (
     <div className="carousel-container">
-      <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => setShowNotification(false)} />
+      <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => closeNotification()} />
       
       <div className="carousel-inner">
         <div className="header-with-cart row justify-content-end">
-          <h2 className="carousel-title col-12">Parties de monstres</h2>
-          <form className="col-3 row justify-content-center" role="search" onSubmit={(e) => e.preventDefault()}>
-            <div className="col-8">
-              <input className="form-control custom-input py-2" type="search" placeholder="Recherche" value={search} onChange={(e) => setSearch(e.target.value)} />
-            </div>
-            <button className="btn col-3" type="submit"><i className="bi bi-search custom-btn icons"></i></button>
-          </form>
+          <h1 className="carousel-title col-12">Nos parties vedettes</h1>
+
         </div>
 
         <div className="carousel-perspective">

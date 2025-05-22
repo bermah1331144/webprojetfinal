@@ -1,5 +1,6 @@
 'use client';
 
+import { viderPanier } from '../(hook)/panier';
 import { useStripe, useElements, PaymentElement } from '@stripe/react-stripe-js';
 import { FormEvent, useState } from 'react';
 import Notification from '../(composant)/notification';
@@ -13,7 +14,7 @@ export default function PaymentForm() {
     e.preventDefault();
     if (!stripe || !elements) return;
 
-    
+    viderPanier();
     setShowNotification(true);
     const { error } = await stripe.confirmPayment({
       elements,
