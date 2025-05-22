@@ -1,5 +1,5 @@
 'use client';
-import { viderPanier } from "../(js)/panier";
+import { viderPanier } from "../(hook)/panier";
 
 // auth-utils.js - Fichier utilitaire pour la gestion de l'authentification
 

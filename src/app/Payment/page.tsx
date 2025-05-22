@@ -2,7 +2,7 @@
 import StripeWrapper from './StripeWrapper';
 import DescriptionCommande from '../(composant)/descriptionCommande';
 import { useEffect, useState } from 'react';
-import { recupererPanier } from '../(js)/panier';
+import { recupererPanier } from '../(hook)/panier';
 
 export default function PaymentPage() {
     const [articles, setArticles] = useState([]);

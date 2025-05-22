@@ -1,20 +1,17 @@
 "use client";
-import Image from "next/image";
+import useCart from "../../(hook)/useCart";
 import "../../(style)/detailsStyle.sass";
-import ListCommentaire from "./listCommentaire";
 import AddCommentaire from "./addCommentaire";
 import { useEffect, useState } from "react";
 import { use } from "react";
 import './style.sass';
-import { useParams } from "next/navigation";
-import {ajouterOuMettreAJourArticle} from '../../(js)/panier';
+import {ajouterOuMettreAJourArticle} from '../../(hook)/panier';
 import Notification from '../../(composant)/notification';
 
 export default function pageDetails({params}){
     const [item, setItem] = useState([]);
     const { id }= use(params);
-      const [notificationMessage, setNotificationMessage] = useState('');
-      const [showNotification, setShowNotification] = useState(false);
+    const {addToCart, notificationMessage, showNotification, closeNotification} = useCart();
 
     //const URLSearchParams = new URLSearchParams(window.location.search);
     
@@ -32,18 +29,11 @@ export default function pageDetails({params}){
         }       
         getItems();
     },[])
-
-    async function addToCart(){
-        ajouterOuMettreAJourArticle(item);
-
-        setNotificationMessage(`${item.nom} a été ajouté au panier!`);
-        setShowNotification(true);
-    }
     
     const imageLien = item.imgLien;
 
     return<>
-        <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => setShowNotification(false)} />
+        <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => closeNotification()} />
         <div id="backgroundAfficheProduit" className="pt-5 py-5">
             <div id="afficheProduit" className="container-fluid">
                 <div id ="boiteProduit" >  
@@ -53,10 +43,10 @@ export default function pageDetails({params}){
                         <img src={imageLien} alt="Produit" className="img-fluid col-md-3"/>
                         <div className="col-12col-md-6 justify-content-center text-center">   
                             <h2>Description item</h2>
-                            <p>{item.description}</p>
+                            <p className="p">{item.description}</p>
                         </div> 
                     </div>
-                    <button className="btn btn-primary" href="/panier" onClick={() => addToCart()}><i className="bi bi-bag pe-2"></i>Ajouter au panier</button>
+                    <button className="btn btn-primary" href="/panier" onClick={() => addToCart(item)}><i className="bi bi-bag pe-2"></i>Ajouter au panier</button>
                     <div className="zoneCommentaire">
 
                         <AddCommentaire idMonste= {id} idItem={id}/>

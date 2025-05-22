@@ -3,7 +3,7 @@ import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 import '../(style)/style.sass'
 import { isAuthenticated, isAdmin, logout, getUserData } from './auth'
-import {recupererPanier} from '../(js)/panier';
+import {recupererPanier} from '../(hook)/panier';
 
 
 export default function header() {
@@ -110,11 +110,12 @@ export default function header() {
             <Link href="/" className="btn custom-btn py-2 mt-2">Accueil</Link>
           </li>
           <li className="nav-item mx-2">
-            {isAdminUser ? (
+            <Link href="/catalogue" className="btn custom-btn py-2 mt-2">Catalogue</Link>
+          </li>
+          <li className="nav-item mx-2">
+            {isAdminUser &&(
               <Link href="/admin/ajout-item" className="btn custom-btn py-2 mt-2">Ajout item</Link>
-            ) : (
-              <Link href="/page1" className="btn custom-btn py-2 mt-2">À venir</Link>
-            )}
+            )} 
           </li>
           <li className="nav-item mx-2">
             {isAdminUser ? (
