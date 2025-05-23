@@ -3,7 +3,7 @@
 import { Lisu_Bosa } from "next/font/google";
 import Commentaire from "./Commentaire";
 import ListCommentaire from "./listCommentaire";
-import { useEffect, useState, useContext } from "react";
+
 import { useParams } from "next/navigation";
 export default function addCommentaire({idItem}) {
     const [message,setMesage] = useState("");
@@ -37,7 +37,7 @@ export default function addCommentaire({idItem}) {
       }, []);
       
     
-    //gestion d#e changements dans les champs du formaulaire
+    //gestion de changements dans les champs du formaulaire
     const handleCharge = (e) => {
         
         setCommentaire({

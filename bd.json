@@ -3349,6 +3349,17 @@
       "recette": [],
       "prixVente": 375,
       "prixAchat": 562
+    },
+    {
+      "id": "598d",
+      "image": "C:\\fakepath\\mavais.png",
+      "name": "test",
+      "description": "ca va tu marcher crisssssss",
+      "rarity": 0,
+      "ingrediants": [],
+      "prixVentre": 0,
+      "prixAchat": "2000",
+      "prixVente": "100"
     }
   ],
   "commentaires": [
