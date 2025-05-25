@@ -140,11 +140,11 @@ export default function Catalogue() {
         {/* Catalogue à droite */}
         <section className="catalogue-section">
           <div className="catalogue-header">
-              <p className="results-count">{items.length} résultat{items.length > 1 ? "s" : ""} trouvé{items.length > 1 ? "s" : ""}</p>
+              <p className="results-count">{filteredItems.length} résultat{filteredItems.length > 1 ? "s" : ""} trouvé{filteredItems.length > 1 ? "s" : ""}</p>
           </div>
 
           <div className="catalogue-grid">
-              {items.map(item => (
+              {filteredItems.map(item => (
               <Card key={item.id} item={item} addToCart={addToCart} />
               ))}
           </div>

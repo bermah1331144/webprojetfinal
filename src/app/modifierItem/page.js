@@ -40,7 +40,7 @@ export default function Catalogue() {
 
     return (
         <>
-            <section className="catalogue-section">
+            <section className="catalogue-section mb-5">
                 <div className="catalogue-header">
                     <div className="top-search-bar">
                         <input type="text" placeholder="🔍 Rechercher un item..." value={searchText} onChange={(e) => setSearchText(e.target.value)} />
