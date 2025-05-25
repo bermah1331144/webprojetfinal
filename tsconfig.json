@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/app/payment/erreur.js"  ],
   "exclude": [
     "node_modules"
   ]

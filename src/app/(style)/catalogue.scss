@@ -206,6 +206,7 @@ body {
 .catalogue-section {
   flex: 1;
   min-width: 0;
+  min-height: 74.2vh;
 }
 
 /* Responsive */
@@ -275,4 +276,12 @@ body {
   &:hover {
     background-color: #b36217;
   }
+}
+
+.catalogue-card-link {
+  text-decoration: none;
+}
+
+.card-height {
+  height: 450px;
 }

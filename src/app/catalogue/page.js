@@ -7,6 +7,7 @@ import Card from "./card";
 
 export default function Catalogue() {
     const [items, setItems] = useState([]);
+    const [filteredItems, setFilteredItems] = useState([]);
     const [searchText, setSearchText] = useState("");
     const [selectedRarity, setSelectedRarity] = useState("");
     const [sortOption, setSortOption] = useState("");
@@ -15,40 +16,50 @@ export default function Catalogue() {
 
     const { addToCart, notificationMessage, showNotification, closeNotification } = useCart();
 
-  useEffect(() => {
-    const fetchItems = async () => {
-      try {
-        const response = await fetch("http://localhost:3001/items");
-        const data = await response.json();
-  
-        // Filtrage
-        let filtered = data.filter(item =>
-          item.nom.toLowerCase().includes(searchText.toLowerCase()) &&
-          (selectedRarity ? item.rarity == selectedRarity : true) &&
-          item.prixAchat >= minPrice &&
-          item.prixAchat <= maxPrice
-        );
-  
-        // Tri
-        if (sortOption === "alpha-asc") {
-          filtered.sort((a, b) => a.nom.localeCompare(b.nom));
-        } else if (sortOption === "alpha-desc") {
-          filtered.sort((a, b) => b.nom.localeCompare(a.nom));
-        } else if (sortOption === "price-asc") {
-          filtered.sort((a, b) => a.prixAchat - b.prixAchat);
-        } else if (sortOption === "price-desc") {
-          filtered.sort((a, b) => b.prixAchat - a.prixAchat);
+    useEffect(() => {
+      const fetchItems = async () => {
+        try {
+          const response = await fetch("http://localhost:3001/items");
+          const data = await response.json();
+          setItems(data);
+        } catch (err) {
+          console.error("Erreur lors du chargement des items :", err);
         }
-        
-  
-        setItems(filtered);
-      } catch (err) {
-        console.error("Erreur lors du chargement des items :", err);
+      };
+    
+      fetchItems();
+    }, []);
+
+    useEffect(() => {
+      // Filtrage et tri à chaque changement de critère
+      let filtered = items.filter(item =>
+        typeof item.nom === 'string' &&
+        item.nom.toLowerCase().includes(searchText.toLowerCase()) &&
+        (selectedRarity ? item.rarity === selectedRarity : true) &&
+        item.prixAchat >= minPrice &&
+        item.prixAchat <= maxPrice
+      );
+    
+      // Tri
+      switch (sortOption) {
+        case "alpha-asc":
+          filtered.sort((a, b) => a.nom.localeCompare(b.nom));
+          break;
+        case "alpha-desc":
+          filtered.sort((a, b) => b.nom.localeCompare(a.nom));
+          break;
+        case "price-asc":
+          filtered.sort((a, b) => a.prixAchat - b.prixAchat);
+          break;
+        case "price-desc":
+          filtered.sort((a, b) => b.prixAchat - a.prixAchat);
+          break;
+        default:
+          break;
       }
-    };
-  
-    fetchItems();
-    }, [searchText, selectedRarity, sortOption, minPrice, maxPrice]);
+    
+      setFilteredItems(filtered);
+    }, [searchText, selectedRarity, sortOption, minPrice, maxPrice, items]);
 
   const resetFilters = () => {
     setSearchText("");
@@ -128,15 +139,15 @@ export default function Catalogue() {
 
         {/* Catalogue à droite */}
         <section className="catalogue-section">
-        <div className="catalogue-header">
-            <p className="results-count">{items.length} résultat{items.length > 1 ? "s" : ""} trouvé{items.length > 1 ? "s" : ""}</p>
-        </div>
+          <div className="catalogue-header">
+              <p className="results-count">{items.length} résultat{items.length > 1 ? "s" : ""} trouvé{items.length > 1 ? "s" : ""}</p>
+          </div>
 
-        <div className="catalogue-grid">
-            {items.map(item => (
-            <Card key={item.id} item={item} addToCart={addToCart} />
-            ))}
-        </div>
+          <div className="catalogue-grid">
+              {items.map(item => (
+              <Card key={item.id} item={item} addToCart={addToCart} />
+              ))}
+          </div>
         </section>
       </div>
     </div>

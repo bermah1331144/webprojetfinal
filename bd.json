@@ -7,7 +7,7 @@
       "nom": "Chatacabra Carapace",
       "rarity": 6,
       "recette": [],
-      "prixVente": 244,
+      "prixVente": 250,
       "prixAchat": 366
     },
     {
@@ -3351,15 +3351,14 @@
       "prixAchat": 562
     },
     {
-      "id": "598d",
-      "image": "C:\\fakepath\\mavais.png",
-      "name": "test",
-      "description": "ca va tu marcher crisssssss",
-      "rarity": 0,
+      "id": "5190",
+      "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
+      "nom": "test1",
+      "description": "test",
+      "rarity": "3",
       "ingrediants": [],
-      "prixVentre": 0,
-      "prixAchat": "2000",
-      "prixVente": "100"
+      "prixVente": 3,
+      "prixAchat": 3
     }
   ],
   "commentaires": [

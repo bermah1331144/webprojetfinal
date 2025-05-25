@@ -3,6 +3,7 @@
 import { Lisu_Bosa } from "next/font/google";
 import Commentaire from "./Commentaire";
 import ListCommentaire from "./listCommentaire";
+import { useState, useEffect } from "react";
 
 import { useParams } from "next/navigation";
 export default function addCommentaire({idItem}) {

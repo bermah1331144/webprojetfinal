@@ -113,12 +113,12 @@ export default function header() {
           </li>
           <li className="nav-item mx-2">
             {isAdminUser &&(
-              <Link href="/admin/ajout-item" className="btn custom-btn py-2 mt-2">Ajout item</Link>
+              <Link href="/addItems" className="btn custom-btn py-2 mt-2">Ajout item</Link>
             )} 
           </li>
           <li className="nav-item mx-2">
             {isAdminUser ? (
-              <Link href="/modificationItem" className="btn custom-btn py-2 my-2">Modifier item</Link>
+              <Link href="/modifierItem" className="btn custom-btn py-2 my-2">Modifier item</Link>
             ) : (
               <Link href="/page2" className="btn custom-btn py-2 my-2">À venir</Link>
             )}
