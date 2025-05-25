@@ -23,7 +23,7 @@ export default function StripeWrapper({prixTotal}) {
           const res = await axios.post('/api/create-payment-intent', {
             data: { amount: montant},
           });
-          setClientSecret(res.data); // 🔁 Assure-toi que c'est une string
+          setClientSecret(res.data);
         }
       } catch (err) {
         console.error('Erreur création paiement :', err);

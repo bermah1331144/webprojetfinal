@@ -9,7 +9,7 @@ export default function PaymentPage() {
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
-        chargerPanier();
+            chargerPanier();
         }
     }, []);
 
