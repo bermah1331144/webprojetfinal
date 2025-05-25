@@ -76,14 +76,22 @@ export default function FormModification({item: initialItem}) {
         
             <label className="custom-form__label">Description</label>
             <textarea className="form-control custom-form__input" name="description" value={item.description || ""} onChange={handleChange} rows={3} />
-        
-            <label className="custom-form__label">Rareté</label>
-            <select className="form-control custom-form__input" name="rarity" value={item.rarity || ""} onChange={handleChange}>
-                <option value="">-- Select Rarity --</option>
-                {[2, 3, 4, 5, 6, 7].map(val => (
-                <option key={val} value={val}>{val}</option>
-                ))}
-            </select>
+
+            <div className="row justify-content-between">
+              <div className="col-6">
+                <label className="custom-form__label">Rareté</label>
+                <select className="form-control custom-form__input" name="rarity" value={item.rarity || ""} onChange={handleChange}>
+                  <option value="">-- Select Rarity --</option>
+                  {[2, 3, 4, 5, 6, 7].map(val => (
+                  <option key={val} value={val}>{val}</option>
+                  ))}
+                </select>
+              </div>
+              <div className="col-6">
+                <label className="custom-form__label">Quantité</label>
+                <input className="form-control custom-form__input" type="number" name="quantite" value={item.quantite || ""} onChange={handleChange} />
+              </div>
+            </div>
         
             <label className="custom-form__label">URL de l'image</label>
             <input className="form-control custom-form__input" type="text" name="imgLien" value={item.imgLien || ""} onChange={handleChange} />

@@ -15,7 +15,8 @@ export default function Page() {
         rarity: 0,
         ingrediants: [],
         prixVente: 0,
-        prixAchat: 0
+        prixAchat: 0,
+        quantite: 0
     }
     const [item, setItem] = useState(defaultItem);
 
@@ -135,6 +136,18 @@ export default function Page() {
                                 id="prixAchat"
                                 name="prixAchat" 
                                 value={item.prixAchat}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="quantite" className="form-label">Quantité:</label>
+                            <input 
+                                type="number"
+                                className="form-control"
+                                id="quantite"
+                                name="quantite" 
+                                value={item.quantite}
                                 onChange={handleChange}
                                 required
                             />
