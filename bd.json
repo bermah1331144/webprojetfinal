@@ -3684,17 +3684,6 @@
       "prixVente": 375,
       "prixAchat": 562,
       "quantite": 50
-    },
-    {
-      "id": "5190",
-      "imgLien": "https://monsterhunterwiki.org/images/8/82/MHWilds-Tail_Icon_White.png",
-      "nom": "test1",
-      "description": "test",
-      "rarity": "3",
-      "ingrediants": [],
-      "prixVente": 3,
-      "prixAchat": 3,
-      "quantite": 50
     }
   ],
   "commentaires": [
