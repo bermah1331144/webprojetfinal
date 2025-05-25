@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 import '../(style)/style.sass'
-import { isAuthenticated, isAdmin, logout, getUserData } from '../utils/auth'
+import { isAuthenticated, isAdmin, logout, getUserData } from '../(hook)/auth'
 import {recupererPanier} from '../(hook)/panier';
 
 export default function header() {

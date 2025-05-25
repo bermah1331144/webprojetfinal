@@ -3,7 +3,8 @@
 
 import './style.sass';
 import '../(style)/style.sass';
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
+import { isAdmin } from "../(hook)/auth";
 
 export default function Page() {
     //Permet de prendre les info ecrit par usager
@@ -17,6 +18,12 @@ export default function Page() {
         prixAchat: 0
     }
     const [item, setItem] = useState(defaultItem);
+
+    useEffect(() => {
+        if(!isAdmin()){
+            window.location.href = "/pagePrincipale";
+        }
+    }, []);
 
     const handleChange = (e) => {
         const { name, value, type } = e.target;

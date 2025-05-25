@@ -2,7 +2,7 @@
 import "../(style)/catalogue.scss";
 import Card from "./card";
 import { useState, useEffect } from "react";
-import { isAdmin } from "../utils/auth";
+import { isAdmin } from "../(hook)/auth";
 
 export default function Catalogue() {
     const [items, setItems] = useState([]);
