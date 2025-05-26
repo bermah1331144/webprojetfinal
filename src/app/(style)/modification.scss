@@ -1,0 +1,112 @@
+$primary: #443627;
+$secondary: #D98324;
+$tertiary: #EFDCAB;
+$quarternary: #F2F6D0;
+
+.custom-form {
+  background-color: $tertiary;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+
+  &__label {
+    margin-top: 15px;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: $primary;
+  }
+
+  &__input {
+    margin-bottom: 15px;
+    background-color: $quarternary;
+    border: 1px solid lighten($primary, 20%);
+    color: $primary;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &:focus {
+      border-color: $secondary !important;  // !important car Bootstrap met ses propres styles sur focus
+      box-shadow: 0 0 5px rgba($secondary, 0.5);
+      background-color: #fff;
+    }
+  }
+}
+
+.custom-form-container {
+    margin-top: 2rem;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+  
+      .col-md-5 {
+        margin-top: 2rem;
+      }
+    }
+  }
+  
+  .custom-form {
+    background-color: $tertiary;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  
+    &__label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: $primary;
+    }
+  
+    &__input {
+      background-color: $quarternary;
+      border: 1px solid lighten($primary, 20%);
+      color: $primary;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      margin-bottom: 1.25rem;
+  
+      &:focus {
+        border-color: $secondary !important;
+        box-shadow: 0 0 5px rgba($secondary, 0.5);
+      }
+    }
+  
+    &__image-preview {
+      text-align: center;
+  
+      img {
+        max-width: 100%;
+        max-height: 350px;
+        border-radius: 10px;
+        object-fit: contain;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .custom-form__button {
+    min-width: 120px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  
+    &.btn-primary {
+      background-color: $secondary;
+      border-color: $secondary;
+  
+      &:hover {
+        background-color: darken($secondary, 10%);
+      }
+    }
+  
+    &.btn-danger {
+      background-color: #c0392b;
+      border-color: #c0392b;
+  
+      &:hover {
+        background-color: darken(#c0392b, 10%);
+      }
+    }
+  }
+    

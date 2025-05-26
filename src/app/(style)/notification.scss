@@ -1,0 +1,25 @@
+.notification-wrapper {
+    position: fixed; /* ✅ détaché du contenu */
+    top: 10vh;
+    right: 20px;
+    z-index: 9999; /* ✅ toujours au-dessus */
+    pointer-events: none; /* évite les clics accidentels */
+  }
+  
+  .notification {
+    background-color: rgba(217, 131, 36, 0.70); /* ✅ ta couleur */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 3s ease-in-out;
+    pointer-events: all;
+  }
+  
+  @keyframes fadeInOut {
+    0%   { opacity: 0; transform: translateY(-10px); }
+    10%  { opacity: 1; transform: translateY(0); }
+    90%  { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
