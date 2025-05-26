@@ -14,7 +14,7 @@ export default function CommentaireUnique({commentaire}) {
                 
                 {commentaire ? (
                     <>
-                        <p className="col-11 p">Titre: {commentaire.titre}</p>
+                        <p className="col-11 p">Titre: {commentaire.title}</p>
                         <p className="col-11 p">Contenu: {commentaire.contenu}</p>
                         <small>{new Date(commentaire.date).toLocaleString()}</small>
 

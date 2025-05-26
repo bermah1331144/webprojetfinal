@@ -54,7 +54,7 @@ export default function PanierPage() {
         <div className="col-12 col-lg-5 mb-4">
           <div className="border border-secondary rounded p-4 sticky-top mt-3 bg-light">
             <DescriptionCommande articles={articles}/>
-            <Link href="/payment" className={`btn btn-primary w-100 mt-3 ${articles.length === 0 ? 'disabled' : ''}`} style={articles.length === 0 ? { pointerEvents: 'none' } : {}}>
+            <Link href="/Payment" className={`btn btn-primary w-100 mt-3 ${articles.length === 0 ? 'disabled' : ''}`} style={articles.length === 0 ? { pointerEvents: 'none' } : {}}>
               Passer commande
             </Link>
           </div>
