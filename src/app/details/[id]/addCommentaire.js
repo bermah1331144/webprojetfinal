@@ -1,130 +1,88 @@
-//Prend les info ecrit par usager et les add a la bd
+import { useEffect, useState } from "react";
+import { isAuthenticated } from "../../(hook)/auth";
+export default function AddCommentaire({ idItem, onCommentaireAjoute }) {
+    const [message, setMesage] = useState("");
 
-import { Lisu_Bosa } from "next/font/google";
-import Commentaire from "./Commentaire";
-import ListCommentaire from "./listCommentaire";
-import { useState, useEffect } from "react";
-
-import { useParams } from "next/navigation";
-export default function addCommentaire({idItem}) {
-    const [message,setMesage] = useState("");
-    //const { user } = useContext(UserContext);
-    //const userId = user.id;
-    const userId = 1;   
-    
-
-
-    //recupere les infos ecrit par l'usager, puis les add a la bd 
-    //Permet de refraichir la liste de commentaire
-    const [commentaire,setCommentaire] = useState({
-
-        date: new Date().toISOString(),
-        titre: "",
+    const [commentaire, setCommentaire] = useState({
+        title: "",
         contenu: "",
-        idUser: userId,
-        idItem: idItem
-
+        itemId: parseInt(idItem)
     });
-    
 
-    useEffect(() => {
-        const user = JSON.parse(localStorage.getItem("user"));
-        if (user) {
-          setCommentaire((prev) => ({
-            ...prev,
-            idUser: user.id
-          }));
-        }
-      }, []);
-      
-    
-    //gestion de changements dans les champs du formaulaire
     const handleCharge = (e) => {
-        
         setCommentaire({
             ...commentaire,
             [e.target.name === "commentaire" ? "contenu" : e.target.name]: e.target.value
         });
     };
 
-    //doit aller cherhcer le numeros du utilisateur
-    async function idUser() {
-        
-    }
-
-    //doit faire un fetch push pour aller ajouter un commentaire a ma bd    
     const handleSubmit = async (e) => {
-
         e.preventDefault();
+        const rawToken = localStorage.getItem('token');
+        const token = rawToken?.replace(/^"(.*)"$/, '$1');
 
-        if(!commentaire.titre || !commentaire.contenu) {
+        if (!isAuthenticated()) return;
+
+        if (!commentaire.title || !commentaire.contenu) {
             setMesage("Veuillez remplir tous les champs");
-            return ;
+            return;
         }
 
         try {
-            const response = await fetch(`http://localhost:3001/commentaires`, {
+            const response = await fetch(`https://projet-prog4e09.cegepjonquiere.ca/api/Commentaires`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
+                    'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify(commentaire),
             });
-            if (response.ok) {
-                console.log("Commentaire ajouté avec succès");
-                setCommentaires((prevCommentaires) => [...prevCommentaires, data]);
 
+            if (!response.ok) {
+                setMesage("Erreur serveur : commentaire non ajouté");
+                return;
             }
-            const data = await response.json();
+
+            setMesage("Commentaire ajouté !");
             setCommentaire({
-                ...commentaire,
                 contenu: "",
-                titre: "",
-                date: new Date().toISOString(),
+                title: "",
+                itemId: parseInt(idItem)
             });
+
+            if (onCommentaireAjoute) {
+                onCommentaireAjoute(); // 🔄 délenche le rafraîchissement
+            }
+
         } catch (error) {
             console.error(error);
+            setMesage("Une erreur est survenue lors de l'envoi.");
         }
+    };
 
-    }
-
-
-    //affiche la liste de commentaire et ajoute un commentaire
-
-    return <>
-        <div className="container-fluid row">
-                <div className="col-6">
-                    <form onSubmit={handleSubmit} id= "formCommentaire" className="row g-3">
-                        <label htmlFor="titre" className="form-label">Titre</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="titre"
-                            name="titre"
-                            value={commentaire.titre}
-                            onChange={handleCharge}
-                            requiered="true"
-                        />
-                        <label htmlFor="commentaire" className="form-label">Commentaire</label>
-                        <textarea
-                            className="form-control"
-                            id="commentaire"
-                            name="commentaire"
-                            value={commentaire.contenu}
-                            onChange={handleCharge}
-                            required
-                        ></textarea>
-                
-                        <button id="boutonCommentaire" type="submit" className="btn btn-primary">Ajouter</button>
-                    </form>
-                    
-                </div>
-                <div className="col-6" >
-                    <ListCommentaire/>
-                </div>
-
-        </div>
-
-    
-    </>;
+    return (
+        <form onSubmit={handleSubmit} id="formCommentaire" className="row g-3">
+            <label htmlFor="title" className="form-label">Titre</label>
+            <input
+                type="text"
+                className="form-control"
+                id="title"
+                name="title"
+                value={commentaire.title}
+                onChange={handleCharge}
+                required
+            />
+            <label htmlFor="commentaire" className="form-label">Commentaire</label>
+            <textarea
+                className="form-control"
+                id="commentaire"
+                name="commentaire"
+                value={commentaire.contenu}
+                onChange={handleCharge}
+                required
+            ></textarea>
+            <button id="boutonCommentaire" type="submit" className="btn btn-primary">Ajouter</button>
+            {message && <div className="mt-2">{message}</div>}
+        </form>
+    );
 }

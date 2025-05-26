@@ -29,11 +29,16 @@ export default function FormModification({item: initialItem}) {
       };
 
     const handleUpdate = () => {
+      const rawToken = localStorage.getItem('token');
+      const token = rawToken?.replace(/^"(.*)"$/, '$1');
         openModal("Confirmer la modification de l'item ?", async () => {
           try {
-            const response = await fetch(`http://localhost:3001/items/${item.id}`, {
+            const response = await fetch(`https://projet-prog4e09.cegepjonquiere.ca/api/Items/${item.id}`, {
               method: "PUT",
-              headers: { "Content-Type": "application/json" },
+              headers: {
+                "Content-Type": "application/json", 
+                "Authorization": `Bearer ${token}`
+              },
               body: JSON.stringify(item),
             });
             if (!response.ok) throw new Error("Erreur lors de la modification");
@@ -48,10 +53,16 @@ export default function FormModification({item: initialItem}) {
       };
     
       const handleDelete = () => {
+        const rawToken = localStorage.getItem('token');
+        const token = rawToken?.replace(/^"(.*)"$/, '$1');
         openModal("Es-tu sûr de vouloir supprimer cet item ?", async () => {
           try {
-            const response = await fetch(`http://localhost:3001/items/${item.id}`, {
+            const response = await fetch(`https://projet-prog4e09.cegepjonquiere.ca/api/Items/${item.id}`, {
               method: "DELETE",
+              headers: {
+                "Content-Type": "application/json", 
+                "Authorization": `Bearer ${token}`
+              },
             });
             if (!response.ok) throw new Error("Erreur lors de la suppression");
             console.log("→ ITEM SUPPRIMÉ !");

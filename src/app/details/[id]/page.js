@@ -1,60 +1,64 @@
 "use client";
-import useCart from "../../(hook)/useCart";
 import "../../(style)/detailsStyle.sass";
-import AddCommentaire from "./addCommentaire";
-import { useEffect, useState } from "react";
-import { use } from "react";
 import './style.sass';
-import {ajouterOuMettreAJourArticle} from '../../(hook)/panier';
+import { useEffect, useState } from "react";
+import { use } from "react"; // ← pour unwrap params
+import usePanier from '../../(hook)/panier-backend';
 import Notification from '../../(composant)/notification';
+import CommentaireSection from "./commentaireSection";
 
-export default function pageDetails({params}){
-    const [item, setItem] = useState([]);
-    const { id }= use(params);
-    const {addToCart, notificationMessage, showNotification, closeNotification} = useCart();
+export default function PageDetails({ params }) {
+    const { id } = use(params); // ✅ unwrap proprement le paramètre
 
-    //const URLSearchParams = new URLSearchParams(window.location.search);
-    
-    //fonction pour aller chercher les infos du produit
+    const [item, setItem] = useState(null);
+    const { addToCart, notificationMessage, showNotification, closeNotification } = usePanier();
+
     useEffect(() => {
-        async function getItems() {
-            try{
-                const response = await fetch(`http://localhost:3001/items?id=${id}`);
+        async function getItem() {
+            try {
+                const response = await fetch(`https://projet-prog4e09.cegepjonquiere.ca/api/Items/${id}`);
                 const data = await response.json();
-                setItem(data[0]);
-            }
-            catch(error){
+                setItem(data);
+            } catch (error) {
                 console.error("Erreur lors de la recherche du produit", error);
             }
-        }       
-        getItems();
-    },[])
-    
-    const imageLien = item.imgLien;
+        }
 
-    return<>
-        <Notification message={notificationMessage} visible={showNotification} duration={3000} onClose={() => closeNotification()} />
-        <div id="backgroundAfficheProduit" className="pt-5 py-5">
-            <div id="afficheProduit" className="container-fluid">
-                <div id ="boiteProduit" >  
-                    <h1>{item.Nom}</h1>
-                    <div className="row justify-content-center ">
+        getItem();
+    }, [id]);
+
+    if (!item) return <p>Chargement...</p>;
+
+    return (
+        <>
+            <Notification
+                message={notificationMessage}
+                visible={showNotification}
+                duration={3000}
+                onClose={closeNotification}
+            />
+            <div id="backgroundAfficheProduit" className="pt-5 py-5">
+                <div id="afficheProduit" className="container-fluid">
+                    <div id="boiteProduit">
                         <h1>{item.nom}</h1>
-                        <img src={imageLien} alt="Produit" className="img-fluid col-md-3"/>
-                        <div className="col-12col-md-6 justify-content-center text-center">   
-                            <h2>Description item</h2>
-                            <p className="p">{item.description}</p>
-                        </div> 
-                    </div>
-                    <button className="btn btn-primary" href="/panier" onClick={() => addToCart(item)}><i className="bi bi-bag pe-2"></i>Ajouter au panier</button>
-                    <div className="zoneCommentaire">
+                        <div className="row justify-content-center">
+                            <img src={item.imgLien} alt={item.nom} className="img-fluid col-md-3" />
+                            <div className="col-12 text-center">
+                                <h2>Description</h2>
+                                <p>{item.description}</p>
+                            </div>
+                        </div>
+                        <button className="btn btn-primary" onClick={() => addToCart(item)}>
+                            <i className="bi bi-bag pe-2"></i>Ajouter au panier
+                        </button>
 
-                        <AddCommentaire idMonste= {id} idItem={id}/>
-
+                        <div className="zoneCommentaire mt-5">
+                            <h3>Commentaires</h3>
+                            <CommentaireSection idItem={id} />
+                        </div>
                     </div>
                 </div>
             </div>
-         </div>            
-
-    </>;
+        </>
+    );
 }

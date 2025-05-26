@@ -2,7 +2,7 @@
 import StripeWrapper from './StripeWrapper';
 import DescriptionCommande from '../(composant)/descriptionCommande';
 import { useEffect, useState } from 'react';
-import { recupererPanier } from '../(hook)/panier';
+import { recupererPanier } from '../(hook)/panier-backend';
 
 export default function PaymentPage() {
     const [articles, setArticles] = useState([]);
@@ -15,9 +15,10 @@ export default function PaymentPage() {
 
     const chargerPanier = async () => {
         const data = await recupererPanier();
-        setArticles(Array.isArray(data) ? data : []);
+        setArticles(data.items);
     };
-    const totalPrixHT = articles.reduce((acc, item) => acc + item.prixVente * item.quantite, 0);
+    console.log(articles);
+    const totalPrixHT = articles.reduce((acc, article) => acc + ((article.item?.prixVente || 0) * article.quantite), 0);
     const TVQ = totalPrixHT * 0.0975;
     const TPS = totalPrixHT * 0.05;
     return <>

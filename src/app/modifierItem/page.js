@@ -15,7 +15,7 @@ export default function Catalogue() {
         }
         const fetchItems = async () => {
             try {
-                const response = await fetch("http://localhost:3001/items");
+                const response = await fetch("https://projet-prog4e09.cegepjonquiere.ca/api/Items");
                 const data = await response.json();
                 setItems(data);
             } catch (err) {

@@ -13,9 +13,8 @@ export default function ConnexionForm() {
   const router = useRouter();
 
   useEffect(() => {
-    const userAuth = localStorage.getItem('userAuth');
+    const userAuth = localStorage.getItem('token');
     if (userAuth) {
-      const userData = JSON.parse(userAuth);
       window.location.href = '/pagePrincipale';
     }
   }, []);
@@ -30,7 +29,7 @@ export default function ConnexionForm() {
     }
 
     try {
-      const response = await fetch('/api/connexion', {
+      const response = await fetch('https://projet-prog4e09.cegepjonquiere.ca/api/Accounts/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -43,19 +42,10 @@ export default function ConnexionForm() {
       if (!response.ok) {
         throw new Error(data.message);
       }
-
-      const utilisateur = {
-        id: data.utilisateur.id,
-        nom: data.utilisateur.nom,
-        prenom: data.utilisateur.prenom,
-        email: data.utilisateur.email,
-        roleId: data.utilisateur.roleId,
-        isLoggedIn: true,
-        loginTime: new Date().toISOString()
-      };
+      console.log(data);
 
       setMessage('Connexion réussie !');
-      localStorage.setItem('userAuth', JSON.stringify(utilisateur));
+      localStorage.setItem('token', JSON.stringify(data.token));
       setTimeout(() => {
         window.location.href = '/pagePrincipale';
       }, 1500);

@@ -1,5 +1,5 @@
 "use client";
-import useCart from "../(hook)/useCart";
+import usePanier from "../(hook)/panier-backend";
 import Notification from "../(composant)/notification";
 import React, { useEffect, useState} from "react";
 import "../(style)/catalogue.scss";
@@ -14,12 +14,12 @@ export default function Catalogue() {
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(1000);
 
-    const { addToCart, notificationMessage, showNotification, closeNotification } = useCart();
+    const { addToCart, notificationMessage, showNotification, closeNotification } = usePanier();
 
     useEffect(() => {
       const fetchItems = async () => {
         try {
-          const response = await fetch("http://localhost:3001/items");
+          const response = await fetch("https://projet-prog4e09.cegepjonquiere.ca/api/Items");
           const data = await response.json();
           setItems(data);
         } catch (err) {

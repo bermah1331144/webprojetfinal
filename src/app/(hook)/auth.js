@@ -1,5 +1,4 @@
 'use client';
-import { viderPanier } from "../(hook)/panier";
 
 // auth-utils.js - Fichier utilitaire pour la gestion de l'authentification
 
@@ -8,19 +7,33 @@ import { viderPanier } from "../(hook)/panier";
  * @returns {boolean} True si l'utilisateur est connecté
  */
 export function isAuthenticated() {
+  // Vérifie si on est dans un environnement navigateur
   if (typeof window === 'undefined') return false;
-  
-  const userAuth = localStorage.getItem('userAuth');
-  if (!userAuth) return false;
-  
+
   try {
-    const userData = JSON.parse(userAuth);
-    return !!userData.isLoggedIn;
+    const token = localStorage.getItem('token');
+    if (!token) return false;
+
+    const payloadBase64 = token.split('.')[1];
+    if (!payloadBase64) return false;
+
+    const payloadJson = atob(payloadBase64.replace(/-/g, '+').replace(/_/g, '/'));
+    const payload = JSON.parse(payloadJson);
+
+    // Vérifie l'expiration du token
+    const now = Math.floor(Date.now() / 1000);
+    if (payload.exp && payload.exp < now) {
+      localStorage.removeItem('token');
+      return false;
+    }
+
+    return true;
   } catch (error) {
-    console.error('Erreur lors de la vérification d\'authentification:', error);
+    console.error('Erreur lors de la vérification du token :', error);
     return false;
   }
 }
+
 
 /**
  * Vérifie si l'utilisateur connecté est un administrateur
@@ -29,12 +42,19 @@ export function isAuthenticated() {
 export function isAdmin() {
   if (typeof window === 'undefined') return false;
 
-  const userAuth = localStorage.getItem('userAuth');
-  if (!userAuth) return false;
+  const token = localStorage.getItem('token');
+  if (!token) return false;
 
   try {
-    const userData = JSON.parse(userAuth);
-    return userData.isLoggedIn && userData.roleId == 1; // 👈 Admin = roleId 1
+    const payloadBase64 = token.split('.')[1];
+    if (!payloadBase64) return false;
+
+    const payloadJson = atob(payloadBase64.replace(/-/g, '+').replace(/_/g, '/'));
+    const payload = JSON.parse(payloadJson);
+
+    console.log(payload.sub);
+    // Ici on regarde "sub" au lieu de role
+    return payload.sub === "Admin";
   } catch (error) {
     console.error('Erreur lors de la vérification du rôle admin:', error);
     return false;
@@ -66,8 +86,7 @@ export function getUserData() {
 export function logout() {
   if (typeof window === 'undefined') return;
   
-  localStorage.removeItem('userAuth');
-  viderPanier();
+  localStorage.removeItem('token');
 
   // Vous pourriez également vouloir effacer d'autres données spécifiques à l'utilisateur
 }

@@ -16,7 +16,7 @@ export default function(){
         }
         const fetchItem = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/items/${id}`);
+                const response = await fetch(`https://projet-prog4e09.cegepjonquiere.ca/api/Items/${id}`);
                 const data = await response.json();
                 setItem(data);
             } catch (err) {

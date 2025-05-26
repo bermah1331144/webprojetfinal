@@ -1,46 +1,32 @@
-"use client";
-
-
-//Afficher tout les commentaires aller chercher dans bs avec fetch
+import { useEffect, useState } from "react";
 import Commentaire from "./Commentaire";
-import { useState, useEffect } from "react";
-import { use } from "react";
-import AddCommentaire from "./addCommentaire";
-export default function listCommentaire({idItems}) {
-   
-    //aller chercher etat de mes commentiares
+export default function ListCommentaire({ idItems, rafraichir }) {
     const [commentaires, setCommentaires] = useState([]);
     const [afficherTout, setAfficherTout] = useState(false);
 
-    const commentaireAfficher = afficherTout ? commentaires : commentaires.slice(0, 3);
-
-    //fetch dans useEffect/get commentaires pour aller chercher les commentaires d'un item
     useEffect(() => {
         async function getCommentaires() {
-            const response = await fetch(`http://localhost:3001/commentaires?idItems=${idItems}`);
+            if (idItems === undefined) return;
+            const response = await fetch(`https://projet-prog4e09.cegepjonquiere.ca/api/Commentaires/${idItems}`);
             const data = await response.json();
-            setCommentaires(data);
-            console.log(data);
+            setCommentaires(Array.isArray(data) ? data : []);
         }
-        
+
         getCommentaires();
-        console.log(commentaires);
-    }, [idItems, AddCommentaire.setRafraichir]);     
+    }, [idItems, rafraichir]); // ⬅️ Se relance quand rafraichir change
 
+    const commentaireAfficher = afficherTout ? commentaires : commentaires.slice(0, 3);
 
-
-    //doit afficher tout les commentaires doit use map
-    //--------------------------------------------- PBL double affichage de commentaire ---------------------------------------------
-    return <>
+    return (
         <div style={{ maxHeight: "300px", overflowY: "auto" }}>
-            {commentaires.map((c) => (
+            {commentaireAfficher.map((c) => (
                 <Commentaire commentaire={c} key={c.id} />
             ))}
             {!afficherTout && commentaires.length > 3 && (
                 <button onClick={() => setAfficherTout(true)} className="btn btn-link p-0 mt-2">
                     Afficher plus
-            </button>
+                </button>
             )}
         </div>
-    </>;
+    );
 }

@@ -3,54 +3,53 @@ import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 import '../(style)/style.sass'
 import { isAuthenticated, isAdmin, logout, getUserData } from '../(hook)/auth'
-import {recupererPanier} from '../(hook)/panier';
+import {recupererPanier} from '../(hook)/panier-backend';
 
 export default function header() {
   const [cartCount, setCartCount] = useState(0)
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [isAdminUser, setIsAdminUser] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [userName, setUserName] = useState('')
   const [showDropdown, setShowDropdown] = useState(false)
   const dropdownRef = useRef(null)
 
   // Vérifier l'état d'authentification au chargement
   useEffect(() => {
-    checkAuthStatus();
-    
-    // Ajouter un event listener pour surveiller les changements dans localStorage
-    window.addEventListener('storage', handleStorageChange);
-    
+    if (typeof window !== 'undefined') {
+      checkAuthStatus();
+      window.addEventListener('storage', handleStorageChange);
+    }
+  
     return () => {
-      // Nettoyage
-      window.removeEventListener('storage', handleStorageChange);
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('storage', handleStorageChange);
+      }
     };
   }, []);
 
   useEffect(() => {
     async function loadCartCount() {
-      try {
-        const panier = await recupererPanier();
-        const total = panier.reduce((acc, item) => acc + (parseInt(item.quantite, 10) || 0), 0);
-        setCartCount(total);
-      } catch (error) {
-        console.error("Erreur lors du chargement du panier :", error);
+      if (typeof window !== 'undefined' && isAuthenticated()) {
+        try {
+          const panier = await recupererPanier();
+          const total = panier.items.reduce((acc, item) => acc + (parseInt(item.quantite, 10) || 0), 0);
+          setCartCount(total);
+        } catch (error) {
+          console.error("Erreur lors du chargement du panier :", error);
+        }
       }
     }
   
     loadCartCount();
-  
-    // Écoute les changements (ex: une autre partie de l'app met à jour IndexedDB)
-    const interval = setInterval(loadCartCount, 1000); // toutes les secondes
+    const interval = setInterval(loadCartCount, 1000);
     return () => clearInterval(interval);
   }, []);
+  
 
   function checkAuthStatus() {
-    const authenticated = isAuthenticated();
-    const adminStatus = isAdmin();
+    setIsLoggedIn(isAuthenticated());
+    setIsAdminUser(isAdmin());
     const userData = getUserData();
-    
-    setIsLoggedIn(authenticated);
-    setIsAdminUser(adminStatus);
     setUserName(userData?.name || 'Utilisateur');
   }
 
@@ -74,8 +73,8 @@ export default function header() {
   }, [])
 
   const handleLogout = () => {
+    setIsAdminUser(false);
     logout();
-    setIsLoggedIn(false);
     setIsAdminUser(false);
     setUserName('');
     setShowDropdown(false);

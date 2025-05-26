@@ -1,27 +1,33 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import PanierItem from './panierItem';
-import { recupererPanier, updateQuantite } from '../(hook)/panier';
+import { recupererPanier, addItemCommande } from '../(hook)/panier-backend';
 import '../(style)/panier.scss';
 import Link from 'next/link';
 import DescriptionCommande from '../(composant)/descriptionCommande';
+import { isAuthenticated } from '../(hook)/auth';
 
 export default function PanierPage() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
+    if (!isAuthenticated()) {
+      window.location.href = "/pagePrincipale";
+    }
     if (typeof window !== 'undefined') {
       chargerPanier();
     }
+    console.log(articles);
   }, []);
 
   const chargerPanier = async () => {
     const data = await recupererPanier();
-    setArticles(Array.isArray(data) ? data : []);
+    setArticles(data.items);
+    console.log(articles);
   };
 
   const handleQuantiteChange = async (id, newQuantite) => {
-    await updateQuantite(id, newQuantite);
+    await addItemCommande(id, newQuantite);
     chargerPanier();
   };
 
@@ -45,17 +51,8 @@ export default function PanierPage() {
         )}
         </div>
 
-        {/* EN FAIRE UN COMPOSANT A REUTILISER POUR LINTERFACE DE PAYMENT*/}
         <div className="col-12 col-lg-5 mb-4">
           <div className="border border-secondary rounded p-4 sticky-top mt-3 bg-light">
-            <h3>Résumé du Panier</h3>
-            {articles.map((item) => (
-                <div key={item.id}  className="row">
-                    <p className='col-8 border border-primary m-0 p-0 ps-1'>{item.nom}</p>
-                    <p className='col-1 border border-primary m-0 p-0 text-end pe-1'>{item.quantite}</p>
-                    <p className='col-3 border border-primary m-0 p-0 text-end pe-1'>{(item.prixVente * item.quantite).toFixed(2)} $</p>
-                </div>
-            ))}
             <DescriptionCommande articles={articles}/>
             <Link href="/payment" className={`btn btn-primary w-100 mt-3 ${articles.length === 0 ? 'disabled' : ''}`} style={articles.length === 0 ? { pointerEvents: 'none' } : {}}>
               Passer commande

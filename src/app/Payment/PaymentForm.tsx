@@ -1,6 +1,6 @@
 'use client';
 
-import { viderPanier } from '../(hook)/panier';
+import { completerCommande } from '../(hook)/panier-backend';
 import { useStripe, useElements, PaymentElement } from '@stripe/react-stripe-js';
 import { FormEvent, useState } from 'react';
 import Notification from '../(composant)/notification';
@@ -13,20 +13,24 @@ export default function PaymentForm() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!stripe || !elements) return;
-
-    viderPanier();
-    setShowNotification(true);
-    const { error } = await stripe.confirmPayment({
+  
+    const { error, paymentIntent } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: 'http://localhost:3000/pagePrincipale', // adapte au besoin
+        return_url: 'http://localhost:3000/pagePrincipale', // Or your live URL
       },
+      redirect: "if_required", 
     });
-
-    if (error) {
-      console.error(error.message);
+  
+    if (paymentIntent && paymentIntent.status === "succeeded") {
+      await completerCommande();
+      setShowNotification(true);
+      window.location.href = '/pagePrincipale';
+    } else {
+      console.warn("Payment not successful yet:", paymentIntent?.status);
     }
   };
+  
 
   return (
     <form onSubmit={handleSubmit}>

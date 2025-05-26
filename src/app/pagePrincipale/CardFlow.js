@@ -1,8 +1,7 @@
 "use client";
-import useCart from '../(hook)/useCart';
+import usePanier from '../(hook)/panier-backend';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import {ajouterOuMettreAJourArticle} from '../(hook)/panier';
 import Notification from '../(composant)/notification';
 
 export default function CardFlow() {
@@ -11,7 +10,7 @@ export default function CardFlow() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [bgIndex, setBgIndex] = useState(0);
   
-  const { addToCart, notificationMessage, showNotification, closeNotification } = useCart();
+  const { addToCart, notificationMessage, showNotification, closeNotification } = usePanier();
 
   const backgroundImages = [
     '/habitat/desert.png',
@@ -21,13 +20,15 @@ export default function CardFlow() {
   ];
 
   useEffect(() => {
-    fetch('/api/cards')
-      .then(res => res.json())
-      .then(data => {
-        const source = Array.isArray(data) ? data : data.items;
-        setItems(source);
-      });
-  }, []);
+    const fetchItems = async () => {
+      const res = await fetch('https://projet-prog4e09.cegepjonquiere.ca/api/Items/vedette')
+      const data = await res.json()
+      setItems(data)
+    }
+
+    fetchItems()
+  }, [])
+
 
   useEffect(() => {
     const interval = setInterval(() => {

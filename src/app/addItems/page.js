@@ -46,10 +46,13 @@ export default function Page() {
         } 
 
         try {
-            const response = await fetch(`http://localhost:3001/items`, {
+            const rawToken = localStorage.getItem('token');
+            const token = rawToken?.replace(/^"(.*)"$/, '$1');
+            const response = await fetch(`https://projet-prog4e09.cegepjonquiere.ca/api/Items`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`
                 },
                 body: JSON.stringify(item),
             });
