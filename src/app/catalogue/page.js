@@ -35,7 +35,7 @@ export default function Catalogue() {
       let filtered = items.filter(item =>
         typeof item.nom === 'string' &&
         item.nom.toLowerCase().includes(searchText.toLowerCase()) &&
-        (selectedRarity ? item.rarity === selectedRarity : true) &&
+        (selectedRarity ? item.rarity == selectedRarity : true) &&
         item.prixAchat >= minPrice &&
         item.prixAchat <= maxPrice
       );
