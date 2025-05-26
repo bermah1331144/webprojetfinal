@@ -57,7 +57,7 @@ export default function PanierPage() {
                 </div>
             ))}
             <DescriptionCommande articles={articles}/>
-            <Link href="/payment" className={`btn btn-primary w-100 mt-3 ${articles.length === 0 ? 'disabled' : ''}`} style={articles.length === 0 ? { pointerEvents: 'none' } : {}}>
+            <Link href="/Payment" className={`btn btn-primary w-100 mt-3 ${articles.length === 0 ? 'disabled' : ''}`} style={articles.length === 0 ? { pointerEvents: 'none' } : {}}>
               Passer commande
             </Link>
           </div>
